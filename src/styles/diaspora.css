@@ -1,0 +1,123 @@
+/* Tailwind utilities — no base/reset so existing site styles are untouched */
+@tailwind components;
+@tailwind utilities;
+
+/* ── Diaspora page wrapper starts invisible ── */
+#diaspora-root { opacity: 0; }
+
+/* ── Keyframes ── */
+@keyframes navSlideDown {
+  from { opacity: 0; transform: translateY(-110%); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes lineReveal {
+  from { transform: translateY(112%); }
+  to   { transform: translateY(0); }
+}
+
+/* ── Hero font scoping ── */
+#diaspora-root {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* ── Text-reveal mask ── */
+.d-reveal-wrap {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.06em;
+}
+.d-reveal-line {
+  display: block;
+  transform: translateY(112%);
+  will-change: transform;
+}
+
+/* ── Activated by JS ── */
+.do-nav  { animation: navSlideDown 0.75s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.do-line { animation: lineReveal   1s    cubic-bezier(0.16, 1, 0.3, 1) both; }
+
+/* ── Scroll-triggered: single element ── */
+[data-anim] {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.75s cubic-bezier(0.16,1,0.3,1),
+              transform 0.75s cubic-bezier(0.16,1,0.3,1);
+}
+[data-anim].visible { opacity: 1; transform: translateY(0); }
+
+/* ── Scroll-triggered: staggered card group ── */
+[data-anim-group] > * {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.72s cubic-bezier(0.16,1,0.3,1),
+              transform 0.72s cubic-bezier(0.16,1,0.3,1);
+}
+[data-anim-group].visible > *:nth-child(1) { transition-delay:   0ms; }
+[data-anim-group].visible > *:nth-child(2) { transition-delay: 110ms; }
+[data-anim-group].visible > *:nth-child(3) { transition-delay: 220ms; }
+[data-anim-group].visible > *:nth-child(4) { transition-delay: 330ms; }
+[data-anim-group].visible > * { opacity: 1; transform: translateY(0); }
+
+/* ── Hero background placeholder (swap for real image) ── */
+.d-hero-bg {
+  /* background-image: url('/your-photo.jpg'); */
+  background-color: #c4a882;
+  background-image: linear-gradient(160deg,
+    rgba(180,148,110,1) 0%,
+    rgba(196,168,130,1) 35%,
+    rgba(212,188,155,1) 60%,
+    rgba(228,210,185,1) 100%);
+  background-size: cover;
+  background-position: center;
+}
+.d-hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0)    0%,
+    rgba(0,0,0,0)    40%,
+    rgba(0,0,0,0.38) 70%,
+    rgba(0,0,0,0.65) 100%
+  );
+}
+
+/* ── Marquee ── */
+.d-marquee-track {
+  display: inline-block;
+  animation: dMarquee 32s linear infinite;
+}
+@keyframes dMarquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ── Step connector line ── */
+@media (min-width: 768px) {
+  .d-step-line::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: calc(50% + 30px);
+    width: calc(100% - 60px);
+    height: 2px;
+    background: linear-gradient(to right, #1a5c5c 0%, #e8dcc8 100%);
+  }
+}
+
+/* ── Card hover lift ── */
+.d-card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.d-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 48px rgba(0,0,0,0.11);
+}
+
+/* ── FAQ body ── */
+.d-faq-body { display: none; }
+.d-faq-body.open { display: block; }
+
+/* ── Dot-grid decoration ── */
+.d-dot-grid {
+  background-image: radial-gradient(#1a5c5c 1.5px, transparent 1.5px);
+  background-size: 9px 9px;
+}

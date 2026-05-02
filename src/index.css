@@ -1,0 +1,165 @@
+/* Solace Wave Therapy — Design system (light, warm, professional) */
+:root {
+  /* Backgrounds */
+  --color-bg: #ffffff;
+  --color-bg-offwhite: #f8f7f5;
+  --color-bg-card: #f7f7f7;
+  --color-bg-footer: #fdf5f2;
+  --color-bg-getintouch: #e8f5e9;
+  --color-bg-coach: #e3f2fd;
+  /* Surfaces */
+  --color-surface: #ffffff;
+  --color-card: #ffffff;
+  --color-border: #e0e0e0;
+  /* Text */
+  --color-text: #333333;
+  --color-text-muted: #666666;
+  --color-text-light: #6c757d;
+  /* Primary accent — warm brown/gold */
+  --color-primary: #b58c6b;
+  --color-primary-dark: #7d4f2e;
+  --color-primary-soft: rgba(181, 140, 107, 0.15);
+  /* Secondary — blue for Coach & therapy approaches */
+  --color-secondary: #1e88e5;
+  --color-secondary-soft: #a7d7e9;
+  --color-teal-circle: #a7d7e9;
+  /* Buttons */
+  --color-btn-primary: #b58c6b;
+  --color-btn-primary-text: #333333;
+  --color-btn-secondary-bg: #eeeeee;
+  --color-btn-secondary-text: #333333;
+  --color-btn-dark-bg: #333333;
+  --color-btn-dark-text: #ffffff;
+  /* Dark brown buttons (Get in Touch) */
+  --color-btn-brown: #5d4e37;
+  /* Social / footer */
+  --color-social-bg: #f4ded2;
+  --color-social-icon: #7d4f2e;
+  /* Typography */
+  --font-sans: 'Lato', 'DM Sans', system-ui, sans-serif;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --radius-sm: 8px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --section-padding: clamp(4rem, 10vw, 6rem);
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.2s var(--ease), color 0.2s, box-shadow 0.2s var(--ease);
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+/* Primary CTA — warm brown/gold */
+.btn--primary {
+  background: var(--color-btn-primary);
+  color: var(--color-btn-primary-text);
+}
+
+.btn--primary:hover {
+  background: #a07d5c;
+  color: var(--color-btn-primary-text);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* Secondary — light gray */
+.btn--secondary {
+  background: var(--color-btn-secondary-bg);
+  color: var(--color-btn-secondary-text);
+  border: 1px solid var(--color-border);
+}
+
+.btn--secondary:hover {
+  background: #e0e0e0;
+  color: var(--color-btn-secondary-text);
+  text-decoration: none;
+}
+
+/* Dark button (Contact Us, etc.) */
+.btn--dark {
+  background: var(--color-btn-dark-bg);
+  color: var(--color-btn-dark-text);
+}
+
+.btn--dark:hover {
+  background: #555;
+  color: var(--color-btn-dark-text);
+  text-decoration: none;
+}
+
+/* Section titles — warm brown */
+.section-title {
+  font-family: var(--font-sans);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 1rem;
+  color: var(--color-primary-dark);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-text-muted);
+  max-width: 560px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+}
