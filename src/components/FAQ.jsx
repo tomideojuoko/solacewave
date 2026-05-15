@@ -1,44 +1,58 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
-const FAQ_ITEMS = [
-  { q: 'How much does therapy cost?', a: 'Our therapy plans start at N20,000 per session, billed monthly. You can check your coverage during the sign-up process in our secure platform.' },
-  { q: 'How do I get started?', a: "Simply click 'Get Started' on our website to access our secure platform. You'll complete a brief assessment and be matched with a licensed therapist within 24 hours." },
-  { q: 'How often will I meet with my therapist?', a: "Most clients meet with their therapists weekly, especially at the beginning. As you progress, you and your therapist may decide to adjust the frequency. Our platform allows for flexible scheduling based on your needs and preferences. And you can also have 24/7 access to your therapist when you are under Coach in my Pocket Plan." },
-  { q: "Can I change therapists if I'm not satisfied?", a: "Absolutely! Finding the right therapist match is important. If you feel your current therapist isn't the right fit, you can request a change anytime through WhatsApp, and we'll match you with someone new." },
-  { q: 'Is online therapy as effective as in-person therapy?', a: 'Research shows that online therapy can be just as effective as in-person therapy for many conditions. Our platform is designed to provide the same quality of care with added convenience and flexibility.' },
-  { q: 'How is my privacy protected?', a: 'We take your privacy seriously. Our platform uses end-to-end encryption for all communications, and we are fully HIPAA compliant. Your personal information and therapy sessions are kept strictly confidential.' },
+const faqs = [
+  {
+    q: 'Do I need a referral to start therapy?',
+    a: 'No referral needed. You can book a free 15-minute consultation directly through our website. No gatekeeping — just get in touch and we\'ll take it from there.',
+  },
+  {
+    q: 'Is therapy covered by insurance?',
+    a: 'Many extended health benefit plans cover Registered Psychotherapy. We\'ll provide a receipt you can submit to your provider. Check your plan under "Registered Psychotherapist (RP)" — most plans include it.',
+  },
+  {
+    q: "What if I've never tried therapy before?",
+    a: "That's completely okay — and quite common among our clients. The free 15-minute call is a no-pressure way to begin. We move at your pace, always. Therapy is a conversation, not an exam.",
+  },
+  {
+    q: 'Will my therapist understand my cultural background?',
+    a: "Yes — that's the entire point of what we do. Our therapists are either from diaspora communities themselves or have deep training in diaspora mental health. You won't be starting from zero.",
+  },
 ]
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null)
 
+  const toggle = (i) => setOpenIndex(openIndex === i ? null : i)
+
   return (
-    <section className="faq-section" id="faq">
-      <div className="container">
-        <h2 className="section-title">Frequently Asked Questions</h2>
-        <div className="faq-section__list">
-          {FAQ_ITEMS.map((item, i) => (
-            <div
-              key={item.q}
-              className={`faq-section__item ${openIndex === i ? 'faq-section__item--open' : ''}`}
-            >
-              <button
-                type="button"
-                className="faq-section__trigger"
-                onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                aria-expanded={openIndex === i}
-              >
-                <span>{item.q}</span>
-                <span className="faq-section__icon" aria-hidden>{openIndex === i ? '−' : '+'}</span>
+    <section className="py-24 bg-cream">
+      <div className="max-w-3xl mx-auto px-6">
+        <div className="text-center mb-14 space-y-4">
+          <span className="text-xs font-semibold tracking-widest text-terra uppercase">FAQ</span>
+          <h2 className="font-serif text-4xl md:text-5xl text-balance">Questions we hear often</h2>
+        </div>
+
+        <div className="space-y-3" data-anim-group>
+          {faqs.map((faq, i) => (
+            <div key={i} className="bg-white rounded-2xl border border-sand overflow-hidden">
+              <button onClick={() => toggle(i)} className="w-full flex items-center justify-between px-7 py-5 text-left">
+                <span className="font-serif text-lg font-medium">{faq.q}</span>
+                <svg
+                  className="shrink-0 transition-transform duration-200 text-muted"
+                  style={{ transform: openIndex === i ? 'rotate(180deg)' : 'rotate(0deg)' }}
+                  width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"/>
+                </svg>
               </button>
-              <div className="faq-section__content">
-                <p>{item.a}</p>
-              </div>
+              {openIndex === i && (
+                <div className="px-7 pb-6">
+                  <p className="text-muted leading-relaxed">{faq.a}</p>
+                </div>
+              )}
             </div>
           ))}
         </div>
-        <p className="faq-section__help">Still have questions? We're here to help.</p>
-        <a href="#contact" className="btn btn--dark faq-section__contact-btn">Contact Us</a>
       </div>
     </section>
   )

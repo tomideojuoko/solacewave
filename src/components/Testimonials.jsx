@@ -1,44 +1,66 @@
-import React from 'react'
-
-const TESTIMONIALS = [
+const quotes = [
   {
-    quote: 'Solace Wave Therapy has been life-changing. My therapist truly understands my needs and has helped me make significant progress.',
-    image: '/assets/testimonial-1-f060cf04-7e01-43b1-8de5-b84f51ebb0dd.png',
-    name: 'Sarah K.',
-    duration: 'Client for 8 months',
+    bg: 'bg-white/10 backdrop-blur-sm border border-white/20',
+    quoteFill: '#d4944a',
+    text: '"For the first time I didn\'t feel like I had to justify my cultural background or explain why my family situation is complicated. I was just understood."',
+    initials: 'AO',
+    avatarBg: 'bg-terra/50',
+    name: 'A.O.',
+    detail: 'Nigerian-Canadian · Individual Therapy',
+    nameColor: 'text-white',
+    detailColor: 'text-white/45',
+    textColor: 'text-white/80',
   },
   {
-    quote: 'The convenience of therapy from home made it possible for me to finally prioritize my mental health. Forever grateful!',
-    image: '/assets/testimonial-2-c4e1b376-5c81-4dfd-a5c8-74cf2be37426.png',
-    name: 'Michael T.',
-    duration: 'Client for 6 months',
+    bg: 'bg-terra/75',
+    quoteFill: 'white',
+    text: '"I grew up thinking therapy wasn\'t for people like us. Solace Wave changed that completely. My therapist made me feel safe, seen, and genuinely cared for every single session."',
+    initials: 'MA',
+    avatarBg: 'bg-white/20',
+    name: 'M.A.',
+    detail: 'Jamaican-Canadian · Group Sessions',
+    nameColor: 'text-white',
+    detailColor: 'text-white/55',
+    textColor: 'text-white/90',
   },
   {
-    quote: 'I was skeptical about online therapy at first, but my experience has been nothing short of amazing. The flexibility fits perfectly with my busy schedule.',
-    image: '/assets/testimonial-3-5587ffb2-5b44-43a7-b92a-2254f91d16cb.png',
-    name: 'Jennifer R.',
-    duration: 'Client for 4 months',
+    bg: 'bg-white/10 backdrop-blur-sm border border-white/20',
+    quoteFill: '#d4944a',
+    text: '"Working through my parents\' expectations and my own identity at the same time felt impossible — until I started here. My therapist helped me find my own path forward."',
+    initials: 'KB',
+    avatarBg: 'bg-gold/40',
+    name: 'K.B.',
+    detail: 'Ghanaian-British · Individual Therapy',
+    nameColor: 'text-white',
+    detailColor: 'text-white/45',
+    textColor: 'text-white/80',
   },
 ]
 
 export default function Testimonials() {
   return (
-    <section className="testimonials-section">
-      <div className="container">
-        <h2 className="section-title">What Our Users Say</h2>
-        <div className="testimonials-section__grid">
-          {TESTIMONIALS.map((item, i) => (
-            <blockquote key={i} className="testimonials-section__card">
-              <span className="testimonials-section__quote-mark" aria-hidden>"</span>
-              <p className="testimonials-section__quote">"{item.quote}"</p>
-              <div className="testimonials-section__author">
-                <img src={item.image} alt="" className="testimonials-section__avatar" />
+    <section className="py-24 bg-teal-deep">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-14 space-y-4">
+          <span className="text-xs font-semibold tracking-widest text-gold uppercase">What Clients Say</span>
+          <h2 className="font-serif text-4xl md:text-5xl text-white text-balance">Real words from real healing</h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6" data-anim-group>
+          {quotes.map((q, i) => (
+            <div key={i} className={`rounded-3xl p-8 space-y-6 ${q.bg}`}>
+              <svg width="28" height="20" viewBox="0 0 28 20" fill={q.quoteFill} className="opacity-75">
+                <path d="M0 20V12.727C0 5.697 3.879 1.394 11.636 0l1.091 2.364C10.01 3.364 8.485 5.697 8.485 8.485H14V20H0zm14 0V12.727C14 5.697 17.879 1.394 25.636 0l1.091 2.364c-2.717 1-4.242 3.333-4.242 6.121H28V20H14z"/>
+              </svg>
+              <p className={`leading-relaxed text-sm ${q.textColor}`}>{q.text}</p>
+              <div className={`flex items-center gap-3 pt-1 border-t border-white/10`}>
+                <div className={`w-9 h-9 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0 ${q.avatarBg}`}>{q.initials}</div>
                 <div>
-                  <cite className="testimonials-section__name">{item.name}</cite>
-                  <span className="testimonials-section__duration">{item.duration}</span>
+                  <p className={`text-sm font-medium ${q.nameColor}`}>{q.name}</p>
+                  <p className={`text-xs ${q.detailColor}`}>{q.detail}</p>
                 </div>
               </div>
-            </blockquote>
+            </div>
           ))}
         </div>
       </div>

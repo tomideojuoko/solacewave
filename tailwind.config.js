@@ -1,10 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-  corePlugins: {
-    preflight: false,  // don't reset existing site styles
-    container: false,  // existing index.css already defines .container
-  },
   theme: {
     extend: {
       colors: {

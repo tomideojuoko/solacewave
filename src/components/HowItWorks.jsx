@@ -1,69 +1,36 @@
-import React from 'react'
-
-const STEPS = [
-  { num: 1, title: 'Complete Assessment' },
-  { num: 2, title: 'Match with Therapist' },
-  { num: 3, title: 'Begin Therapy' },
-]
-
-const BULLETS = [
-  'Personalized treatment and therapist based on your responses',
-  'Identify specific areas where you need support',
-  'Share preferences for therapist characteristics',
+const steps = [
+  { num: '1', color: 'bg-teal-deep shadow-teal-deep/25', title: 'Book a Free Call', text: 'A 15-minute, no-pressure chat to share what you\'re going through and see if we\'re the right fit.', line: true },
+  { num: '2', color: 'bg-terra shadow-terra/25',         title: 'Initial Assessment', text: 'A deeper first session — we listen to your story, understand your goals, and map what healing looks like for you.', line: true },
+  { num: '3', color: 'bg-gold shadow-gold/25',           title: 'Begin Your Therapy', text: 'We build a personalised care plan and get to work — virtual or in-person, at a pace that actually works for you.', line: false },
 ]
 
 export default function HowItWorks() {
   return (
-    <section className="how-section" id="how-it-works">
-      <div className="container">
-        <h2 className="section-title">How It Works</h2>
-        <div className="how-section__steps">
-          {STEPS.map((step, i) => (
-            <React.Fragment key={step.num}>
-              <div className="how-section__step">
-                <span className="how-section__step-num">{step.num}</span>
-                <span className="how-section__step-title">{step.title}</span>
-              </div>
-              {i < STEPS.length - 1 && <span className="how-section__connector" aria-hidden />}
-            </React.Fragment>
+    <section className="py-24 bg-white">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-16 max-w-xl mx-auto space-y-4">
+          <span className="text-xs font-semibold tracking-widest text-terra uppercase">Your Journey</span>
+          <h2 className="font-serif text-4xl md:text-5xl text-balance">Three steps to start feeling better</h2>
+          <p className="text-muted">We've made it as simple as possible to take the first step.</p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 relative" data-anim-group>
+          {steps.map((step, i) => (
+            <div key={i} className={`relative text-center space-y-5 ${step.line ? 'step-line' : ''}`}>
+              <div className={`w-14 h-14 rounded-full text-white font-serif text-xl font-semibold flex items-center justify-center mx-auto shadow-lg ${step.color}`}>{step.num}</div>
+              <h3 className="font-serif text-xl font-semibold">{step.title}</h3>
+              <p className="text-muted text-sm leading-relaxed">{step.text}</p>
+            </div>
           ))}
         </div>
 
-        <div className="how-section__assessment">
-          <div className="how-section__assessment-inner">
-            <div className="how-section__assessment-visual">
-              <img
-                src="/assets/assessment-illustration-2446f34d-68bb-470d-b590-106d76db3e2c.png"
-                alt="Therapy session: support and care"
-                className="how-section__illustration"
-              />
-            </div>
-            <div className="how-section__assessment-content">
-              <h3 className="how-section__assessment-title">
-                <span className="how-section__assessment-title-accent">Complete</span> Your Assessment
-              </h3>
-              <p>
-                Answer a few questions about your mental health needs, preferences, and goals. Our comprehensive
-                assessment takes about 5-10 minutes and helps us understand your unique situation.
-              </p>
-              <ul className="how-section__checklist">
-                {BULLETS.map((item) => (
-                  <li key={item}>
-                    <span className="how-section__check" aria-hidden>✓</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="https://wa.me/2347085256034?text=Hello%20I%20want%20to%20start%20my%20assessment"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn--secondary"
-              >
-                Start Assessment
-              </a>
-            </div>
-          </div>
+        <div className="text-center mt-14">
+          <a href="#book" className="inline-flex items-center gap-2 bg-teal-deep text-white font-semibold px-10 py-4 rounded-full hover:bg-teal-mid transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-200">
+            Start with a Free Call
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
         </div>
       </div>
     </section>

@@ -1,32 +1,95 @@
-import Header from './components/Header'
+import { useEffect } from 'react'
+import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import GetInTouch from './components/GetInTouch'
-import CoachInPocket from './components/CoachInPocket'
+import MarqueeBanner from './components/MarqueeBanner'
+import About from './components/About'
+import WhoWeServe from './components/WhoWeServe'
+import Services from './components/Services'
 import HowItWorks from './components/HowItWorks'
-import WhyChoose from './components/WhyChoose'
-import TherapyApproaches from './components/TherapyApproaches'
+import Approach from './components/Approach'
+import Team from './components/Team'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
-import FinalCTA from './components/FinalCTA'
+import CTA from './components/CTA'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
-import './App.css'
+
+const EASE = 'cubic-bezier(0.16, 1, 0.3, 1)'
+const wait = ms => new Promise(r => setTimeout(r, ms))
 
 export default function App() {
+  useEffect(() => {
+    async function runIntro() {
+      document.body.style.transition = 'opacity 0.4s ease'
+      document.body.style.opacity = '1'
+
+      await wait(100)
+      document.getElementById('navbar')?.classList.add('do-nav')
+
+      await wait(350)
+      ;['rl1', 'rl2'].forEach((id, i) => {
+        const el = document.getElementById(id)
+        if (!el) return
+        el.style.animationDelay = `${i * 175}ms`
+        el.classList.add('do-line')
+      })
+
+      await wait(780)
+      const sub = document.getElementById('hero-sub')
+      if (sub) {
+        sub.style.transition = `opacity 0.9s ${EASE}, transform 0.9s ${EASE}`
+        sub.style.transform = 'translateY(22px)'
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          sub.style.opacity = '1'
+          sub.style.transform = 'translateY(0)'
+        }))
+      }
+
+      await wait(180)
+      const stats = document.getElementById('hero-stats')
+      if (stats) {
+        stats.style.transition = `opacity 0.9s ${EASE}, transform 0.9s ${EASE}`
+        stats.style.transform = 'translateY(22px)'
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          stats.style.opacity = '1'
+          stats.style.transform = 'translateY(0)'
+        }))
+      }
+    }
+
+    runIntro()
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return
+        entry.target.classList.add('visible')
+        observer.unobserve(entry.target)
+      })
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' })
+
+    document.querySelectorAll('[data-anim], [data-anim-group]').forEach(el => observer.observe(el))
+
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <>
-      <Header />
+    <div className="bg-cream font-sans text-charcoal antialiased">
+      <Navbar />
       <main>
         <Hero />
-        <GetInTouch />
-        <CoachInPocket />
+        <MarqueeBanner />
+        <About />
+        <WhoWeServe />
+        <Services />
         <HowItWorks />
-        <WhyChoose />
-        <TherapyApproaches />
+        <Approach />
+        <Team />
         <Testimonials />
         <FAQ />
-        <FinalCTA />
+        <CTA />
+        <Contact />
       </main>
       <Footer />
-    </>
+    </div>
   )
 }

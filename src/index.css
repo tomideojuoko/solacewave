@@ -1,165 +1,125 @@
-/* Solace Wave Therapy — Design system (light, warm, professional) */
-:root {
-  /* Backgrounds */
-  --color-bg: #ffffff;
-  --color-bg-offwhite: #f8f7f5;
-  --color-bg-card: #f7f7f7;
-  --color-bg-footer: #fdf5f2;
-  --color-bg-getintouch: #e8f5e9;
-  --color-bg-coach: #e3f2fd;
-  /* Surfaces */
-  --color-surface: #ffffff;
-  --color-card: #ffffff;
-  --color-border: #e0e0e0;
-  /* Text */
-  --color-text: #333333;
-  --color-text-muted: #666666;
-  --color-text-light: #6c757d;
-  /* Primary accent — warm brown/gold */
-  --color-primary: #b58c6b;
-  --color-primary-dark: #7d4f2e;
-  --color-primary-soft: rgba(181, 140, 107, 0.15);
-  /* Secondary — blue for Coach & therapy approaches */
-  --color-secondary: #1e88e5;
-  --color-secondary-soft: #a7d7e9;
-  --color-teal-circle: #a7d7e9;
-  /* Buttons */
-  --color-btn-primary: #b58c6b;
-  --color-btn-primary-text: #333333;
-  --color-btn-secondary-bg: #eeeeee;
-  --color-btn-secondary-text: #333333;
-  --color-btn-dark-bg: #333333;
-  --color-btn-dark-text: #ffffff;
-  /* Dark brown buttons (Get in Touch) */
-  --color-btn-brown: #5d4e37;
-  /* Social / footer */
-  --color-social-bg: #f4ded2;
-  --color-social-icon: #7d4f2e;
-  /* Typography */
-  --font-sans: 'Lato', 'DM Sans', system-ui, sans-serif;
-  --radius: 12px;
-  --radius-lg: 20px;
-  --radius-sm: 8px;
-  --ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --section-padding: clamp(4rem, 10vw, 6rem);
-  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
-  --shadow-card-hover: 0 4px 20px rgba(0, 0, 0, 0.08);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+
+/* ── Marquee ── */
+.marquee-container { overflow: hidden; white-space: nowrap; }
+.marquee-track {
+  display: inline-block;
+  animation: marquee 32s linear infinite;
+}
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+/* ── Nav: transparent → cream on scroll ── */
+#navbar {
+  background: transparent;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+.nav-scrolled {
+  background: rgba(250,246,240,0.97) !important;
+  box-shadow: 0 1px 24px rgba(0,0,0,0.07);
+  backdrop-filter: blur(10px);
+}
+.nav-scrolled .nav-link   { color: rgba(26,26,26,0.70) !important; }
+.nav-scrolled .nav-logo   { color: #0a3d3d !important; }
+.nav-scrolled .nav-sub    { color: #b5623a !important; }
+.nav-scrolled .nav-social { border-color: rgba(26,26,26,0.25) !important; color: rgba(26,26,26,0.55) !important; }
+
+/* ── Hero background ── */
+.hero-bg {
+  background-color: #c4a882;
+  background-image: linear-gradient(160deg,
+    rgba(180,148,110,1) 0%,
+    rgba(196,168,130,1) 35%,
+    rgba(212,188,155,1) 60%,
+    rgba(228,210,185,1) 100%);
+  background-size: cover;
+  background-position: center;
+}
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0)    0%,
+    rgba(0,0,0,0)    40%,
+    rgba(0,0,0,0.35) 70%,
+    rgba(0,0,0,0.62) 100%
+  );
 }
 
-html {
-  scroll-behavior: smooth;
+/* ── Card lift on hover ── */
+.card-hover { transition: transform .25s ease, box-shadow .25s ease; }
+.card-hover:hover { transform: translateY(-5px); box-shadow: 0 24px 48px rgba(0,0,0,.11); }
+
+/* ── Step connector line ── */
+@media (min-width: 768px) {
+  .step-line::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: calc(50% + 30px);
+    width: calc(100% - 60px);
+    height: 2px;
+    background: linear-gradient(to right, #1a5c5c 0%, #e8dcc8 100%);
+  }
 }
 
-body {
-  margin: 0;
-  font-family: var(--font-sans);
-  background: var(--color-bg);
-  color: var(--color-text);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
+.text-balance { text-wrap: balance; }
+
+/* ── Dot-grid decoration ── */
+.dot-grid {
+  background-image: radial-gradient(#1a5c5c 1.5px, transparent 1.5px);
+  background-size: 9px 9px;
 }
 
-#root {
-  min-height: 100vh;
+/* ── Page load + scroll animations ── */
+body { opacity: 0; }
+
+@keyframes navSlideDown {
+  from { opacity: 0; transform: translateY(-110%); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes lineReveal {
+  from { transform: translateY(112%); }
+  to   { transform: translateY(0); }
 }
 
-a {
-  color: var(--color-primary-dark);
-  text-decoration: none;
+.reveal-wrap {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.06em;
+}
+.reveal-line {
+  display: block;
+  transform: translateY(112%);
+  will-change: transform;
 }
 
-a:hover {
-  text-decoration: underline;
-}
+.do-nav  { animation: navSlideDown 0.75s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.do-line { animation: lineReveal   1s    cubic-bezier(0.16, 1, 0.3, 1) both; }
 
-img {
-  max-width: 100%;
-  height: auto;
+[data-anim] {
+  opacity: 0;
+  transform: translateY(36px);
+  transition:
+    opacity   0.75s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
 }
+[data-anim].visible { opacity: 1; transform: translateY(0); }
 
-.container {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+[data-anim-group] > * {
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity   0.72s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.72s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.875rem 1.75rem;
-  font-family: var(--font-sans);
-  font-size: 1rem;
-  font-weight: 600;
-  border: none;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  transition: background 0.2s var(--ease), color 0.2s, box-shadow 0.2s var(--ease);
-}
-
-.btn:hover {
-  text-decoration: none;
-}
-
-/* Primary CTA — warm brown/gold */
-.btn--primary {
-  background: var(--color-btn-primary);
-  color: var(--color-btn-primary-text);
-}
-
-.btn--primary:hover {
-  background: #a07d5c;
-  color: var(--color-btn-primary-text);
-  box-shadow: var(--shadow-card-hover);
-}
-
-/* Secondary — light gray */
-.btn--secondary {
-  background: var(--color-btn-secondary-bg);
-  color: var(--color-btn-secondary-text);
-  border: 1px solid var(--color-border);
-}
-
-.btn--secondary:hover {
-  background: #e0e0e0;
-  color: var(--color-btn-secondary-text);
-  text-decoration: none;
-}
-
-/* Dark button (Contact Us, etc.) */
-.btn--dark {
-  background: var(--color-btn-dark-bg);
-  color: var(--color-btn-dark-text);
-}
-
-.btn--dark:hover {
-  background: #555;
-  color: var(--color-btn-dark-text);
-  text-decoration: none;
-}
-
-/* Section titles — warm brown */
-.section-title {
-  font-family: var(--font-sans);
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-weight: 700;
-  text-align: center;
-  margin: 0 0 1rem;
-  color: var(--color-primary-dark);
-}
-
-.section-subtitle {
-  text-align: center;
-  color: var(--color-text-muted);
-  max-width: 560px;
-  margin: 0 auto 3rem;
-  font-size: 1.1rem;
-}
+[data-anim-group].visible > *:nth-child(1) { transition-delay:   0ms; }
+[data-anim-group].visible > *:nth-child(2) { transition-delay: 110ms; }
+[data-anim-group].visible > *:nth-child(3) { transition-delay: 220ms; }
+[data-anim-group].visible > *:nth-child(4) { transition-delay: 330ms; }
+[data-anim-group].visible > * { opacity: 1; transform: translateY(0); }

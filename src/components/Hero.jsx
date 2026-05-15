@@ -1,32 +1,47 @@
-import React from 'react'
-
 export default function Hero() {
   return (
-    <section className="hero">
-      <div className="hero__video-wrap">
-        <video
-          className="hero__video"
-          autoPlay
-          muted
-          loop
-          playsInline
-          aria-hidden
-        >
-          <source src="/assets/therapy-background.mp4" type="video/mp4" />
-        </video>
-        <div className="hero__overlay" aria-hidden />
-      </div>
-      <div className="hero__content-wrap container">
-        <div className="hero__content">
-          <h1 className="hero__title">Your Mental Health Journey Begins Here</h1>
-          <p className="hero__subtitle">
-            Experience personalized therapy from licensed professionals in a safe, confidential online environment
+    <section id="hero" className="hero-bg relative w-full" style={{ height: '100vh', minHeight: '600px' }}>
+      <div className="hero-overlay absolute inset-0"></div>
+      <div className="absolute inset-x-0 bottom-0 px-8 md:px-16 pb-14 md:pb-20 z-10">
+
+        <h1 className="font-serif text-white leading-[1.1] max-w-4xl text-[2.8rem] sm:text-[3.8rem] md:text-[5rem] lg:text-[6rem]">
+          <span className="reveal-wrap"><span className="reveal-line" id="rl1">Healing that speaks</span></span>
+          <span className="reveal-wrap"><span className="reveal-line" id="rl2">your language</span></span>
+        </h1>
+
+        <div id="hero-sub" className="mt-6 flex flex-col sm:flex-row sm:items-center gap-5" style={{ opacity: 0 }}>
+          <p className="text-white/75 text-base md:text-lg max-w-md leading-relaxed">
+            Culturally affirming therapy for Black, African &amp; Caribbean diaspora communities.
           </p>
-          <div className="hero__actions">
-            <a href="#consultation" className="btn btn--secondary">Book Free Consultation</a>
-            <a href="#how-it-works" className="btn btn--hero-dark">Learn More</a>
+          <div className="flex items-center gap-3 shrink-0">
+            <a href="#book" className="inline-flex items-center gap-2 bg-gold text-charcoal font-bold px-7 py-3.5 rounded-full hover:bg-gold/90 transition-all text-sm shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-200">
+              Book a Free Call
+            </a>
+            <a href="#about" className="inline-flex items-center gap-2 bg-white/15 text-white font-medium px-7 py-3.5 rounded-full hover:bg-white/25 transition-all text-sm border border-white/30 backdrop-blur-sm">
+              Learn More
+            </a>
           </div>
         </div>
+
+        <div id="hero-stats" className="mt-8 flex flex-wrap gap-6 pt-6 border-t border-white/20" style={{ opacity: 0 }}>
+          <div>
+            <p className="text-white font-serif text-xl font-semibold">200+</p>
+            <p className="text-white/55 text-xs mt-0.5">Clients supported</p>
+          </div>
+          <div>
+            <p className="text-white font-serif text-xl font-semibold">5+ yrs</p>
+            <p className="text-white/55 text-xs mt-0.5">Clinical experience</p>
+          </div>
+          <div>
+            <p className="text-white font-serif text-xl font-semibold">100%</p>
+            <p className="text-white/55 text-xs mt-0.5">Culturally affirming</p>
+          </div>
+          <div>
+            <p className="text-white font-serif text-xl font-semibold">Virtual</p>
+            <p className="text-white/55 text-xs mt-0.5">Across Canada</p>
+          </div>
+        </div>
+
       </div>
     </section>
   )
