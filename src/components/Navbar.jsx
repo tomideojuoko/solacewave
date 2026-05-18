@@ -77,11 +77,11 @@ export default function Navbar() {
 
         {/* Nav links row */}
         <div className="flex items-center justify-center gap-10 pb-4">
-          <a href="#about"    className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">About Us</a>
-          <a href="#services" className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">Services</a>
-          <a href="#approach" className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">Our Approach</a>
-          <a href="#team"     className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">Team</a>
-          <a href="#contact"  className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">Contact Us</a>
+          <a href="#about"       className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">About Us</a>
+          <a href="/services" className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">What We Offer</a>
+          <a href="#approach"    className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">Our Approach</a>
+          <a href="#team"        className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">Team</a>
+          <a href="#contact"     className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">Contact Us</a>
         </div>
       </div>
 
@@ -97,9 +97,9 @@ export default function Navbar() {
 
       {isMenuOpen && (
         <div className="md:hidden bg-cream border-t border-sand px-6 py-5 space-y-4">
-          <a href="#about"    onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-teal-deep">About Us</a>
-          <a href="#services" onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-teal-deep">Services</a>
-          <a href="#approach" onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-teal-deep">Our Approach</a>
+          <a href="#about"          onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-teal-deep">About Us</a>
+          <a href="/services" onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-teal-deep">What We Offer</a>
+          <a href="#approach"      onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-teal-deep">Our Approach</a>
           <a href="#team"     onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-teal-deep">Team</a>
           <a href="#contact"  onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-teal-deep">Contact Us</a>
           <a href="#book"     onClick={closeMenu} className="block text-center bg-gold text-charcoal font-bold px-5 py-3 rounded-full text-sm">Book Now!</a>

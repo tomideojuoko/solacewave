@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import MarqueeBanner from './components/MarqueeBanner'
@@ -13,11 +14,12 @@ import FAQ from './components/FAQ'
 import CTA from './components/CTA'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ServicesPage from './pages/ServicesPage'
 
 const EASE = 'cubic-bezier(0.16, 1, 0.3, 1)'
 const wait = ms => new Promise(r => setTimeout(r, ms))
 
-export default function App() {
+function HomePage() {
   useEffect(() => {
     async function runIntro() {
       document.body.style.transition = 'opacity 0.4s ease'
@@ -91,5 +93,14 @@ export default function App() {
       </main>
       <Footer />
     </div>
+  )
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/services" element={<ServicesPage />} />
+    </Routes>
   )
 }
