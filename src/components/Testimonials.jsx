@@ -1,7 +1,7 @@
 const quotes = [
   {
     bg: 'bg-white/10 backdrop-blur-sm border border-white/20',
-    quoteFill: '#d4944a',
+    quoteFill: '#EED7BF',
     text: '"For the first time I didn\'t feel like I had to justify my cultural background or explain why my family situation is complicated. I was just understood."',
     initials: 'AO',
     avatarBg: 'bg-terra/50',
@@ -25,10 +25,10 @@ const quotes = [
   },
   {
     bg: 'bg-white/10 backdrop-blur-sm border border-white/20',
-    quoteFill: '#d4944a',
-    text: '"Working through my parents\' expectations and my own identity at the same time felt impossible — until I started here. My therapist helped me find my own path forward."',
+    quoteFill: '#EED7BF',
+    text: '"Working through my parents\' expectations and my own identity at the same time felt impossible until I started here. My therapist helped me find my own path forward."',
     initials: 'KB',
-    avatarBg: 'bg-gold/40',
+    avatarBg: 'bg-brown/40',
     name: 'K.B.',
     detail: 'Ghanaian-British · Individual Therapy',
     nameColor: 'text-white',
@@ -39,10 +39,10 @@ const quotes = [
 
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-teal-deep">
+    <section className="py-24 bg-brown">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14 space-y-4">
-          <span className="text-xs font-semibold tracking-widest text-gold uppercase">What Clients Say</span>
+          <span className="text-xs font-semibold tracking-widest text-sand uppercase">What Clients Say</span>
           <h2 className="font-serif text-4xl md:text-5xl text-white text-balance">Real words from real healing</h2>
         </div>
 

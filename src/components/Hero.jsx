@@ -5,16 +5,16 @@ export default function Hero() {
       <div className="absolute inset-x-0 bottom-0 px-8 md:px-16 pb-14 md:pb-20 z-10">
 
         <h1 className="font-serif text-white leading-[1.1] max-w-4xl text-[2.8rem] sm:text-[3.8rem] md:text-[5rem] lg:text-[6rem]">
-          <span className="reveal-wrap"><span className="reveal-line" id="rl1">Healing that speaks</span></span>
-          <span className="reveal-wrap"><span className="reveal-line" id="rl2">your language</span></span>
+          <span className="reveal-wrap"><span className="reveal-line" id="rl1">Healing that understands</span></span>
+          <span className="reveal-wrap"><span className="reveal-line" id="rl2">all parts of you</span></span>
         </h1>
 
         <div id="hero-sub" className="mt-6 flex flex-col sm:flex-row sm:items-center gap-5" style={{ opacity: 0 }}>
           <p className="text-white/75 text-base md:text-lg max-w-md leading-relaxed">
-            Culturally affirming therapy for Black, African &amp; Caribbean diaspora communities.
+            Culturally attuned therapy and coaching for Black, African and Caribbean communities across Canada.
           </p>
           <div className="flex items-center gap-3 shrink-0">
-            <a href="#book" className="inline-flex items-center gap-2 bg-gold text-charcoal font-bold px-7 py-3.5 rounded-full hover:bg-gold/90 transition-all text-sm shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-200">
+            <a href="#book" className="inline-flex items-center gap-2 bg-brown text-sand font-bold px-7 py-3.5 rounded-full hover:bg-terra transition-all text-sm shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-200">
               Book a Free Call
             </a>
             <a href="#about" className="inline-flex items-center gap-2 bg-white/15 text-white font-medium px-7 py-3.5 rounded-full hover:bg-white/25 transition-all text-sm border border-white/30 backdrop-blur-sm">

@@ -5,17 +5,17 @@ export default {
     extend: {
       colors: {
         teal: {
-          deep:  '#0a3d3d',
-          mid:   '#1a5c5c',
-          light: '#2d7a7a',
-          pale:  '#e8f4f4',
+          deep:  '#004C60',
+          mid:   '#663916',
+          light: '#804a1e',
+          pale:  '#F8F0E8',
         },
-        cream:    '#faf6f0',
-        sand:     '#e8dcc8',
-        terra:    '#b5623a',
-        gold:     '#d4944a',
-        charcoal: '#1a1a1a',
-        muted:    '#6b7280',
+        cream:    '#F8F0E8',
+        sand:     '#EED7BF',
+        terra:    '#663916',
+        gold:     '#4a2810',
+        charcoal: '#2a1a0e',
+        muted:    '#5a3a20',
       },
       fontFamily: {
         serif: ['Fraunces', 'Georgia', 'serif'],

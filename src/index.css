@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Brand brown ── */
+.bg-brown  { background-color: #4a2810 !important; }
+.text-brown { color: #4a2810 !important; }
+.hover-bg-brown:hover { background-color: #663916 !important; }
+.btn-brown {
+  background-color: #4a2810 !important;
+  color: #EED7BF !important;
+}
+.btn-brown:hover { background-color: #663916 !important; }
+
 html { scroll-behavior: smooth; }
 
 /* ── Marquee ── */
@@ -21,23 +31,18 @@ html { scroll-behavior: smooth; }
   transition: background 0.4s ease, box-shadow 0.4s ease;
 }
 .nav-scrolled {
-  background: rgba(250,246,240,0.97) !important;
-  box-shadow: 0 1px 24px rgba(0,0,0,0.07);
+  background: rgba(248,240,232,0.97) !important;
+  box-shadow: 0 1px 24px rgba(74,40,16,0.10);
   backdrop-filter: blur(10px);
 }
-.nav-scrolled .nav-link   { color: rgba(26,26,26,0.70) !important; }
-.nav-scrolled .nav-logo   { color: #0a3d3d !important; }
-.nav-scrolled .nav-sub    { color: #b5623a !important; }
-.nav-scrolled .nav-social { border-color: rgba(26,26,26,0.25) !important; color: rgba(26,26,26,0.55) !important; }
+.nav-scrolled .nav-link   { color: rgba(42,26,14,0.70) !important; }
+.nav-scrolled .nav-logo   { color: #4a2810 !important; }
+.nav-scrolled .nav-sub    { color: #663916 !important; }
+.nav-scrolled .nav-social { border-color: rgba(42,26,14,0.25) !important; color: rgba(42,26,14,0.55) !important; }
 
 /* ── Hero background ── */
 .hero-bg {
-  background-color: #c4a882;
-  background-image: linear-gradient(160deg,
-    rgba(180,148,110,1) 0%,
-    rgba(196,168,130,1) 35%,
-    rgba(212,188,155,1) 60%,
-    rgba(228,210,185,1) 100%);
+  background-image: url('/assets/laughingatcomputer.JPG');
   background-size: cover;
   background-position: center;
 }

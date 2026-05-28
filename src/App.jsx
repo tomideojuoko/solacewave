@@ -14,7 +14,9 @@ import FAQ from './components/FAQ'
 import CTA from './components/CTA'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import CookieBanner from './components/CookieBanner'
 import ServicesPage from './pages/ServicesPage'
+import LegalPage from './pages/LegalPage'
 
 const EASE = 'cubic-bezier(0.16, 1, 0.3, 1)'
 const wait = ms => new Promise(r => setTimeout(r, ms))
@@ -89,9 +91,21 @@ function HomePage() {
         <Testimonials />
         <FAQ />
         <CTA />
+
+        {/* Therapy Video Section */}
+        <section className="w-full h-screen bg-black flex items-center justify-center">
+          <video
+            src="/assets/therapy video.mov"
+            controls
+            playsInline
+            className="w-full h-full object-contain"
+          />
+        </section>
+
         <Contact />
       </main>
       <Footer />
+      <CookieBanner />
     </div>
   )
 }
@@ -101,6 +115,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/services" element={<ServicesPage />} />
+      <Route path="/legal" element={<LegalPage />} />
     </Routes>
   )
 }

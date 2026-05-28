@@ -17,8 +17,8 @@ export default function Navbar() {
       })
       const logo = navbar?.querySelector('.nav-logo')
       const sub = navbar?.querySelector('.nav-sub')
-      if (logo) logo.style.color = past ? '#0a3d3d' : ''
-      if (sub) sub.style.color = past ? '#b5623a' : ''
+      if (logo) logo.style.color = past ? '#4a2810' : ''
+      if (sub) sub.style.color = past ? '#663916' : ''
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
@@ -63,15 +63,15 @@ export default function Navbar() {
           </div>
 
           {/* Logo */}
-          <a href="#" className="absolute left-1/2 -translate-x-1/2 text-center">
-            <span className="nav-logo block font-serif text-[2.6rem] leading-none font-semibold text-white drop-shadow-sm tracking-tight transition-colors duration-400">Solace Wave</span>
-            <span className="nav-sub block font-sans text-[0.7rem] tracking-[0.28em] uppercase text-white/80 mt-1 transition-colors duration-400">Therapy</span>
+          <a href="#" className="absolute left-1/2 -translate-x-1/2 flex items-center gap-3 whitespace-nowrap">
+            <img src="/assets/Solace logo suite-08.png" alt="Solace Wave Logo" className="h-12 w-auto drop-shadow-sm" />
+            <span className="nav-logo font-serif text-[2.4rem] leading-none font-semibold text-white drop-shadow-sm tracking-tight transition-colors duration-400">Solace Wave </span><span className="nav-sub font-serif text-[2rem] leading-none font-semibold tracking-tight text-white/80 transition-colors duration-400">Therapy</span>
           </a>
 
           {/* Book button */}
           <div className="flex items-center gap-5">
             <a href="#contact" className="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Contact</a>
-            <a href="#book" className="bg-gold text-charcoal font-bold px-6 py-2.5 rounded-full hover:bg-gold/90 transition-all text-sm shadow-md hover:shadow-lg hover:-translate-y-0.5 duration-200 whitespace-nowrap">Book Now!</a>
+            <a href="#book" className="bg-brown text-sand font-bold px-6 py-2.5 rounded-full hover:bg-terra transition-all text-sm shadow-md hover:shadow-lg hover:-translate-y-0.5 duration-200 whitespace-nowrap">Book Now!</a>
           </div>
         </div>
 
@@ -97,12 +97,12 @@ export default function Navbar() {
 
       {isMenuOpen && (
         <div className="md:hidden bg-cream border-t border-sand px-6 py-5 space-y-4">
-          <a href="#about"          onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-teal-deep">About Us</a>
-          <a href="/services" onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-teal-deep">What We Offer</a>
-          <a href="#approach"      onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-teal-deep">Our Approach</a>
-          <a href="#team"     onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-teal-deep">Team</a>
-          <a href="#contact"  onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-teal-deep">Contact Us</a>
-          <a href="#book"     onClick={closeMenu} className="block text-center bg-gold text-charcoal font-bold px-5 py-3 rounded-full text-sm">Book Now!</a>
+          <a href="#about"          onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-terra">About Us</a>
+          <a href="/services" onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-terra">What We Offer</a>
+          <a href="#approach"      onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-terra">Our Approach</a>
+          <a href="#team"     onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-terra">Team</a>
+          <a href="#contact"  onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-terra">Contact Us</a>
+          <a href="#book"     onClick={closeMenu} className="block text-center bg-brown text-sand font-bold px-5 py-3 rounded-full text-sm">Book Now!</a>
         </div>
       )}
     </nav>
