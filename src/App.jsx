@@ -16,6 +16,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import CookieBanner from './components/CookieBanner'
 import ServicesPage from './pages/ServicesPage'
+import TeamPage from './pages/TeamPage'
 import LegalPage from './pages/LegalPage'
 
 const EASE = 'cubic-bezier(0.16, 1, 0.3, 1)'
@@ -86,11 +87,6 @@ function HomePage() {
         <WhoWeServe />
         <Services />
         <HowItWorks />
-        <Approach />
-        <Team />
-        <Testimonials />
-        <FAQ />
-        <CTA />
 
         {/* Therapy Video Section */}
         <section className="w-full h-screen bg-black flex items-center justify-center">
@@ -102,6 +98,11 @@ function HomePage() {
           />
         </section>
 
+        <Approach />
+        <Team />
+        <Testimonials />
+        <FAQ />
+        <CTA />
         <Contact />
       </main>
       <Footer />
@@ -115,6 +116,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/services" element={<ServicesPage />} />
+      <Route path="/team" element={<TeamPage />} />
       <Route path="/legal" element={<LegalPage />} />
     </Routes>
   )

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -63,31 +64,31 @@ export default function Navbar() {
           </div>
 
           {/* Logo */}
-          <a href="#" className="absolute left-1/2 -translate-x-1/2 flex items-center gap-3 whitespace-nowrap">
+          <Link to="/" className="absolute left-1/2 -translate-x-1/2 flex items-center gap-3 whitespace-nowrap">
             <img src="/assets/Solace logo suite-08.png" alt="Solace Wave Logo" className="h-12 w-auto drop-shadow-sm" />
             <span className="nav-logo font-serif text-[2.4rem] leading-none font-semibold text-white drop-shadow-sm tracking-tight transition-colors duration-400">Solace Wave </span><span className="nav-sub font-serif text-[2rem] leading-none font-semibold tracking-tight text-white/80 transition-colors duration-400">Therapy</span>
-          </a>
+          </Link>
 
           {/* Book button */}
           <div className="flex items-center gap-5">
             <a href="#contact" className="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Contact</a>
-            <a href="#book" className="bg-brown text-sand font-bold px-6 py-2.5 rounded-full hover:bg-terra transition-all text-sm shadow-md hover:shadow-lg hover:-translate-y-0.5 duration-200 whitespace-nowrap">Book Now!</a>
+            <a href="https://calendly.com/solacewavetherapy/consultation" target="_blank" rel="noopener noreferrer" className="bg-brown text-sand font-bold px-6 py-2.5 rounded-full hover:bg-terra transition-all text-sm shadow-md hover:shadow-lg hover:-translate-y-0.5 duration-200 whitespace-nowrap">Book Now!</a>
           </div>
         </div>
 
         {/* Nav links row */}
         <div className="flex items-center justify-center gap-10 pb-4">
           <a href="#about"       className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">About Us</a>
-          <a href="/services" className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">What We Offer</a>
+          <a href="/services" className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">Services</a>
           <a href="#approach"    className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">Our Approach</a>
-          <a href="#team"        className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">Team</a>
+          <Link to="/team"        className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">Team</Link>
           <a href="#contact"     className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">Contact Us</a>
         </div>
       </div>
 
       {/* Mobile nav */}
       <div className="md:hidden flex items-center justify-between px-6 py-4">
-        <a href="#" className="font-serif text-xl font-semibold text-white">Solace Wave</a>
+        <Link to="/" className="font-serif text-xl font-semibold text-white">Solace Wave</Link>
         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 text-white" aria-label="Open menu">
           <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
@@ -98,11 +99,11 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden bg-cream border-t border-sand px-6 py-5 space-y-4">
           <a href="#about"          onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-terra">About Us</a>
-          <a href="/services" onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-terra">What We Offer</a>
+          <a href="/services" onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-terra">Services</a>
           <a href="#approach"      onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-terra">Our Approach</a>
-          <a href="#team"     onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-terra">Team</a>
+          <Link to="/team"     onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-terra">Team</Link>
           <a href="#contact"  onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-terra">Contact Us</a>
-          <a href="#book"     onClick={closeMenu} className="block text-center bg-brown text-sand font-bold px-5 py-3 rounded-full text-sm">Book Now!</a>
+          <a href="https://calendly.com/solacewavetherapy/consultation" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="block text-center bg-brown text-sand font-bold px-5 py-3 rounded-full text-sm">Book Now!</a>
         </div>
       )}
     </nav>

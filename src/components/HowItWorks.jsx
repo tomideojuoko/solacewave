@@ -25,7 +25,7 @@ export default function HowItWorks() {
         </div>
 
         <div className="text-center mt-14">
-          <a href="#book" className="inline-flex items-center gap-2 bg-brown text-white font-semibold px-10 py-4 rounded-full hover:bg-terra transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-200">
+          <a href="https://calendly.com/solacewavetherapy/consultation" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-brown text-white font-semibold px-10 py-4 rounded-full hover:bg-terra transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-200">
             Start with a Free Call
             <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>

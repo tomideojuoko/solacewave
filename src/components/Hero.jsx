@@ -14,7 +14,7 @@ export default function Hero() {
             Culturally attuned therapy and coaching for Black, African and Caribbean communities across Canada.
           </p>
           <div className="flex items-center gap-3 shrink-0">
-            <a href="#book" className="inline-flex items-center gap-2 bg-brown text-sand font-bold px-7 py-3.5 rounded-full hover:bg-terra transition-all text-sm shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-200">
+            <a href="https://calendly.com/solacewavetherapy/consultation" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-brown text-sand font-bold px-7 py-3.5 rounded-full hover:bg-terra transition-all text-sm shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-200">
               Book a Free Call
             </a>
             <a href="#about" className="inline-flex items-center gap-2 bg-white/15 text-white font-medium px-7 py-3.5 rounded-full hover:bg-white/25 transition-all text-sm border border-white/30 backdrop-blur-sm">

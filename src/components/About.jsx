@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function About() {
   return (
     <section id="about" className="py-24 bg-cream">
@@ -39,12 +41,12 @@ export default function About() {
             <p className="text-muted text-lg leading-relaxed">
               At Solace Wave Therapy, we offer mental health support rooted in real cultural connection, trauma-informed practice and deep respect for who you are and where you come from. No translating yourself. No shrinking your experiences. No being talked out of what you know to be true.
             </p>
-            <a href="#services" className="inline-flex items-center gap-2 text-terra font-semibold hover:gap-3 transition-all duration-150 text-base">
+            <Link to="/services" className="inline-flex items-center gap-2 text-terra font-semibold hover:gap-3 transition-all duration-150 text-base">
               Explore our services
               <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
               </svg>
-            </a>
+            </Link>
           </div>
 
         </div>

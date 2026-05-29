@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Footer() {
   return (
     <footer className="bg-charcoal text-white">
@@ -42,20 +44,20 @@ export default function Footer() {
             <h4 className="text-xs font-semibold uppercase tracking-wider text-white/40">Quick Links</h4>
             <ul className="space-y-3">
               <li><a href="#about"    className="text-white/55 hover:text-white text-sm transition-colors">About Us</a></li>
-              <li><a href="#services" className="text-white/55 hover:text-white text-sm transition-colors">Services</a></li>
+              <li><Link to="/services" className="text-white/55 hover:text-white text-sm transition-colors">Services</Link></li>
               <li><a href="#approach" className="text-white/55 hover:text-white text-sm transition-colors">Our Approach</a></li>
-              <li><a href="#team"     className="text-white/55 hover:text-white text-sm transition-colors">Our Team</a></li>
-              <li><a href="#book"     className="text-white/55 hover:text-white text-sm transition-colors">Book a Session</a></li>
+              <li><Link to="/team"     className="text-white/55 hover:text-white text-sm transition-colors">Our Team</Link></li>
+              <li><a href="https://calendly.com/solacewavetherapy/consultation" target="_blank" rel="noopener noreferrer"     className="text-white/55 hover:text-white text-sm transition-colors">Book a Session</a></li>
             </ul>
           </div>
 
           <div className="space-y-4">
             <h4 className="text-xs font-semibold uppercase tracking-wider text-white/40">Services</h4>
             <ul className="space-y-3">
-              <li><a href="#services" className="text-white/55 hover:text-white text-sm transition-colors">Individual Therapy</a></li>
-              <li><a href="#services" className="text-white/55 hover:text-white text-sm transition-colors">Couples Therapy</a></li>
-              <li><a href="#services" className="text-white/55 hover:text-white text-sm transition-colors">Group Sessions</a></li>
-              <li><a href="#book"     className="text-white/55 hover:text-white text-sm transition-colors">Free Consultation</a></li>
+              <li><Link to="/services" className="text-white/55 hover:text-white text-sm transition-colors">Individual Therapy</Link></li>
+              <li><Link to="/services" className="text-white/55 hover:text-white text-sm transition-colors">Couples Therapy</Link></li>
+              <li><Link to="/services" className="text-white/55 hover:text-white text-sm transition-colors">Group Sessions</Link></li>
+              <li><a href="https://calendly.com/solacewavetherapy/consultation" target="_blank" rel="noopener noreferrer"     className="text-white/55 hover:text-white text-sm transition-colors">Free Consultation</a></li>
             </ul>
           </div>
 

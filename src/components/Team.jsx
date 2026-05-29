@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Team() {
   return (
     <section id="team" className="py-24 bg-cream">
@@ -31,9 +33,14 @@ export default function Team() {
                 <span className="bg-white/15 text-sand text-xs font-medium px-3 py-1 rounded-full">CBT · Narrative · SFBT</span>
                 <span className="bg-white/15 text-sand text-xs font-medium px-3 py-1 rounded-full">CRPO Registered</span>
               </div>
-              <a href="#book" className="inline-flex items-center gap-2 bg-sand text-brown font-semibold px-6 py-3 rounded-full hover:bg-white transition-all text-sm mt-1">
-                Book a session →
-              </a>
+              <div className="flex gap-2 flex-wrap">
+                <a href="#book" className="inline-flex items-center gap-2 bg-sand text-brown font-semibold px-6 py-3 rounded-full hover:bg-white transition-all text-sm">
+                  Book a session →
+                </a>
+                <Link to="/team" className="inline-flex items-center gap-2 bg-white/20 text-sand font-semibold px-6 py-3 rounded-full hover:bg-white/30 transition-all text-sm">
+                  View Full Team →
+                </Link>
+              </div>
             </div>
 
           </div>
