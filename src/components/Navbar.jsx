@@ -65,7 +65,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link to="/" className="absolute left-1/2 -translate-x-1/2 flex items-center gap-3 whitespace-nowrap">
-            <img src="/assets/Solace logo suite-08.png" alt="Solace Wave Logo" className="h-12 w-auto drop-shadow-sm" />
+            <img src={`${import.meta.env.BASE_URL}assets/Solace logo suite-08.png`} alt="Solace Wave Logo" className="h-12 w-auto drop-shadow-sm" />
             <span className="nav-logo font-serif text-[2.4rem] leading-none font-semibold text-white drop-shadow-sm tracking-tight transition-colors duration-400">Solace Wave </span><span className="nav-sub font-serif text-[2rem] leading-none font-semibold tracking-tight text-white/80 transition-colors duration-400">Therapy</span>
           </Link>
 

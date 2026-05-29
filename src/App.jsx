@@ -91,7 +91,7 @@ function HomePage() {
         {/* Therapy Video Section */}
         <section className="w-full h-screen bg-black flex items-center justify-center">
           <video
-            src="/assets/therapy video.mov"
+            src={`${import.meta.env.BASE_URL}assets/therapy video.mov`}
             controls
             playsInline
             className="w-full h-full object-contain"
