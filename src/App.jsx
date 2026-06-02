@@ -92,6 +92,7 @@ function HomePage() {
         <section className="w-full h-screen bg-black flex items-center justify-center">
           <video
             src={`${import.meta.env.BASE_URL}assets/therapy video.mov`}
+            poster={`${import.meta.env.BASE_URL}assets/therapy-video-poster.jpg`}
             controls
             playsInline
             className="w-full h-full object-contain"

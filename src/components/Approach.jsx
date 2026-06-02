@@ -49,31 +49,23 @@ export default function Approach() {
         <div className="grid md:grid-cols-2 gap-16 items-center" data-anim style={{ transitionDelay: '0.1s' }}>
           <div className="space-y-6">
             <h3 className="font-serif text-3xl font-semibold text-brown">Virtual-first. Flexible. Accessible.</h3>
-            <p className="text-muted leading-relaxed">We know life is busy. Childcare is real. Commuting across the city for a therapy session isn't always possible. That's why sessions are virtual-first available wherever you are in Canada.</p>
-            <p className="text-muted leading-relaxed">For those in the Toronto area, in-person sessions are also available when that's what you need.</p>
+            <p className="text-muted leading-relaxed">We know life is busy. Commuting across the city for a therapy session isn't always possible. That's why sessions are virtual-first available wherever you are in Ontario.</p>
+            <div>
+              <p className="font-serif text-xl font-semibold text-brown">Book from anywhere</p>
+              <p className="text-muted leading-relaxed">Evenings & weekends available to fit your schedule</p>
+            </div>
             <div className="grid grid-cols-2 gap-4 pt-2">
               <div className="bg-brown rounded-2xl p-5">
                 <p className="font-serif text-xl font-semibold text-sand">Virtual</p>
-                <p className="text-sand/60 text-sm mt-1">Across Canada</p>
-              </div>
-              <div className="bg-brown rounded-2xl p-5">
-                <p className="font-serif text-xl font-semibold text-sand">In-Person</p>
-                <p className="text-sand/60 text-sm mt-1">Toronto, ON</p>
+                <p className="text-sand/60 text-sm mt-1">Across Ontario</p>
               </div>
             </div>
           </div>
 
-          <div className="bg-brown rounded-3xl p-10 flex items-center justify-center min-h-64">
-            <div className="text-center space-y-4">
-              <div className="w-20 h-20 rounded-full bg-brown flex items-center justify-center mx-auto">
-                <svg width="38" height="38" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth="1.4">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                </svg>
-              </div>
-              <p className="font-serif text-xl font-semibold text-sand">Book from anywhere</p>
-              <p className="text-sand/60 text-sm">Evenings &amp; weekends available to fit your schedule</p>
-            </div>
+          <div className="rounded-3xl overflow-hidden">
+            <img src={`${import.meta.env.BASE_URL}assets/We'reherecanada.PNG`} alt="We're here Canada" className="w-full h-full object-cover" />
           </div>
+
         </div>
 
       </div>

@@ -1,7 +1,7 @@
 const items = [
   'Culturally Affirming', 'Anti-Oppressive Practice', 'Trauma-Informed Care',
   'Diaspora Community', 'Black Mental Health', 'African & Caribbean Heritage',
-  'Virtual & In-Person', 'Identity & Belonging',
+  'Virtual Sessions', 'Identity & Belonging',
 ]
 
 export default function MarqueeBanner() {
