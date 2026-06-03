@@ -9,6 +9,7 @@ import Services from './components/Services'
 import HowItWorks from './components/HowItWorks'
 import Approach from './components/Approach'
 import Team from './components/Team'
+import VideoSection from './components/VideoSection'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import CTA from './components/CTA'
@@ -87,18 +88,7 @@ function HomePage() {
         <WhoWeServe />
         <Services />
         <HowItWorks />
-
-        {/* Therapy Video Section */}
-        <section className="w-full h-screen bg-black flex items-center justify-center">
-          <video
-            src={`${import.meta.env.BASE_URL}assets/therapy video.mov`}
-            poster={`${import.meta.env.BASE_URL}assets/therapy-video-poster.jpg`}
-            controls
-            playsInline
-            className="w-full h-full object-contain"
-          />
-        </section>
-
+        <VideoSection />
         <Approach />
         <Team />
         <Testimonials />

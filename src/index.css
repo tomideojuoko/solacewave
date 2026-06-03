@@ -12,7 +12,14 @@
 }
 .btn-brown:hover { background-color: #663916 !important; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+body {
+  overflow-y: scroll;
+}
 
 /* ── Marquee ── */
 .marquee-container { overflow: hidden; white-space: nowrap; }

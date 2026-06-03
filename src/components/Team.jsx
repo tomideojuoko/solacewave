@@ -11,7 +11,7 @@ export default function Team() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Kobi Card */}
           <div className="bg-brown rounded-3xl p-8 md:p-10 flex flex-col" data-anim>
-            <div className="w-full aspect-square rounded-2xl mb-6 overflow-hidden min-h-96">
+            <div className="w-full aspect-square rounded-2xl mb-6 overflow-hidden min-h-64 sm:min-h-80 md:min-h-96">
               <img src={`${import.meta.env.BASE_URL}assets/Kobi.jpg`} alt="Kobi Lord-Michael" className="w-full h-full object-cover" />
             </div>
             <div className="space-y-4 flex-1">
@@ -32,7 +32,7 @@ export default function Team() {
 
           {/* Deborah Card */}
           <div className="bg-brown rounded-3xl p-8 md:p-10 flex flex-col" data-anim>
-            <div className="w-full aspect-square rounded-2xl mb-6 overflow-hidden min-h-96">
+            <div className="w-full aspect-square rounded-2xl mb-6 overflow-hidden min-h-64 sm:min-h-80 md:min-h-96">
               <img src={`${import.meta.env.BASE_URL}assets/Deborah.PNG`} alt="Deborah Ochoche" className="w-full h-full object-cover" />
             </div>
             <div className="space-y-4 flex-1">
