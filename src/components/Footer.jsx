@@ -8,12 +8,7 @@ export default function Footer() {
 
           <div className="md:col-span-2 space-y-5">
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-full bg-terra flex items-center justify-center">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                  <path d="M2 12C2 12 5.5 6 12 6C18.5 6 22 12 22 12C22 12 18.5 18 12 18C5.5 18 2 12 2 12Z" stroke="white" strokeWidth="2" strokeLinejoin="round"/>
-                  <circle cx="12" cy="12" r="3" fill="white"/>
-                </svg>
-              </div>
+              <img src={`${import.meta.env.BASE_URL}assets/Solace%20logo%20suite-08.png`} alt="Solace Wave Therapy" className="h-9 w-auto" />
               <span className="font-serif text-[17px] font-semibold tracking-tight">
                 Solace Wave<span className="text-terra"> Therapy</span>
               </span>

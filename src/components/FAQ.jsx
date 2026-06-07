@@ -2,20 +2,28 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    q: 'Do I need a referral to start therapy?',
-    a: 'No referral needed. You can book a free 15-minute consultation directly through our website. No gatekeeping just get in touch and we\'ll take it from there.',
+    q: 'What is the difference between Therapy and Wellness Coaching?',
+    a: 'Therapy is a regulated health procedure done by a professional who can assess, diagnose, and support treatment of conditions like depression, anxiety, PTSD, and other mental health concerns. If you feel you need that level of clinical care, therapy is the right path. A wellness coach does not diagnose, prescribe, or treat medical or mental health conditions, but is a powerful support for everyday life including personal growth, building healthy habits, navigating relationships, managing stress, improving work-life balance, setting and achieving goals, and finding clarity during life transitions. If you are unsure which is right for you, book a free consultation and we will help you figure it out together.',
   },
   {
     q: 'Is therapy covered by insurance?',
-    a: 'Many extended health benefit plans cover Registered Psychotherapy. We\'ll provide a receipt you can submit to your provider. Check your plan under "Registered Psychotherapist (RP)" most plans include it.',
+    a: 'Many extended health benefits plans in Canada cover registered psychotherapy, though coverage varies by provider. We recommend checking with your insurer directly. We provide receipts for reimbursement.',
   },
   {
-    q: "What if I've never tried therapy before?",
-    a: "That's completely okay and quite common among our clients. The free 15-minute call is a no-pressure way to begin. We move at your pace, always. Therapy is a conversation, not an exam.",
+    q: "What if I've tried therapy before?",
+    a: 'A past experience that did not feel right usually means the fit was off, not that therapy is not for you. We take time to match you carefully so this experience feels different.',
   },
   {
-    q: 'Will my therapist understand my cultural background?',
-    a: "Yes that's the entire point of what we do. Our therapists are either from diaspora communities themselves or have deep training in diaspora mental health. You won't be starting from zero.",
+    q: 'What happens if I want to switch my therapist?',
+    a: 'You can request a change at any time. Your comfort always comes first.',
+  },
+  {
+    q: 'How many sessions will I need?',
+    a: 'Every journey is different. Your therapist will check in regularly to make sure your care reflects where you are and a treatment plan will be drawn up specifically for you.',
+  },
+  {
+    q: 'How often can I have sessions?',
+    a: 'Most clients start weekly or biweekly, but frequency is flexible based on your needs and schedule.',
   },
 ]
 
@@ -29,7 +37,7 @@ export default function FAQ() {
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-14 space-y-4">
           <span className="text-xs font-semibold tracking-widest text-terra uppercase">FAQ</span>
-          <h2 className="font-serif text-4xl md:text-5xl text-balance text-brown">Questions we hear often</h2>
+          <h2 className="font-serif text-4xl md:text-5xl text-balance text-brown">FAQ - Questions we get asked often</h2>
         </div>
 
         <div className="space-y-3" data-anim-group>

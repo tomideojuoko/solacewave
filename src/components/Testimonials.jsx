@@ -26,11 +26,11 @@ const quotes = [
   {
     bg: 'bg-white/10 backdrop-blur-sm border border-white/20',
     quoteFill: '#EED7BF',
-    text: '"Working through my parents\' expectations and my own identity at the same time felt impossible until I started here. My therapist helped me find my own path forward."',
+    text: '"Working through my parents\' expectations and my own identity at the same time felt impossible until I started here. My coach helped me find my own path forward."',
     initials: 'KB',
     avatarBg: 'bg-brown/40',
     name: 'K.B.',
-    detail: 'Ghanaian-British · Individual Therapy',
+    detail: 'Ghanaian-British · Wellness coaching',
     nameColor: 'text-white',
     detailColor: 'text-white/45',
     textColor: 'text-white/80',

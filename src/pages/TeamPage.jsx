@@ -48,11 +48,6 @@ export default function TeamPage() {
   return (
     <div className="bg-[#F8F0E8] text-[#2a1a0e] min-h-screen" style={{ fontFamily: "'Poppins', sans-serif" }}>
 
-      {/* Dev note */}
-      <div className="bg-[#004C60] text-[#EED7BF] py-3.5 px-10 text-center text-xs font-medium tracking-wide">
-        ✦ Design Preview — Solace Wave Therapy · Team Page
-      </div>
-
       {/* Page header */}
       <div className="bg-[#4a2810] py-20 px-10 text-center">
         <Link
@@ -64,7 +59,7 @@ export default function TeamPage() {
           </svg>
           Back to main site
         </Link>
-        <h1 className="font-['Playfair_Display'] text-5xl md:text-6xl font-bold text-[#EED7BF] mb-4">Meet Our Team</h1>
+        <h1 className="font-['Playfair_Display'] text-5xl md:text-6xl font-bold text-[#EED7BF] mb-4">Meet our Team</h1>
         <p className="text-lg text-[rgba(238,215,191,0.75)] font-light max-w-lg mx-auto leading-relaxed">
           Compassionate professionals rooted in culture, committed to your healing.
         </p>
@@ -153,12 +148,12 @@ export default function TeamPage() {
           >
             Book Your Free Consultation
           </a>
-          <Link
-            to="/services"
+          <a
+            href="#team"
             className="bg-transparent text-[#EED7BF] font-medium px-9 py-4 rounded-full border-1.5 border-[rgba(238,215,191,0.4)] hover:border-[#EED7BF] hover:text-white transition-all duration-300 text-sm"
           >
-            Explore Our Services
-          </Link>
+            Explore our Psychotherapist and Wellness Coaches Team
+          </a>
         </div>
       </div>
     </div>

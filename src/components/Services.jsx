@@ -19,7 +19,7 @@ export default function Services() {
               </svg>
             </div>
             <span className="inline-block text-xs font-semibold text-sand bg-white/15 px-2.5 py-1 rounded-full">Free</span>
-            <h3 className="font-serif text-lg font-semibold text-sand">15-Min Free Consult</h3>
+            <h3 className="font-serif text-lg font-semibold text-sand">20 Min Free Consult</h3>
             <p className="text-sand/65 text-sm leading-relaxed">A no-pressure intro call. Share what's on your mind and see if we're the right fit zero commitment.</p>
             <a href="#book" className="text-sand text-sm font-semibold hover:text-white inline-flex items-center gap-1 transition-colors">Book now →</a>
           </div>
@@ -30,7 +30,14 @@ export default function Services() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
               </svg>
             </div>
-            <h3 className="font-serif text-lg font-semibold text-sand">Individual Therapy</h3>
+            <div>
+              <span className="inline-block text-xs font-semibold text-amber-300 bg-white/10 px-2.5 py-1 rounded-full mb-2">Limited time sale</span>
+              <h3 className="font-serif text-lg font-semibold text-sand">Individual Therapy</h3>
+              <div className="flex items-center gap-2 mt-1">
+                <span className="text-sand/60 text-sm line-through">$175 CAD</span>
+                <span className="text-sand font-semibold text-sm">$150 CAD</span>
+              </div>
+            </div>
             <p className="text-sand/65 text-sm leading-relaxed">One-on-one sessions for anxiety, depression, identity, trauma, and life transitions in a space built entirely for you.</p>
             <a href="#book" className="text-sand text-sm font-semibold hover:text-white inline-flex items-center gap-1 transition-colors">Learn more →</a>
           </div>

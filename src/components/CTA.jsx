@@ -7,14 +7,11 @@ export default function CTA() {
           You deserve care that<br/>truly <em className="not-italic text-terra">understands you</em>
         </h2>
         <p className="text-sand/70 text-lg md:text-xl max-w-lg mx-auto leading-relaxed">
-          Book your free 15-minute consultation today. No commitment, no pressure just a warm, honest conversation to start.
+          Book your free 20 minute consultation today. No commitment, no pressure just a warm, honest conversation to start.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
           <a href="https://calendly.com/solacewavetherapy/consultation" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-sand text-brown font-bold px-10 py-4 rounded-full hover:bg-white transition-all text-base shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-200">
             Book Free Call Now →
-          </a>
-          <a href="tel:" className="text-sand/65 text-sm hover:text-sand transition-colors font-medium">
-            or call us directly
           </a>
         </div>
 

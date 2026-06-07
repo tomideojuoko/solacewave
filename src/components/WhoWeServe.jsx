@@ -5,7 +5,7 @@ const cards = [
     titleClass: 'text-sand',
     textClass: 'text-sand/65',
     title: "You're navigating two worlds",
-    text: "You're a first- or second-generation immigrant managing cultural expectations at home while assimilating outside of it and the tension is exhausting.",
+    text: "You're a first or second-generation immigrant managing cultural expectations at home while assimilating outside of it and the tension is exhausting.",
   },
   {
     icon: '💬',

@@ -20,7 +20,7 @@ export default function About() {
               </div>
               <div className="bg-brown rounded-2xl p-6">
                 <p className="font-serif text-lg font-medium text-sand mb-2">
-                  "Therapy isn't for people like us" that ends here.
+                  "Therapy isn't for people like us…" That ends here.
                 </p>
                 <p className="text-sand/65 text-sm leading-relaxed">
                   We're dismantling the stigma and rebuilding access to quality, culturally-aware mental health care for our communities.

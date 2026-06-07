@@ -16,7 +16,7 @@ export default function Contact() {
           <div className="space-y-4">
             <span className="text-xs font-semibold tracking-widest text-terra uppercase">Get In Touch</span>
             <h2 className="font-serif text-4xl font-semibold text-balance text-brown">We'd love to hear from you</h2>
-            <p className="text-muted leading-relaxed">Have questions before booking? Want to know if we're the right fit? Reach out we respond to every message.</p>
+            <p className="text-muted leading-relaxed">Have questions before booking? Want to know if we're the right fit? Reach out.... we respond to every message.</p>
           </div>
 
           <div className="space-y-5">
@@ -28,7 +28,11 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-xs text-muted uppercase tracking-wider font-medium mb-1">Email</p>
-                <a href="mailto:hello@solacewavetherapy.com" className="text-terra font-medium hover:underline">hello@solacewavetherapy.com</a>
+                <div className="space-y-1">
+                  <a href="mailto:Admin@solacewavetherapy.com" className="text-terra font-medium hover:underline block">Admin@solacewavetherapy.com</a>
+                  <p className="text-terra font-medium">Or</p>
+                  <a href="mailto:Solacewavetherapy@gmail.com" className="text-terra font-medium hover:underline block">Solacewavetherapy@gmail.com</a>
+                </div>
               </div>
             </div>
 
@@ -41,7 +45,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-xs text-muted uppercase tracking-wider font-medium mb-1">Location</p>
-                <p className="text-charcoal font-medium">Toronto, ON · Virtual across Canada</p>
+                <p className="text-charcoal font-medium">Toronto, ON · Virtual across Ontario</p>
               </div>
             </div>
 
@@ -53,7 +57,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-xs text-muted uppercase tracking-wider font-medium mb-1">Availability</p>
-                <p className="text-charcoal font-medium">Evenings &amp; weekends available</p>
+                <p className="text-charcoal font-medium">weekdays, weekends and evenings available</p>
               </div>
             </div>
           </div>
