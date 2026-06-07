@@ -17,7 +17,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import CookieBanner from './components/CookieBanner'
 import ServicesPage from './pages/ServicesPage'
-import TeamPage from './pages/TeamPage'
+import TeamsPage from './pages/TeamsPage'
 import LegalPage from './pages/LegalPage'
 
 const EASE = 'cubic-bezier(0.16, 1, 0.3, 1)'
@@ -107,7 +107,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/services" element={<ServicesPage />} />
-      <Route path="/team" element={<TeamPage />} />
+      <Route path="/team" element={<TeamsPage />} />
       <Route path="/legal" element={<LegalPage />} />
     </Routes>
   )
