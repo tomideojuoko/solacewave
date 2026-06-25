@@ -6,6 +6,7 @@ const teamMembers = [
     name: 'Annmarie C.',
     credential: 'RP • CCC • CRPO',
     country: '🇨🇦 Canada',
+    image: '/assets/Annmarie.jpeg',
     quote: 'Your lived experience matters here. Together, we create space for reflection, healing, and growth.',
     tags: ['Trauma-informed therapy', 'Grief & loss', 'Racialized stress', 'Anxiety & burnout'],
     bio: 'Annmarie is a Registered Psychotherapist with deep experience supporting people through trauma, grief, and the specific stress that comes with navigating race and identity. With warmth and cultural understanding, she creates a space where your whole story is honored.',
@@ -18,6 +19,7 @@ const teamMembers = [
     name: 'Michael O.',
     credential: 'RP (Qualifying) • CRPO',
     country: '🇨🇦 Canada',
+    image: '/assets/MichaelO.jpeg',
     quote: 'Healing and growth are possible, even in seasons that feel overwhelming.',
     tags: ['Anxiety & depression', 'Trauma', 'Athletes', 'Burnout'],
     bio: 'Michael is a Registered Psychotherapist (Qualifying) bringing clinical expertise and personal understanding to support individuals navigating anxiety, trauma, and burnout. He has a special heart for athletes and high-performers seeking balance and resilience.',
@@ -30,6 +32,7 @@ const teamMembers = [
     name: 'Uwem A.',
     credential: 'RP • CRPO',
     country: '🇨🇦 Canada',
+    image: '/assets/UwemA.jpeg',
     quote: "You don't have to face life's challenges alone. I'm here to walk alongside you.",
     tags: ['Anxiety & stress', 'Depression', 'Couples & family', 'Faith-based'],
     bio: 'Uwem is a Registered Psychotherapist with over a decade of experience supporting individuals, couples, and families. With faith-informed sensitivity and practical wisdom, he helps people navigate life\'s most challenging transitions with hope and resilience.',
@@ -42,6 +45,7 @@ const teamMembers = [
     name: 'Ashleigh O.',
     credential: 'Wellness Coach',
     country: '🇳🇬 Nigeria',
+    image: '/assets/AshleighO.jpeg',
     quote: "Break the cycle. Rebuild your strength. I'll walk with you every step of the way.",
     tags: ['Relationships', 'Life transitions', 'Personal growth'],
     bio: 'Ashleigh is a Wellness Coach with over 10 years of experience helping people reconnect with their strength and move forward with purpose. Warm, direct, and deeply invested in every person she works with, she creates a safe space where honest conversations lead to real change.',
@@ -54,6 +58,7 @@ const teamMembers = [
     name: 'Beniyam D.',
     credential: 'RP (Qualifying) • CRPO',
     country: '🇪🇷 Eritrea',
+    image: '/assets/BeniyamD.jpeg',
     quote: "Your story matters, and healing happens when you're truly seen and heard.",
     tags: ['Identity & culture', 'Anxiety', 'Relationships', 'Grief'],
     bio: 'Beniyam is a Registered Psychotherapist (Qualifying) who brings deep cultural understanding and clinical insight to support clients through identity exploration, cultural transitions, and relational healing.',
@@ -66,6 +71,7 @@ const teamMembers = [
     name: 'Nhyira A.',
     credential: 'RP • CRPO',
     country: '🇬🇭 Ghana',
+    image: '/assets/NhyiraA.jpeg',
     quote: "Growth happens when you feel safe to be yourself. That's the space I create.",
     tags: ["Women's empowerment", 'Personal growth', 'Anxiety', 'Life transitions'],
     bio: 'Nhyira is a Registered Psychotherapist with a passion for supporting women through self-discovery, confidence-building, and meaningful life transitions. With cultural awareness and genuine care, she helps clients reconnect with their inner strength.',
@@ -78,6 +84,7 @@ const teamMembers = [
     name: 'Jane O.',
     credential: 'Wellness Coach',
     country: '🇳🇬 Nigeria',
+    image: '/assets/JaneO.jpeg',
     quote: "Real change comes when you feel genuinely supported. I'm here to help you get there.",
     tags: ["Relationships", "Women's empowerment", 'Personal growth', 'Self-discovery'],
     bio: 'Jane is a Wellness Coach with 8 years of experience supporting individuals and couples through some of life\'s most meaningful transitions. She has a particular heart for women navigating confidence, self-worth, and personal growth, creating a space where clients feel deeply understood and genuinely supported.',
@@ -90,6 +97,7 @@ const teamMembers = [
     name: 'Shuaib M.',
     credential: 'Wellness Coach',
     country: '🇳🇬 Nigeria',
+    image: '/assets/ShuaibM.jpeg',
     quote: 'I help you build stronger relationships, navigate transitions, and grow into your best self.',
     tags: ['Relationships', 'Life transitions', 'Personal growth'],
     bio: 'Shuaib is a Wellness Coach with over 10 years of experience working with individuals and families through life\'s most meaningful transitions. With deep cultural sensitivity and a grounded, practical approach, he helps clients strengthen their relationships, navigate change, and grow into the best version of themselves.',
@@ -107,7 +115,7 @@ function TeamCard({ member, isOpen, onToggle }) {
         onClick={onToggle}
       >
         <div className="card-photo">
-          {/* Placeholder for image - no images for now */}
+          {member.image && <img src={member.image} alt={member.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
         </div>
         <div className="card-body">
           <p className="card-name">{member.name}</p>
