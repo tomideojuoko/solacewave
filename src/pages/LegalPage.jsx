@@ -402,7 +402,7 @@ function PrivacyContent() {
       </Section>
 
       <Section title="11. Your Rights">
-        <P>You have the right to access, correct, or request deletion of your personal information at any time. If you have any questions or concerns about how your information is being handled, or wish to make a request, please contact us at solacewavetherapy@gmail.com.</P>
+        <P>You have the right to access, correct, or request deletion of your personal information at any time. If you have any questions or concerns about how your information is being handled, or wish to make a request, please contact us at solacewavetherapy@gmail.com or call +1 (647) 930-0819.</P>
         <P>If you have a concern about your personal health information or privacy that we are unable to resolve, you may contact the Information and Privacy Commissioner of Ontario at ipc.on.ca or 1-800-387-0073.</P>
       </Section>
 
