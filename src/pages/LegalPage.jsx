@@ -300,11 +300,15 @@ function TermsContent() {
         <P>To the fullest extent permitted by law, Solace Wave Therapy shall not be liable for any indirect, incidental, or consequential damages arising out of or related to your use of our services. Our total liability to you shall not exceed the amount paid by you for the session in question.</P>
       </Section>
 
-      <Section title="14. Governing Law">
+      <Section title="14. SMS Communications">
+        <P>By opting in to SMS, you agree to receive appointment reminders, account notifications, and customer care messages from Solace Wave Therapy. Message frequency varies. Message and data rates may apply. To opt out, reply STOP to any message. For help, reply HELP or contact <a href="mailto:solacewavetherapy@gmail.com" style={{ color: '#663916', fontWeight: 500, textDecoration: 'none' }}>solacewavetherapy@gmail.com</a>.</P>
+      </Section>
+
+      <Section title="15. Governing Law">
         <P>These Terms of Service are governed by and construed in accordance with the laws of the Province of Ontario and the federal laws of Canada applicable therein. Any disputes shall be resolved by arbitration administered by the International Centre for Dispute Resolution Canada (ICDR Canada) in Toronto, Ontario.</P>
       </Section>
 
-      <Section title="15. Changes to These Terms">
+      <Section title="16. Changes to These Terms">
         <P>We may update these Terms of Service from time to time. We will notify you of any material changes by updating the "Last Updated" date at the top of this page. Your continued use of our services following any changes constitutes your acceptance of the updated terms.</P>
         <P>Questions about these terms? Contact us at solacewavetherapy@gmail.com.</P>
       </Section>
@@ -350,6 +354,8 @@ function PrivacyContent() {
       <Section title="4. SMS and Messaging Consent">
         <P>By providing your phone number and engaging with us by SMS, you agree to receive messages from Solace Wave Therapy related to your bookings, session reminders, and service communications. Message and data rates may apply. Message frequency depends on your interactions with us.</P>
         <P>You may opt out at any time by replying STOP to any message. Reply SUPPORT for help. No mobile or messaging consent information will ever be shared with third parties or affiliates for marketing or promotional purposes. Text messaging originator opt-in data and consent will not be shared with any third parties under any circumstances.</P>
+        <Sub>SMS Data Protection</Sub>
+        <P>Consumer data, including SMS registration data, is not transferred, shared, or disclosed to any external organization under any circumstances. We maintain role-based access controls, staff confidentiality obligations, and administrative, technical, and physical safeguards to prevent unauthorized access or disclosure. You may opt out of SMS messages at any time by replying STOP to any message.</P>
       </Section>
 
       <Section title="5. How We Protect Your Information">
