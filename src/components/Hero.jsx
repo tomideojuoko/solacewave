@@ -5,7 +5,7 @@ export default function Hero() {
       <div className="absolute inset-x-0 bottom-0 px-8 md:px-16 pb-14 md:pb-20 z-10">
 
         <h1 className="font-serif text-white leading-[1.1] max-w-4xl text-[2.8rem] sm:text-[3.8rem] md:text-[5rem] lg:text-[6rem]">
-          <span className="reveal-wrap"><span className="reveal-line" id="rl1">Healing that understands</span></span>
+          <span className="reveal-wrap"><span className="reveal-line" id="rl1">Therapists that understands</span></span>
           <span className="reveal-wrap"><span className="reveal-line" id="rl2">all parts of you</span></span>
         </h1>
 
