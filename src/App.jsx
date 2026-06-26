@@ -13,6 +13,7 @@ import VideoSection from './components/VideoSection'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import CTA from './components/CTA'
+import SMSOptIn from './components/SMSOptIn'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import CookieBanner from './components/CookieBanner'
@@ -94,6 +95,7 @@ function HomePage() {
         <Testimonials />
         <FAQ />
         <CTA />
+        <SMSOptIn />
         <Contact />
       </main>
       <Footer />
