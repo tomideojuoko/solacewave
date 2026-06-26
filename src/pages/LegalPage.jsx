@@ -358,12 +358,40 @@ function PrivacyContent() {
         <P>Consumer data, including SMS registration data, is not transferred, shared, or disclosed to any external organization under any circumstances. We maintain role-based access controls, staff confidentiality obligations, and administrative, technical, and physical safeguards to prevent unauthorized access or disclosure. You may opt out of SMS messages at any time by replying STOP to any message.</P>
       </Section>
 
-      <Section title="5. How We Protect Your Information">
+      <Section title="5. SMS Privacy Policy">
+        <P>Solace Wave Therapy respects your privacy. By opting into our SMS messaging service, you agree to the following terms regarding how we handle your data.</P>
+        <Sub>Data Collection</Sub>
+        <P>We will collect your name, email address, mailing address, and mobile phone number when you sign up for SMS updates. The information will be collected via the website contact form, email, rental agreement, or third-party reservation systems.</P>
+        <Sub>Data Usage</Sub>
+        <P>We use your data solely for sending informational and marketing messages.</P>
+        <Sub>Data Security</Sub>
+        <P>We protect your data with secure storage measures to prevent unauthorized access.</P>
+        <Sub>Data Retention</Sub>
+        <P>We retain your information as long as you are subscribed to our SMS service. You may request deletion at any time.</P>
+        <Sub>Message and Data Rates</Sub>
+        <P>Message and data rates may apply. Your mobile carrier may charge fees for sending or receiving text messages, especially if you do not have an unlimited texting or data plan. Messages are recurring, and message frequency varies.</P>
+        <Sub>Contact and Support</Sub>
+        <P>Contact Solace Wave Therapy at +1 (647) 930-0819 or Solacewavetherapy@gmail.com for HELP or to STOP receiving messages.</P>
+        <Sub>Opt-Out</Sub>
+        <P>You can opt out of the SMS list at any time by texting, emailing, or replying STOP or CANCEL to Solacewavetherapy@gmail.com or +1 (647) 930-0819. After unsubscribing, you will receive a final SMS to confirm you have unsubscribed and we will remove your number from our list within 24 hours. You can send HELP for additional assistance, and you will receive a text including our phone number, email, and website.</P>
+        <Sub>Non-Sharing Clause</Sub>
+        <P>Text messaging originator opt-in data and consent will not be shared with any third parties, excluding aggregators and providers of the text messaging services.</P>
+        <Sub>Data Sharing</Sub>
+        <Ul items={[
+          'Customer data is not shared with third parties for promotional or marketing purposes',
+          'Mobile opt-in and consent are never shared with anyone for any purpose. Any information sharing that may be mentioned elsewhere in this policy excludes mobile opt-in data',
+        ]} />
+        <Sub>SMS Messaging Terms and Conditions</Sub>
+        <P>The messaging program consists of general conversational messaging to answer questions and provide support to customers, promotional offers or discounts, and promotion of your products and services. You can cancel the SMS service at any time by texting "STOP" to the phone number from which you received messages. After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us. If you want to join again, just sign up as you did the first time.</P>
+        <P>If you are experiencing issues with the messaging program, you can reply with the keyword HELP for more assistance, or you can get help directly at Solacewavetherapy@gmail.com. Carriers are not liable for delayed or undelivered messages. Message and data rates may apply for any messages sent to you from us and to us from you. Message frequency will vary based on communication needs. If you have any questions about your text plan or data plan, contact your wireless provider.</P>
+      </Section>
+
+      <Section title="6. How We Protect Your Information">
         <P>We take the security of your information seriously. All personal health information is stored on secure, encrypted, PHIPA-compliant platforms. Virtual sessions are conducted on encrypted video platforms. We do not conduct sessions via unsecured platforms such as regular FaceTime, WhatsApp, or unencrypted Zoom.</P>
         <P>Our therapists and coaches are contractually required to implement reasonable administrative, technical, and physical safeguards to protect all client information and to report any actual or suspected privacy breach to Solace Wave Therapy within 24 hours of becoming aware of it.</P>
       </Section>
 
-      <Section title="6. Disclosure of Your Information">
+      <Section title="7. Disclosure of Your Information">
         <P>Solace Wave Therapy does not share your personal information with third parties for marketing, promotional, or commercial purposes. Your information is kept confidential and will not be disclosed to any outside organisation except in the following limited circumstances:</P>
         <Ul items={[
           'Where we have obtained your explicit written consent',
@@ -376,7 +404,7 @@ function PrivacyContent() {
         <P>We may share aggregated, non-identifiable information (such as total session numbers) without notice to you, as this data cannot be linked to any individual.</P>
       </Section>
 
-      <Section title="7. Confidentiality and Mandatory Reporting">
+      <Section title="8. Confidentiality and Mandatory Reporting">
         <P>All information shared in therapy or coaching sessions is held in strict confidence. However, there are circumstances under Ontario law where our therapists are legally required to disclose information without your consent:</P>
         <Ul items={[
           'If information suggests a child is in need of protection under the Child, Youth and Family Services Act, 2017',
@@ -387,26 +415,26 @@ function PrivacyContent() {
         <P>Your therapist will discuss any mandatory disclosure with you whenever safely possible before taking action. Wellness coaches are not regulated health professionals and do not hold personal health information, but are bound by strict confidentiality obligations under their coaching agreements.</P>
       </Section>
 
-      <Section title="8. Data Retention">
+      <Section title="9. Data Retention">
         <P>We retain your personal information only as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required or permitted by law. Personal health information collected in the context of psychotherapy services will be retained for a minimum of 10 years from the date of last service, or 10 years after a minor client turns 18, whichever is later, in accordance with CRPO and PHIPA requirements.</P>
         <P>When your information is no longer required, it will be securely destroyed in accordance with our data destruction obligations.</P>
       </Section>
 
-      <Section title="9. International Data Transfers">
+      <Section title="10. International Data Transfers">
         <P>Our wellness coaches are currently based in Nigeria and provide services remotely to clients in Canada. Your personal information may be transferred to and processed in locations outside of your province or country. We take steps to ensure that your data is handled securely and in accordance with this policy, regardless of where it is processed. Our coaches are contractually bound by the same confidentiality and data protection obligations regardless of their location.</P>
       </Section>
 
-      <Section title="10. Cookies and Tracking Technologies">
+      <Section title="11. Cookies and Tracking Technologies">
         <P>Our website may use cookies and similar tracking technologies to enhance your experience. Cookies are small text files placed on your device to collect information about your activity on our site. You can control the use of cookies through your browser settings, but disabling cookies may limit your ability to use certain features of our website.</P>
         <P>We do not use cookies to track you for advertising purposes or to share your browsing behaviour with third parties.</P>
       </Section>
 
-      <Section title="11. Your Rights">
+      <Section title="12. Your Rights">
         <P>You have the right to access, correct, or request deletion of your personal information at any time. If you have any questions or concerns about how your information is being handled, or wish to make a request, please contact us at solacewavetherapy@gmail.com or call +1 (647) 930-0819.</P>
         <P>If you have a concern about your personal health information or privacy that we are unable to resolve, you may contact the Information and Privacy Commissioner of Ontario at ipc.on.ca or 1-800-387-0073.</P>
       </Section>
 
-      <Section title="12. Changes to This Policy">
+      <Section title="13. Changes to This Policy">
         <P>We may update this Privacy Policy from time to time to reflect changes in our practices or applicable law. Any changes will be communicated by updating the "Last Updated" date at the top of this page. Your continued use of our services following any changes constitutes your acceptance of the updated policy.</P>
         <P>Questions about this policy? Contact us at solacewavetherapy@gmail.com.</P>
       </Section>
