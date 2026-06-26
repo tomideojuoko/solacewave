@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-cream">
+    <section id="about" className="py-16 bg-cream">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
 

@@ -7,7 +7,7 @@ const modalities = [
 
 export default function Approach() {
   return (
-    <section id="approach" className="py-24 bg-cream">
+    <section id="approach" className="py-16 bg-cream">
       <div className="max-w-6xl mx-auto px-6 space-y-24">
 
         <div className="text-center max-w-xl mx-auto space-y-4">

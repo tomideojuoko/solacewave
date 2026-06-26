@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function Team() {
   return (
-    <section id="team" className="py-24 bg-cream">
+    <section id="team" className="py-16 bg-cream">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14 space-y-4">
           <h2 className="font-serif text-4xl md:text-5xl text-balance text-brown">Meet our <span className="text-3xl md:text-4xl">20 minute free consultation</span> Team</h2>

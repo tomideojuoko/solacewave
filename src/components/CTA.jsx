@@ -1,6 +1,6 @@
 export default function CTA() {
   return (
-    <section id="book" className="py-24 bg-brown">
+    <section id="book" className="py-16 bg-brown">
       <div className="max-w-4xl mx-auto px-6 text-center space-y-8" data-anim>
         <span className="text-xs font-semibold tracking-widest text-sand/60 uppercase">Take The First Step</span>
         <h2 className="font-serif text-4xl md:text-6xl text-sand leading-tight text-balance">

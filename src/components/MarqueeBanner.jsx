@@ -1,6 +1,6 @@
 const items = [
   'Culturally Affirming', 'Anti-Oppressive Practice', 'Trauma-Informed Care',
-  'Diaspora Community', 'Black Mental Health', 'African & Caribbean Heritage',
+  'Mental Health & Wellness', 'Black Mental Health', 'African & Caribbean Heritage',
   'Virtual Sessions', 'Identity & Belonging',
 ]
 

@@ -39,7 +39,7 @@ const quotes = [
 
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-brown">
+    <section className="py-16 bg-brown">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14 space-y-4">
           <span className="text-xs font-semibold tracking-widest text-sand uppercase">What Clients Say</span>

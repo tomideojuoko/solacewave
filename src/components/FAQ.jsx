@@ -33,7 +33,7 @@ export default function FAQ() {
   const toggle = (i) => setOpenIndex(openIndex === i ? null : i)
 
   return (
-    <section className="py-24 bg-cream">
+    <section className="py-16 bg-cream">
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-14 space-y-4">
           <span className="text-xs font-semibold tracking-widest text-terra uppercase">FAQ</span>

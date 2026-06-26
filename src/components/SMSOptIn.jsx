@@ -1,6 +1,6 @@
 export default function SMSOptIn() {
   return (
-    <section className="py-20 bg-white/40 backdrop-blur-sm">
+    <section className="py-16 bg-white/40 backdrop-blur-sm">
       <div className="max-w-2xl mx-auto px-6">
         <div className="text-center space-y-6">
           <h3 className="font-serif text-2xl font-semibold text-brown">SMS Opt-In</h3>
