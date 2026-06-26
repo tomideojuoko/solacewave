@@ -16,7 +16,7 @@
       var redirect = sessionStorage.redirect;
       delete sessionStorage.redirect;
       if (redirect && redirect !== location.pathname) {
-        window.location.href = redirect;
+        history.replaceState(null, null, redirect);
       }
     })();
   </script>
