@@ -359,31 +359,39 @@ function PrivacyContent() {
       </Section>
 
       <Section title="5. SMS Privacy Policy">
-        <P>Solace Wave Therapy respects your privacy. By opting into our SMS messaging service, you agree to the following terms regarding how we handle your data.</P>
-        <Sub>Data Collection</Sub>
-        <P>We will collect your name, email address, mailing address, and mobile phone number when you sign up for SMS updates. The information will be collected via the website contact form, email, rental agreement, or third-party reservation systems.</P>
-        <Sub>Data Usage</Sub>
-        <P>We use your data solely for sending informational and marketing messages.</P>
-        <Sub>Data Security</Sub>
-        <P>We protect your data with secure storage measures to prevent unauthorized access.</P>
-        <Sub>Data Retention</Sub>
-        <P>We retain your information as long as you are subscribed to our SMS service. You may request deletion at any time.</P>
-        <Sub>Message and Data Rates</Sub>
-        <P>Message and data rates may apply. Your mobile carrier may charge fees for sending or receiving text messages, especially if you do not have an unlimited texting or data plan. Messages are recurring, and message frequency varies.</P>
-        <Sub>Contact and Support</Sub>
-        <P>Contact Solace Wave Therapy at +1 (647) 930-0819 or Solacewavetherapy@gmail.com for HELP or to STOP receiving messages.</P>
-        <Sub>Opt-Out</Sub>
-        <P>You can opt out of the SMS list at any time by texting, emailing, or replying STOP or CANCEL to Solacewavetherapy@gmail.com or +1 (647) 930-0819. After unsubscribing, you will receive a final SMS to confirm you have unsubscribed and we will remove your number from our list within 24 hours. You can send HELP for additional assistance, and you will receive a text including our phone number, email, and website.</P>
-        <Sub>Non-Sharing Clause</Sub>
-        <P>Text messaging originator opt-in data and consent will not be shared with any third parties, excluding aggregators and providers of the text messaging services.</P>
-        <Sub>Data Sharing</Sub>
-        <Ul items={[
-          'Customer data is not shared with third parties for promotional or marketing purposes',
-          'Mobile opt-in and consent are never shared with anyone for any purpose. Any information sharing that may be mentioned elsewhere in this policy excludes mobile opt-in data',
-        ]} />
-        <Sub>SMS Messaging Terms and Conditions</Sub>
-        <P>The messaging program consists of general conversational messaging to answer questions and provide support to customers, promotional offers or discounts, and promotion of your products and services. You can cancel the SMS service at any time by texting "STOP" to the phone number from which you received messages. After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us. If you want to join again, just sign up as you did the first time.</P>
-        <P>If you are experiencing issues with the messaging program, you can reply with the keyword HELP for more assistance, or you can get help directly at Solacewavetherapy@gmail.com. Carriers are not liable for delayed or undelivered messages. Message and data rates may apply for any messages sent to you from us and to us from you. Message frequency will vary based on communication needs. If you have any questions about your text plan or data plan, contact your wireless provider.</P>
+        <div style={{ fontSize: 14.5, lineHeight: 1.85, color: '#5a3a20', fontWeight: 300, marginBottom: 12, whiteSpace: 'pre-wrap' }}>
+          {`SMS PRIVACY POLICY
+
+1001588602 ONTARIO LIMITED DBA Solace Wave Therapy Terms and Conditions / Privacy Policy
+1001588602 ONTARIO LIMITED DBA Solace Wave Therapy , Respects your privacy. By opting into our SMS messaging service, you agree to the following terms regarding how we handle your data.
+
+
+Data Collection: We will collect your name, email address, mailing address, and mobile phone number when you sign up for SMS updates.  The information will be collected via the website contact form, email, rental agreement, or third-party reservation systems.
+
+ Data Usage: We use your data solely for sending Informational and Marketing messages
+Data Security: We protect your data with secure storage measures to prevent unauthorized access.
+Data Retention: We retain your information as long as you are subscribed to our SMS service. You may request deletion at any time.
+MESSAGE AND DATA RATES MAY APPLY. Your mobile carrier may charge fees for sending or receiving text messages, especially if you do not have an unlimited texting or data plan.
+Messages are recurring, and message frequency varies.
+Contact 1001588602 ONTARIO LIMITED DBA Solace Wave Therapy at
+(647) 930-0819 or Solacewavetherapy@gmail.com for HELP or to STOP receiving messages.
+
+Opt-Out: You can opt out of the SMS list at anytime by texting, emailing, or replying STOP or CANCEL to Solacewavetherapy@gmail.com or (647) 930-0819.  After unsubscribing, you will receive a final SMS to confirm you have unsubscribed and we will remove your number from our list within 24 hours.
+
+You can send HELP for additional assistance, and you will receive a text including our Phone number, email and website. We are here to help you.
+
+Non-Sharing Clause: Text messaging originator opt-in data and consent will not be shared with any third parties, excluding aggregators and providers of the Text Messaging services.
+Data Sharing
+• Customer data is not shared with 3rd parties for promotional or marketing purposes.
+• Mobile opt-in and consent are never shared with anyone for any purpose. Any information sharing that may be mentioned elsewhere in this policy excludes mobile opt-in data.
+1001588602 ONTARIO LIMITED DBA Solace Wave Therapy Messaging Terms and Conditions
+1. The messaging program consists of general conversational messaging to answer questions and provide support to customers, promotional offers or discounts, any promotion of your products/services.
+2. You can cancel the SMS service at any time. Just text 'STOP' to the phone number from which you received messages. After you send the SMS message 'STOP' to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us. If you want to join again, just sign up as you did the first time and we will start sending SMS messages to you again.
+3. If you are experiencing issues with the messaging program you can reply with the keyword HELP for more assistance, or you can get help directly at Solacewavetherapy@gmail.com.
+4. Carriers are not liable for delayed or undelivered messages.
+5. As always, message and data rates may apply for any messages sent to you from us and to us from you. Message frequency will vary based on communication needs. If you have any questions about your text plan or data plan, it is best to contact your wireless provider.
+6. If you have any questions regarding privacy, please read our privacy policy contained in the rest of this document/page.`}
+        </div>
       </Section>
 
       <Section title="6. How We Protect Your Information">
