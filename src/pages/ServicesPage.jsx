@@ -11,11 +11,8 @@ const services = [
   {
     id: 1,
     name: 'Individual Therapy',
-    price: '$150 CAD per session',
-    saleOld: '$175 CAD',
-    saleNew: '$150 CAD',
-    isSale: true,
-    cardPrice: '$150 CAD',
+    price: '$160 CAD per session',
+    cardPrice: '$160 CAD per session',
     image: IMG1,
     preview: 'A private, one on one space built entirely around you. Work through what you are carrying with a Registered Psychotherapist who already understands your world.',
     body: [
@@ -37,6 +34,30 @@ const services = [
   },
   {
     id: 2,
+    name: 'Group Therapy',
+    price: '$200 CAD for 4 sessions',
+    cardPrice: '$200 CAD for 4 sessions',
+    image: IMG4,
+    preview: 'Meet others like you. A facilitated therapeutic space where shared experience becomes shared healing. No explaining needed. Just connection, community and real support.',
+    body: [
+      'There is something powerful about being in a room with people who already understand. No explaining. No context-setting. Just shared experience, honest conversation and the kind of healing that happens when you realise you are not alone.',
+      'Our group therapy sessions are facilitated by a Registered Psychotherapist and bring together small groups of Black, African and Caribbean individuals navigating similar life experiences. Groups are intentionally sized to create safety, intimacy and real connection.',
+    ],
+    subheadings: [
+      {
+        title: 'What group therapy offers',
+        text: 'A safe, facilitated space to process shared experiences, the power of being truly seen and understood by peers, community, accountability and mutual support, professional therapeutic guidance in a group setting and an affordable path into therapy for those who are just beginning.',
+      },
+      {
+        title: 'Meeting others like you.',
+        text: 'Our groups are curated thoughtfully. We match group members based on shared themes and experiences so the space feels relevant, safe and genuinely healing from the very first session.',
+      },
+    ],
+    note: 'Group sessions are held virtually. Group sizes are kept small to ensure every member feels heard. Contact us to find out about upcoming groups and availability.',
+    cta: { label: 'Book a Free Consultation', href: 'https://calendly.com/solacewavetherapy/consultation', variant: 'brown' },
+  },
+  {
+    id: 3,
     name: 'Wellness Coaching',
     price: '$100 CAD per session',
     cardPrice: '$100 CAD',
@@ -57,7 +78,7 @@ const services = [
     cta: { label: 'Book a Free Consultation', href: 'https://calendly.com/solacewavetherapy/consultation', variant: 'brown' },
   },
   {
-    id: 3,
+    id: 4,
     name: 'Couples Counselling',
     price: '$250 CAD per session',
     cardPrice: '$250 CAD',
@@ -78,30 +99,6 @@ const services = [
       },
     ],
     note: 'Sessions are held virtually. Both partners attend together. Sessions are private and confidential.',
-    cta: { label: 'Book a Free Consultation', href: 'https://calendly.com/solacewavetherapy/consultation', variant: 'brown' },
-  },
-  {
-    id: 4,
-    name: 'Group Therapy',
-    price: '$55 CAD per session',
-    cardPrice: '$55 CAD',
-    image: IMG4,
-    preview: 'Meet others like you. A facilitated therapeutic space where shared experience becomes shared healing. No explaining needed. Just connection, community and real support.',
-    body: [
-      'There is something powerful about being in a room with people who already understand. No explaining. No context-setting. Just shared experience, honest conversation and the kind of healing that happens when you realise you are not alone.',
-      'Our group therapy sessions are facilitated by a Registered Psychotherapist and bring together small groups of Black, African and Caribbean individuals navigating similar life experiences. Groups are intentionally sized to create safety, intimacy and real connection.',
-    ],
-    subheadings: [
-      {
-        title: 'What group therapy offers',
-        text: 'A safe, facilitated space to process shared experiences, the power of being truly seen and understood by peers, community, accountability and mutual support, professional therapeutic guidance in a group setting and an affordable path into therapy for those who are just beginning.',
-      },
-      {
-        title: 'Meeting others like you.',
-        text: 'Our groups are curated thoughtfully. We match group members based on shared themes and experiences so the space feels relevant, safe and genuinely healing from the very first session.',
-      },
-    ],
-    note: 'Group sessions are held virtually. Group sizes are kept small to ensure every member feels heard. Contact us to find out about upcoming groups and availability.',
     cta: { label: 'Book a Free Consultation', href: 'https://calendly.com/solacewavetherapy/consultation', variant: 'brown' },
   },
   {
@@ -142,15 +139,7 @@ function ExpandedPanel({ service, onClose }) {
         </div>
         <div className="flex-1">
           <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl font-bold text-[#4a2810] mb-2">{service.name}</h2>
-          {service.isSale ? (
-            <div className="space-y-1">
-              <p className="text-xs font-semibold text-amber-600 mb-2 uppercase tracking-wider">Limited Time Sale</p>
-              <p className="text-base font-semibold text-gray-400 line-through mb-1">{service.saleOld}</p>
-              <p className="text-lg font-semibold text-[#663916] leading-relaxed">{service.saleNew}</p>
-            </div>
-          ) : (
-            <p className="text-lg font-semibold text-[#663916] leading-relaxed">{service.price}</p>
-          )}
+          <p className="text-lg font-semibold text-[#663916] leading-relaxed">{service.price}</p>
         </div>
       </div>
 
@@ -293,15 +282,7 @@ export default function ServicesPage() {
               </div>
               <div style={{ padding: '20px 28px 28px', textAlign: 'center' }}>
                 <p style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 700, color: '#4a2810', marginBottom: 8 }}>{service.name}</p>
-                {service.isSale ? (
-                  <div style={{ marginBottom: 12 }}>
-                    <p style={{ fontSize: 11, fontWeight: 600, color: '#D97706', marginBottom: 6, letterSpacing: 0.5, textTransform: 'uppercase' }}>Limited Time Sale</p>
-                    <p style={{ fontSize: 14, fontWeight: 600, color: '#999', marginBottom: 4, textDecoration: 'line-through' }}>{service.saleOld}</p>
-                    <p style={{ fontSize: 16, fontWeight: 600, color: '#663916' }}>{service.saleNew}</p>
-                  </div>
-                ) : (
-                  <p style={{ fontSize: 16, fontWeight: 600, color: '#663916', marginBottom: 12 }}>{service.cardPrice}</p>
-                )}
+                <p style={{ fontSize: 16, fontWeight: 600, color: '#663916', marginBottom: 12, whiteSpace: 'pre-line' }}>{service.cardPrice}</p>
                 <p style={{ fontSize: 14, lineHeight: 1.7, color: '#5a3a20', fontWeight: 300, marginBottom: 20 }}>{service.preview}</p>
                 <span style={{
                   background: '#F8F0E8',

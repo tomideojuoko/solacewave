@@ -31,11 +31,9 @@ export default function Services() {
               </svg>
             </div>
             <div>
-              <span className="inline-block text-xs font-semibold text-amber-300 bg-white/10 px-2.5 py-1 rounded-full mb-2">Limited time sale</span>
               <h3 className="font-serif text-lg font-semibold text-sand">Individual Therapy</h3>
-              <div className="flex items-center gap-2 mt-1">
-                <span className="text-sand/60 text-sm line-through">$175 CAD</span>
-                <span className="text-sand font-semibold text-sm">$150 CAD</span>
+              <div className="space-y-1 mt-2 text-sm">
+                <p className="text-sand/80">$160 CAD per session</p>
               </div>
             </div>
             <p className="text-sand/65 text-sm leading-relaxed">One-on-one sessions for anxiety, depression, identity, trauma, and life transitions in a space built entirely for you.</p>
@@ -48,7 +46,8 @@ export default function Services() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
               </svg>
             </div>
-            <h3 className="font-serif text-lg font-semibold text-sand">Community Group Sessions</h3>
+            <h3 className="font-serif text-lg font-semibold text-sand">Group Therapy</h3>
+            <p className="text-sand/80 text-sm font-medium">$200 CAD for 4 sessions</p>
             <p className="text-sand/65 text-sm leading-relaxed">Facilitated group therapy with others from shared backgrounds. Healing in community you are not alone in this.</p>
             <a href="#book" className="text-sand text-sm font-semibold hover:text-white inline-flex items-center gap-1 transition-colors">Learn more →</a>
           </div>
