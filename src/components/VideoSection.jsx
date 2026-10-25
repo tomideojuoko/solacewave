@@ -7,7 +7,7 @@ export default function VideoSection() {
           Why we offer a Free Consultation
         </h2>
         <p className="text-lg md:text-xl text-charcoal/80 max-w-2xl mx-auto">
-          Most platforms match you based on a survey or with an algorithm. At Solace Wave Therapy, we match you with intention
+          At Solace Wave Therapy, every match is made by a real person who takes the time to get to know you.
         </p>
       </div>
 
