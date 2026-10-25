@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import MarqueeBanner from './components/MarqueeBanner'
@@ -105,6 +105,14 @@ function HomePage() {
 }
 
 export default function App() {
+  const { pathname } = useLocation()
+
+  // The page starts hidden (index.css) so the homepage can fade in.
+  // Other pages have no intro, so show them straight away.
+  useEffect(() => {
+    if (pathname !== '/') document.body.style.opacity = '1'
+  }, [pathname])
+
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
