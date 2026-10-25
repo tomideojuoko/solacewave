@@ -15,23 +15,13 @@ export default function Approach() {
           <h2 className="font-serif text-4xl md:text-5xl text-balance text-brown">Rooted in culture. Grounded in evidence.</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center" data-anim>
-          <div className="bg-blush rounded-3xl p-10 flex flex-col justify-between min-h-72 space-y-8">
-            <div className="w-12 h-12 rounded-2xl bg-white/50 flex items-center justify-center">
-              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#4a2810" strokeWidth="1.5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-              </svg>
-            </div>
-            <div>
-              <p className="font-serif text-2xl text-gold leading-snug">"Your culture is not a barrier to healing it's the pathway."</p>
-              <p className="text-gold/45 text-sm mt-4">— Solace Wave Therapy</p>
-            </div>
-          </div>
-
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center" data-anim>
           <div className="space-y-6">
             <h3 className="font-serif text-3xl font-semibold text-brown">Anti-Oppressive &amp; Trauma-Informed</h3>
             <p className="text-muted leading-relaxed">We practice through an anti-oppressive lens acknowledging how racism, colonialism, and systemic inequality shape your mental health. We don't pathologise survival. We honour it.</p>
-            <ul className="space-y-3 pt-2">
+          </div>
+          <div>
+            <ul className="space-y-3">
               {modalities.map((m, i) => (
                 <li key={i} className="flex items-center gap-3">
                   <div className="w-5 h-5 rounded-full bg-sand flex items-center justify-center shrink-0">

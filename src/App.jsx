@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import MarqueeBanner from './components/MarqueeBanner'
 import About from './components/About'
+import FounderQuote from './components/FounderQuote'
 import WhoWeServe from './components/WhoWeServe'
 import Services from './components/Services'
 import HowItWorks from './components/HowItWorks'
@@ -85,6 +86,7 @@ function HomePage() {
       <main>
         <Hero />
         <MarqueeBanner />
+        <FounderQuote />
         <About />
         <WhoWeServe />
         <Services />
