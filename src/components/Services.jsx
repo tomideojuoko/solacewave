@@ -19,7 +19,7 @@ export default function Services() {
               </svg>
             </div>
             <span className="inline-block text-xs font-semibold text-sand bg-white/15 px-2.5 py-1 rounded-full">Free</span>
-            <h3 className="font-serif text-lg font-semibold text-sand">20 Min Free Consult</h3>
+            <h3 className="font-serif text-lg font-semibold text-sand">30 Min Free Consult</h3>
             <p className="text-sand/65 text-sm leading-relaxed">A no-pressure intro call. Share what's on your mind and see if we're the right fit zero commitment.</p>
             <a href="#book" className="text-sand text-sm font-semibold hover:text-white inline-flex items-center gap-1 transition-colors">Book now →</a>
           </div>
