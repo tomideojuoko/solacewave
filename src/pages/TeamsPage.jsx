@@ -15,19 +15,6 @@ const teamMembers = [
     isTherapist: true,
   },
   {
-    id: 3,
-    name: 'Raquel A.',
-    credential: 'RP (Qualifying) • CRPO',
-    country: '🇨🇦 Canada',
-    image: '/assets/RaquelA.png',
-    quote: "You don't have to have everything figured out before we begin.",
-    tags: ['Anxiety', 'ADHD support', 'Grief and loss', 'Trauma', 'Relationship challenges', 'Culture and belonging', 'Adults and families'],
-    bio: 'Raquel is a Registered Psychotherapist (Qualifying) with a background in education and counselling psychology. She takes a trauma-informed, culturally responsive approach, helping clients navigate identity, family dynamics, and life transitions with warmth and understanding. Her practice centres on meeting each client where they are, honouring the culture, community, and lived experience that shape how they see themselves and the world.',
-    specialties: ['Anxiety & self-esteem', 'Relationships & family dynamics', 'Identity exploration', 'Life transitions', 'Grief & loss', 'Cultural & family expectations', 'LGBTQIA+ affirming support', 'Trauma-informed & client-centred therapy'],
-    disclaimer: true,
-    isTherapist: true,
-  },
-  {
     id: 9,
     name: 'Kemani G.',
     credential: 'MSW • RSW',
@@ -37,6 +24,19 @@ const teamMembers = [
     tags: ['Depression', 'Anxiety', 'High performance burnout', 'Identity and life transitions', 'Relationships', 'Emotional processing', 'Workplace stress', 'Young men and boys'],
     bio: "Kemani is a Registered Social Worker who brings experience supporting youth and adults through a compassionate, mindful, and trauma-informed approach. He strives to create a safe, inclusive and empowering space where individuals feel heard, supported, and encouraged to build emotional awareness, strengthen resilience and navigate life's challenges.",
     specialties: ['Self-esteem & personal growth', 'Emotional regulation', 'Anti-oppressive practice', 'Youth & young adult support', 'Mindfulness', 'Trauma-informed care'],
+    disclaimer: true,
+    isTherapist: true,
+  },
+  {
+    id: 3,
+    name: 'Raquel A.',
+    credential: 'RP (Qualifying) • CRPO',
+    country: '🇨🇦 Canada',
+    image: '/assets/RaquelA.png',
+    quote: "You don't have to have everything figured out before we begin.",
+    tags: ['Anxiety', 'ADHD support', 'Grief and loss', 'Trauma', 'Relationship challenges', 'Culture and belonging', 'Adults and families'],
+    bio: 'Raquel is a Registered Psychotherapist (Qualifying) with a background in education and counselling psychology. She takes a trauma-informed, culturally responsive approach, helping clients navigate identity, family dynamics, and life transitions with warmth and understanding. Her practice centres on meeting each client where they are, honouring the culture, community, and lived experience that shape how they see themselves and the world.',
+    specialties: ['Anxiety & self-esteem', 'Relationships & family dynamics', 'Identity exploration', 'Life transitions', 'Grief & loss', 'Cultural & family expectations', 'LGBTQIA+ affirming support', 'Trauma-informed & client-centred therapy'],
     disclaimer: true,
     isTherapist: true,
   },
@@ -82,7 +82,7 @@ function TeamCard({ member, isOpen, onToggle }) {
             <p className="expanded-quote">"{member.quote}"</p>
             <p className="expanded-bio">{member.bio}</p>
             <div className="expanded-specialties">
-              <h4>Areas of expertise</h4>
+              <h4>How I can help</h4>
               <div className="tags tags-left">
                 {member.specialties.map((spec, idx) => (
                   <span key={idx} className="tag">{spec}</span>
