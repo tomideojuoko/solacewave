@@ -2,12 +2,12 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    q: 'What is the difference between Therapy and Wellness Coaching?',
-    a: 'Therapy is a regulated health procedure done by a professional who can assess, diagnose, and support treatment of conditions like depression, anxiety, PTSD, and other mental health concerns. If you feel you need that level of clinical care, therapy is the right path. A wellness coach does not diagnose, prescribe, or treat medical or mental health conditions, but is a powerful support for everyday life including personal growth, building healthy habits, navigating relationships, managing stress, improving work-life balance, setting and achieving goals, and finding clarity during life transitions. If you are unsure which is right for you, book a free consultation and we will help you figure it out together.',
-  },
-  {
     q: 'Is therapy covered by insurance?',
     a: 'Many extended health benefits plans in Canada cover registered psychotherapy, though coverage varies by provider. We recommend checking with your insurer directly. We provide receipts for reimbursement.',
+  },
+  {
+    q: 'Do you offer direct billing?',
+    a: "Yes! We offer direct billing with select insurers, including Manulife, Sun Life, Canada Life, Medavie Blue Cross, Alberta Blue Cross and many more. Not sure if your plan is covered? Book a free consultation and we'll help you check your coverage and whether we can bill your insurer directly.",
   },
   {
     q: "What if I've tried therapy before?",
@@ -24,6 +24,10 @@ const faqs = [
   {
     q: 'How often can I have sessions?',
     a: 'Most clients start weekly or biweekly, but frequency is flexible based on your needs and schedule.',
+  },
+  {
+    q: 'What is the difference between Therapy and Wellness Coaching?',
+    a: 'Therapy is a regulated health procedure done by a professional who can assess, diagnose, and support treatment of conditions like depression, anxiety, PTSD, and other mental health concerns. If you feel you need that level of clinical care, therapy is the right path. A wellness coach does not diagnose, prescribe, or treat medical or mental health conditions, but is a powerful support for everyday life including personal growth, building healthy habits, navigating relationships, managing stress, improving work-life balance, setting and achieving goals, and finding clarity during life transitions. If you are unsure which is right for you, book a free consultation and we will help you figure it out together.',
   },
 ]
 
