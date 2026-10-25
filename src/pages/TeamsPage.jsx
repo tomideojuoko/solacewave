@@ -8,22 +8,9 @@ const teamMembers = [
     country: '🇨🇦 Canada',
     image: '/assets/Annmarie.jpeg',
     quote: 'Your lived experience matters here. Together, we create space for reflection, healing, and growth.',
-    tags: ['Trauma-informed therapy', 'Grief & loss', 'Racialized stress', 'Anxiety & burnout'],
+    tags: ['Trauma', 'Anxiety', 'The girl child experience', 'Grief and loss', 'Burnout', 'Family pressures', 'Relationship issues', 'Self-esteem & confidence'],
     bio: 'Annmarie is a Registered Psychotherapist with deep experience supporting people through trauma, grief, and the specific stress that comes with navigating race and identity. With warmth and cultural understanding, she creates a space where your whole story is honored.',
     specialties: ['Trauma-informed therapy', 'Grief & loss', 'Racialized stress & BIPOC support', 'Anxiety & emotional burnout', 'Life transitions', 'Relationship challenges', 'Anti-oppressive practice'],
-    disclaimer: true,
-    isTherapist: true,
-  },
-  {
-    id: 2,
-    name: 'Michael O.',
-    credential: 'RP (Qualifying) • CRPO',
-    country: '🇨🇦 Canada',
-    image: '/assets/MichaelO.jpeg',
-    quote: 'Healing and growth are possible, even in seasons that feel overwhelming.',
-    tags: ['Anxiety & depression', 'Trauma', 'Athletes', 'Burnout'],
-    bio: 'Michael is a Registered Psychotherapist (Qualifying) bringing clinical expertise and personal understanding to support individuals navigating anxiety, trauma, and burnout. He has a special heart for athletes and high-performers seeking balance and resilience.',
-    specialties: ['Anxiety & depression', 'Trauma & PTSD', 'Athletes & sports performance', 'High-performance burnout', 'Identity & life transitions', 'Grief & loss', 'Self-esteem & emotional regulation', 'Relationship & attachment issues', 'CBT & person-centred therapy'],
     disclaimer: true,
     isTherapist: true,
   },
@@ -34,22 +21,22 @@ const teamMembers = [
     country: '🇨🇦 Canada',
     image: '/assets/RaquelA.png',
     quote: "You don't have to have everything figured out before we begin.",
-    tags: ['Anxiety & self-esteem', 'Relationships & family dynamics', 'Life transitions', 'Grief & loss'],
+    tags: ['Anxiety', 'ADHD support', 'Grief and loss', 'Trauma', 'Relationship challenges', 'Culture and belonging', 'Adults and families'],
     bio: 'Raquel is a Registered Psychotherapist (Qualifying) with a background in education and counselling psychology. She takes a trauma-informed, culturally responsive approach, helping clients navigate identity, family dynamics, and life transitions with warmth and understanding. Her practice centres on meeting each client where they are, honouring the culture, community, and lived experience that shape how they see themselves and the world.',
     specialties: ['Anxiety & self-esteem', 'Relationships & family dynamics', 'Identity exploration', 'Life transitions', 'Grief & loss', 'Cultural & family expectations', 'LGBTQIA+ affirming support', 'Trauma-informed & client-centred therapy'],
     disclaimer: true,
     isTherapist: true,
   },
   {
-    id: 4,
-    name: 'Wakilat C.',
-    credential: 'RP • CRPO',
+    id: 9,
+    name: 'Kemani G.',
+    credential: 'MSW • RSW',
     country: '🇨🇦 Canada',
-    image: '/assets/WakilatC.png',
-    quote: "You deserve to feel heard, valued, and supported.",
-    tags: ['Anxiety & self-esteem', 'ADHD & autism support', 'Cultural identity', 'Grief & loss'],
-    bio: 'Wakilat is a Registered Psychotherapist with a Masters degree in Counselling Psychology, supporting children, youth, adults, and families. Growing up in Nigeria before moving to Canada, she brings a deep understanding of how culture, family, faith, and community shape mental health. As a Black Muslim therapist, she creates a warm, culturally responsive space where clients feel seen, respected, and supported.',
-    specialties: ['Anxiety & self-esteem', 'ADHD & autism support', 'Cultural identity', 'Relationship concerns', 'Grief & loss', 'Life transitions', 'Black, African & Muslim community mental health', 'Children, youth & families'],
+    image: '/assets/KemaniG.jpg',
+    quote: "Healing doesn't mean having all the answers. It means giving yourself permission to explore, grow and embrace the journey.",
+    tags: ['Depression', 'Anxiety', 'High performance burnout', 'Identity and life transitions', 'Relationships', 'Emotional processing', 'Workplace stress', 'Young men and boys'],
+    bio: "Kemani is a Registered Social Worker who brings experience supporting youth and adults through a compassionate, mindful, and trauma-informed approach. He strives to create a safe, inclusive and empowering space where individuals feel heard, supported, and encouraged to build emotional awareness, strengthen resilience and navigate life's challenges.",
+    specialties: ['Self-esteem & personal growth', 'Emotional regulation', 'Anti-oppressive practice', 'Youth & young adult support', 'Mindfulness', 'Trauma-informed care'],
     disclaimer: true,
     isTherapist: true,
   },
@@ -71,37 +58,32 @@ const teamMembers = [
 function TeamCard({ member, isOpen, onToggle }) {
   return (
     <div className="card-wrap">
-      <div
-        className={`team-card ${isOpen ? 'open' : ''}`}
-        onClick={onToggle}
-      >
+      <div className={`team-card ${isOpen ? 'open' : ''}`}>
         <div className="card-photo">
           {member.image && <img src={member.image} alt={member.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
         </div>
-        <div className="card-body">
-          <p className="card-name">{member.name}</p>
-          <p className="card-credential">{member.credential}</p>
-          <div className="card-quote">{member.quote}</div>
-          <div className="tags">
-            {member.tags.map((tag, idx) => (
-              <span key={idx} className="tag">{tag}</span>
-            ))}
-          </div>
-          <div className="card-toggle">
-            <span>{isOpen ? 'Close' : 'Read more'}</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <path d="M6 9l6 6 6-6" />
-            </svg>
-          </div>
+        <p className="card-name">{member.name}</p>
+        <p className="card-credential">{member.credential}</p>
+        <div className="tags">
+          {member.tags.map((tag, idx) => (
+            <span key={idx} className="tag">{tag}</span>
+          ))}
         </div>
-      </div>
-      {isOpen && (
-        <div className="expanded-panel open">
-          <div className="expanded-inner">
+
+        <button type="button" className="card-toggle" onClick={onToggle} aria-expanded={isOpen}>
+          <span>{isOpen ? 'Show less' : 'Read more'}</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+
+        {isOpen && (
+          <div className="expanded">
+            <p className="expanded-quote">"{member.quote}"</p>
             <p className="expanded-bio">{member.bio}</p>
             <div className="expanded-specialties">
-              <h4>Focus areas</h4>
-              <div className="tags">
+              <h4>Areas of expertise</h4>
+              <div className="tags tags-left">
                 {member.specialties.map((spec, idx) => (
                   <span key={idx} className="tag">{spec}</span>
                 ))}
@@ -116,8 +98,8 @@ function TeamCard({ member, isOpen, onToggle }) {
               </div>
             )}
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   )
 }
@@ -204,8 +186,9 @@ export default function TeamsPage() {
 
         .cards-grid {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 20px;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 24px;
+          align-items: start;
         }
 
         .card-wrap {
@@ -216,14 +199,13 @@ export default function TeamsPage() {
         .team-card {
           background: var(--white);
           border-radius: 20px;
-          overflow: hidden;
           border: 1px solid rgba(102, 57, 22, 0.1);
+          padding: 28px 24px 24px;
           display: flex;
-          flex-direction: row;
-          min-height: 210px;
-          cursor: pointer;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
           transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-          position: relative;
         }
 
         .team-card:hover {
@@ -233,76 +215,55 @@ export default function TeamsPage() {
 
         .team-card.open {
           border-color: rgba(102, 57, 22, 0.25);
-          border-radius: 20px 20px 0 0;
           transform: none;
-          box-shadow: none;
         }
 
         .card-photo {
-          width: 130px;
-          flex-shrink: 0;
+          width: 160px;
+          height: 160px;
+          border-radius: 16px;
           overflow: hidden;
-          position: relative;
           background: #e8d5be;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: rgba(232, 213, 190, 0.3);
-          font-size: 60px;
-        }
-
-        .card-body {
-          padding: 16px 18px;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          min-width: 0;
+          margin-bottom: 18px;
+          flex-shrink: 0;
         }
 
         .card-name {
           font-family: "Playfair Display", serif;
-          font-size: 17px;
+          font-size: 21px;
           font-weight: 700;
-          color: var(--brown-dark);
-          margin-bottom: 2px;
+          color: var(--brown);
+          margin-bottom: 4px;
         }
 
         .card-credential {
-          font-size: 9px;
+          font-size: 11px;
           font-weight: 600;
           letter-spacing: 1px;
           text-transform: uppercase;
           color: var(--brown);
-          margin-bottom: 10px;
-          opacity: 0.8;
-        }
-
-        .card-quote {
-          font-size: 12px;
-          font-weight: 300;
-          color: var(--text-mid);
-          line-height: 1.65;
-          border-left: 2px solid var(--teal);
-          background: var(--beige-light);
-          padding: 8px 10px;
-          border-radius: 0 6px 6px 0;
-          margin-bottom: 10px;
-          flex: 1;
+          margin-bottom: 16px;
+          opacity: 0.75;
         }
 
         .tags {
           display: flex;
           flex-wrap: wrap;
-          gap: 4px;
+          gap: 6px;
+          justify-content: center;
+        }
+
+        .tags-left {
+          justify-content: flex-start;
         }
 
         .tag {
           background: var(--beige-light);
           border: 1px solid rgba(102, 57, 22, 0.15);
           color: var(--text-mid);
-          font-size: 10px;
+          font-size: 11px;
           font-weight: 500;
-          padding: 2px 8px;
+          padding: 4px 10px;
           border-radius: 100px;
         }
 
@@ -310,13 +271,15 @@ export default function TeamsPage() {
           display: flex;
           align-items: center;
           gap: 6px;
-          margin-top: 10px;
-          font-size: 11px;
+          margin-top: 20px;
+          background: none;
+          border: none;
+          padding: 0;
+          font: inherit;
+          font-size: 12px;
           font-weight: 600;
           color: var(--teal);
           cursor: pointer;
-          width: fit-content;
-          transition: opacity 0.2s;
         }
 
         .card-toggle svg {
@@ -328,39 +291,33 @@ export default function TeamsPage() {
           transform: rotate(180deg);
         }
 
-        .expanded-panel {
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.45s ease;
-          background: var(--white);
-          border: 1px solid rgba(102, 57, 22, 0.25);
-          border-top: none;
-          border-radius: 0 0 20px 20px;
+        .expanded {
+          width: 100%;
+          text-align: left;
+          margin-top: 18px;
+          padding-top: 18px;
+          border-top: 1px solid rgba(102, 57, 22, 0.12);
         }
 
-        .expanded-panel.open {
-          max-height: 800px;
-        }
-
-        .expanded-inner {
-          padding: 24px 26px 28px;
+        .expanded-quote {
+          font-family: "Playfair Display", serif;
+          font-style: italic;
+          font-size: 15px;
+          line-height: 1.6;
+          color: var(--brown-dark);
+          margin-bottom: 14px;
         }
 
         .expanded-bio {
-          font-size: 14px;
+          font-size: 13.5px;
           font-weight: 300;
           color: var(--text-mid);
-          line-height: 1.85;
-          margin-bottom: 20px;
-        }
-
-        .expanded-bio strong {
-          color: var(--brown);
-          font-weight: 600;
+          line-height: 1.8;
+          margin-bottom: 18px;
         }
 
         .expanded-specialties {
-          margin-bottom: 20px;
+          margin-bottom: 18px;
         }
 
         .expanded-specialties h4 {
@@ -491,6 +448,12 @@ export default function TeamsPage() {
           border-top: 1px solid rgba(102, 57, 22, 0.1);
           max-width: 1000px;
           margin: 0 auto;
+        }
+
+        @media (max-width: 900px) {
+          .cards-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
         }
 
         @media (max-width: 640px) {
