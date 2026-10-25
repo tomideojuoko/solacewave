@@ -3,7 +3,8 @@ import { useState } from 'react'
 const teamMembers = [
   {
     id: 1,
-    name: 'Annmarie C.',
+    name: 'Annmarie E.',
+    fullName: 'Annmarie Etuk',
     credential: 'RP • CCC • CRPO',
     country: '🇨🇦 Canada',
     image: '/assets/Annmarie-circle.jpg',
@@ -60,7 +61,7 @@ function TeamCard({ member, isOpen, onToggle }) {
     <div className="card-wrap">
       <div className={`team-card ${isOpen ? 'open' : ''}`}>
         <div className="card-photo">
-          {member.image && <img src={member.image} alt={member.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
+          {member.image && <img src={member.image} alt={member.fullName || member.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
         </div>
         <p className="card-name">{member.name}</p>
         <p className="card-credential">{member.credential}</p>
@@ -188,6 +189,11 @@ export default function TeamsPage() {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 24px;
+          align-items: stretch;
+        }
+
+        /* When a card is opened, let the others keep their own height */
+        .cards-grid:has(.team-card.open) {
           align-items: start;
         }
 
@@ -197,6 +203,7 @@ export default function TeamsPage() {
         }
 
         .team-card {
+          flex: 1;
           background: var(--white);
           border-radius: 20px;
           border: 1px solid rgba(102, 57, 22, 0.1);
@@ -253,6 +260,10 @@ export default function TeamsPage() {
           justify-content: center;
         }
 
+        .team-card > .tags {
+          margin-bottom: 20px;
+        }
+
         .tags-left {
           justify-content: flex-start;
         }
@@ -271,7 +282,7 @@ export default function TeamsPage() {
           display: flex;
           align-items: center;
           gap: 6px;
-          margin-top: 20px;
+          margin-top: auto;
           background: none;
           border: none;
           padding: 0;
