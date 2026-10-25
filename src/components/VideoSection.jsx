@@ -52,7 +52,7 @@ export default function VideoSection() {
         </div>
 
         {/* Stat */}
-        <div className="pt-4 border-t border-charcoal/10">
+        <div className="pt-2 pb-4 border-b border-charcoal/10">
           <p className="text-charcoal/70 text-xs md:text-sm leading-relaxed">
             <span className="font-serif text-xl md:text-2xl font-bold text-brown">99.9%</span> of our clients stay with their matched therapist… Our premium matching system is increasing success rates.
           </p>
