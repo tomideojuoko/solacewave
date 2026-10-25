@@ -9,17 +9,19 @@ const cards = [
   },
   {
     icon: '💬',
-    bg: 'bg-brown',
-    titleClass: 'text-sand',
-    textClass: 'text-sand/65',
+    bg: 'bg-sand',
+    titleClass: 'text-gold',
+    textClass: 'text-gold/75',
+    iconBg: 'bg-white/50',
     title: "You're tired of explaining yourself",
     text: "Sometimes it takes time to explain your culture, family, or background before you can get to what brought you in. You deserve a clinician or coach who already shares that context, so you can focus on healing from day one.",
   },
   {
     icon: '🌱',
-    bg: 'bg-brown',
-    titleClass: 'text-sand',
-    textClass: 'text-sand/65',
+    bg: 'bg-blush',
+    titleClass: 'text-gold',
+    textClass: 'text-gold/75',
+    iconBg: 'bg-white/50',
     title: "You're ready to heal on your terms",
     text: "Whether it's anxiety, depression, grief, identity, trauma, or relationship strain, you're ready to work through it with someone who feels familiar, and who makes it easier to open up.",
   },
@@ -36,7 +38,7 @@ export default function WhoWeServe() {
         <div className="grid md:grid-cols-3 gap-6" data-anim-group>
           {cards.map((card, i) => (
             <div key={i} className={`rounded-3xl p-8 space-y-4 card-hover ${card.bg}`}>
-              <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-2xl">{card.icon}</div>
+              <div className={`w-12 h-12 rounded-2xl ${card.iconBg || 'bg-white/10'} flex items-center justify-center text-2xl`}>{card.icon}</div>
               <h3 className={`font-serif text-xl font-semibold ${card.titleClass}`}>{card.title}</h3>
               <p className={`leading-relaxed text-sm ${card.textClass}`}>{card.text}</p>
             </div>

@@ -42,11 +42,11 @@ export default function FAQ() {
 
         <div className="space-y-3" data-anim-group>
           {faqs.map((faq, i) => (
-            <div key={i} className="bg-brown rounded-2xl overflow-hidden">
-              <button onClick={() => toggle(i)} className="w-full flex items-center justify-between px-7 py-5 text-left hover:bg-terra transition-colors duration-200">
-                <span className="font-serif text-lg font-medium text-sand">{faq.q}</span>
+            <div key={i} className="bg-sand rounded-2xl overflow-hidden">
+              <button onClick={() => toggle(i)} className="w-full flex items-center justify-between px-7 py-5 text-left hover:bg-blush transition-colors duration-200">
+                <span className="font-serif text-lg font-medium text-gold">{faq.q}</span>
                 <svg
-                  className="shrink-0 transition-transform duration-200 text-sand/60"
+                  className="shrink-0 transition-transform duration-200 text-gold/60"
                   style={{ transform: openIndex === i ? 'rotate(180deg)' : 'rotate(0deg)' }}
                   width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"
                 >
@@ -54,8 +54,8 @@ export default function FAQ() {
                 </svg>
               </button>
               {openIndex === i && (
-                <div className="px-7 pb-6 border-t border-white/10">
-                  <p className="text-sand/75 leading-relaxed pt-4">{faq.a}</p>
+                <div className="px-7 pb-6 border-t border-gold/10">
+                  <p className="text-gold/75 leading-relaxed pt-4">{faq.a}</p>
                 </div>
               )}
             </div>

@@ -75,32 +75,32 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="bg-brown rounded-3xl p-8 space-y-6">
+        <div className="bg-blush rounded-3xl p-8 space-y-6">
           <div>
-            <h3 className="font-serif text-2xl font-semibold text-sand">Stay in the loop</h3>
-            <p className="text-sand/65 text-sm mt-2 leading-relaxed">Thoughtful content on diaspora mental health, self-care, and community events. No spam ever.</p>
+            <h3 className="font-serif text-2xl font-semibold text-gold">Stay in the loop</h3>
+            <p className="text-gold/65 text-sm mt-2 leading-relaxed">Thoughtful content on diaspora mental health, self-care, and community events. No spam ever.</p>
           </div>
 
           {!submitted ? (
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="text-xs font-medium text-sand/60 uppercase tracking-wider mb-1.5 block">First Name</label>
-                  <input type="text" placeholder="Amara" className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-sm text-sand placeholder:text-sand/35 focus:outline-none focus:ring-2 focus:ring-sand/40 focus:border-transparent transition-all"/>
+                  <label className="text-xs font-medium text-gold/60 uppercase tracking-wider mb-1.5 block">First Name</label>
+                  <input type="text" placeholder="Amara" className="w-full bg-white/70 border border-gold/15 rounded-xl px-4 py-3 text-sm text-gold placeholder:text-gold/35 focus:outline-none focus:ring-2 focus:ring-terra/30 focus:border-transparent transition-all"/>
                 </div>
                 <div>
-                  <label className="text-xs font-medium text-sand/60 uppercase tracking-wider mb-1.5 block">Last Name</label>
-                  <input type="text" placeholder="Osei" className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-sm text-sand placeholder:text-sand/35 focus:outline-none focus:ring-2 focus:ring-sand/40 focus:border-transparent transition-all"/>
+                  <label className="text-xs font-medium text-gold/60 uppercase tracking-wider mb-1.5 block">Last Name</label>
+                  <input type="text" placeholder="Osei" className="w-full bg-white/70 border border-gold/15 rounded-xl px-4 py-3 text-sm text-gold placeholder:text-gold/35 focus:outline-none focus:ring-2 focus:ring-terra/30 focus:border-transparent transition-all"/>
                 </div>
               </div>
               <div>
-                <label className="text-xs font-medium text-sand/60 uppercase tracking-wider mb-1.5 block">Email</label>
-                <input type="email" placeholder="hello@email.com" className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-sm text-sand placeholder:text-sand/35 focus:outline-none focus:ring-2 focus:ring-sand/40 focus:border-transparent transition-all"/>
+                <label className="text-xs font-medium text-gold/60 uppercase tracking-wider mb-1.5 block">Email</label>
+                <input type="email" placeholder="hello@email.com" className="w-full bg-white/70 border border-gold/15 rounded-xl px-4 py-3 text-sm text-gold placeholder:text-gold/35 focus:outline-none focus:ring-2 focus:ring-terra/30 focus:border-transparent transition-all"/>
               </div>
-              <button type="submit" className="w-full bg-sand text-brown font-semibold py-3.5 rounded-xl hover:bg-white transition-all text-sm">
+              <button type="submit" className="w-full bg-brown text-sand font-semibold py-3.5 rounded-xl hover-bg-brown transition-all text-sm">
                 Subscribe to Newsletter →
               </button>
-              <p className="text-sand/50 text-xs text-center">No spam. Unsubscribe anytime.</p>
+              <p className="text-gold/50 text-xs text-center">No spam. Unsubscribe anytime.</p>
             </form>
           ) : (
             <div className="bg-sand/40 border border-sand rounded-xl p-5 text-center">

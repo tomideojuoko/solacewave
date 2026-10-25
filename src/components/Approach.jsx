@@ -16,15 +16,15 @@ export default function Approach() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-16 items-center" data-anim>
-          <div className="bg-brown rounded-3xl p-10 flex flex-col justify-between min-h-72 space-y-8">
-            <div className="w-12 h-12 rounded-2xl bg-white/15 flex items-center justify-center">
-              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth="1.5">
+          <div className="bg-blush rounded-3xl p-10 flex flex-col justify-between min-h-72 space-y-8">
+            <div className="w-12 h-12 rounded-2xl bg-white/50 flex items-center justify-center">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#4a2810" strokeWidth="1.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
               </svg>
             </div>
             <div>
-              <p className="font-serif text-2xl text-white leading-snug">"Your culture is not a barrier to healing it's the pathway."</p>
-              <p className="text-white/45 text-sm mt-4">— Solace Wave Therapy</p>
+              <p className="font-serif text-2xl text-gold leading-snug">"Your culture is not a barrier to healing it's the pathway."</p>
+              <p className="text-gold/45 text-sm mt-4">— Solace Wave Therapy</p>
             </div>
           </div>
 
@@ -55,9 +55,9 @@ export default function Approach() {
               <p className="text-muted leading-relaxed">Evenings & weekends available to fit your schedule</p>
             </div>
             <div className="grid grid-cols-2 gap-4 pt-2">
-              <div className="bg-brown rounded-2xl p-5">
-                <p className="font-serif text-xl font-semibold text-sand">Virtual</p>
-                <p className="text-sand/60 text-sm mt-1">Across Ontario</p>
+              <div className="bg-sand rounded-2xl p-5">
+                <p className="font-serif text-xl font-semibold text-gold">Virtual</p>
+                <p className="text-gold/60 text-sm mt-1">Across Ontario</p>
               </div>
             </div>
           </div>

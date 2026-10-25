@@ -4,7 +4,7 @@ export default function CTA() {
       <div className="max-w-4xl mx-auto px-6 text-center space-y-8" data-anim>
         <span className="text-xs font-semibold tracking-widest text-sand/60 uppercase">Take The First Step</span>
         <h2 className="font-serif text-4xl md:text-6xl text-sand leading-tight text-balance">
-          You deserve care that<br/>truly <em className="not-italic text-terra">understands you</em>
+          You deserve care that<br/>truly <em className="not-italic text-blush">understands you</em>
         </h2>
         <p className="text-sand/70 text-lg md:text-xl max-w-lg mx-auto leading-relaxed">
           Book your free 30 minute consultation today. No commitment, no pressure just a warm, honest conversation to start.

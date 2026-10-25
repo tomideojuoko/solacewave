@@ -12,16 +12,16 @@ export default function Services() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5" data-anim-group>
 
-          <div className="bg-brown rounded-3xl p-7 space-y-4 card-hover">
-            <div className="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center">
-              <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#EED7BF" strokeWidth="1.8">
+          <div className="bg-sand rounded-3xl p-7 space-y-4 card-hover">
+            <div className="w-11 h-11 rounded-xl bg-white/50 flex items-center justify-center">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#4a2810" strokeWidth="1.8">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
               </svg>
             </div>
-            <span className="inline-block text-xs font-semibold text-sand bg-white/15 px-2.5 py-1 rounded-full">Free</span>
-            <h3 className="font-serif text-lg font-semibold text-sand">30 Min Free Consult</h3>
-            <p className="text-sand/65 text-sm leading-relaxed">A no-pressure intro call. Share what's on your mind and see if we're the right fit zero commitment.</p>
-            <a href="#book" className="text-sand text-sm font-semibold hover:text-white inline-flex items-center gap-1 transition-colors">Book now →</a>
+            <span className="inline-block text-xs font-semibold text-gold bg-white/50 px-2.5 py-1 rounded-full">Free</span>
+            <h3 className="font-serif text-lg font-semibold text-gold">30 Min Free Consult</h3>
+            <p className="text-gold/65 text-sm leading-relaxed">A no-pressure intro call. Share what's on your mind and see if we're the right fit zero commitment.</p>
+            <a href="#book" className="text-gold text-sm font-semibold hover:text-terra inline-flex items-center gap-1 transition-colors">Book now →</a>
           </div>
 
           <div className="bg-brown rounded-3xl p-7 space-y-4 card-hover">
@@ -40,16 +40,16 @@ export default function Services() {
             <a href="#book" className="text-sand text-sm font-semibold hover:text-white inline-flex items-center gap-1 transition-colors">Learn more →</a>
           </div>
 
-          <div className="bg-brown rounded-3xl p-7 space-y-4 card-hover">
-            <div className="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center">
-              <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#EED7BF" strokeWidth="1.8">
+          <div className="bg-blush rounded-3xl p-7 space-y-4 card-hover">
+            <div className="w-11 h-11 rounded-xl bg-white/50 flex items-center justify-center">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#4a2810" strokeWidth="1.8">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
               </svg>
             </div>
-            <h3 className="font-serif text-lg font-semibold text-sand">Group Therapy</h3>
-            <p className="text-sand/80 text-sm font-medium">$200 CAD for 4 sessions</p>
-            <p className="text-sand/65 text-sm leading-relaxed">Facilitated group therapy with others from shared backgrounds. Healing in community you are not alone in this.</p>
-            <a href="#book" className="text-sand text-sm font-semibold hover:text-white inline-flex items-center gap-1 transition-colors">Learn more →</a>
+            <h3 className="font-serif text-lg font-semibold text-gold">Group Therapy</h3>
+            <p className="text-gold/80 text-sm font-medium">$200 CAD for 4 sessions</p>
+            <p className="text-gold/65 text-sm leading-relaxed">Facilitated group therapy with others from shared backgrounds. Healing in community you are not alone in this.</p>
+            <a href="#book" className="text-gold text-sm font-semibold hover:text-terra inline-flex items-center gap-1 transition-colors">Learn more →</a>
           </div>
 
           <div className="bg-terra rounded-3xl p-7 space-y-4 card-hover">

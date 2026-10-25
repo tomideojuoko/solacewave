@@ -12,6 +12,7 @@ export default {
         },
         cream:    '#F8F0E8',
         sand:     '#EED7BF',
+        blush:    '#F1D7CF',
         terra:    '#663916',
         gold:     '#4a2810',
         charcoal: '#2a1a0e',

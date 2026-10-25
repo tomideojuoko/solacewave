@@ -37,20 +37,20 @@ export default function Team() {
           </div>
 
           {/* Deborah Card */}
-          <div className="bg-brown rounded-3xl p-8 md:p-10 flex flex-col" data-anim>
+          <div className="bg-blush rounded-3xl p-8 md:p-10 flex flex-col" data-anim>
             <div className="w-full aspect-square rounded-2xl mb-6 overflow-hidden min-h-64 sm:min-h-80 md:min-h-96">
               <img src={`${import.meta.env.BASE_URL}assets/Deborah.PNG`} alt="Deborah Ochoche" className="w-full h-full object-cover" />
             </div>
             <div className="space-y-4 flex-1">
               <div>
-                <h3 className="font-serif text-2xl font-semibold text-sand">Deborah Ochoche</h3>
-                <p className="text-sand/60 text-sm font-medium mt-1">Client Coordinator and Consultant</p>
+                <h3 className="font-serif text-2xl font-semibold text-gold">Deborah Ochoche</h3>
+                <p className="text-gold/60 text-sm font-medium mt-1">Client Coordinator and Consultant</p>
               </div>
-              <p className="text-sand/75 leading-relaxed text-sm">
+              <p className="text-gold/75 leading-relaxed text-sm">
                 Deborah is the warm first voice you hear at Solace Wave Therapy. She listens deeply, holds space without judgment and makes sure every client feels truly heard even before they meet their assigned therapist or coach. She matches you with the perfect therapist or wellness coach for your specific needs.
               </p>
-              <div className="bg-white/10 rounded-2xl p-4 mt-4">
-                <p className="text-sand text-sm italic">
+              <div className="bg-white/50 rounded-2xl p-4 mt-4">
+                <p className="text-gold text-sm italic">
                   "Your first step matters and I make sure it feels that way."
                 </p>
               </div>
