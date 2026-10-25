@@ -13,7 +13,7 @@ const cards = [
     titleClass: 'text-sand',
     textClass: 'text-sand/65',
     title: "You're tired of explaining yourself",
-    text: "You've tried therapy before but spent half the session educating your therapist instead of healing. You need a clinician or coach who already understands you so the real work can begin.",
+    text: "Sometimes it takes time to explain your culture, family, or background before you can get to what brought you in. You deserve a clinician or coach who already shares that context, so you can focus on healing from day one.",
   },
   {
     icon: '🌱',
