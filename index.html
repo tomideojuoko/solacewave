@@ -12,11 +12,13 @@
   <script type="module" src="/src/main.jsx"></script>
   <script>
     (function() {
-      var redirect = sessionStorage.redirect;
-      delete sessionStorage.redirect;
-      if (redirect && redirect !== location.pathname) {
-        history.replaceState(null, null, redirect);
-      }
+      try {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.pathname) {
+          history.replaceState(null, null, redirect);
+        }
+      } catch (e) {}
     })();
   </script>
 </body>

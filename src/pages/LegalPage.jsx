@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { getItem, setItem } from '../utils/storage'
 
 /* ── Cookie Banner ── */
 function CookieBanner() {
@@ -9,30 +10,30 @@ function CookieBanner() {
   const [ads, setAds] = useState(false)
 
   useEffect(() => {
-    if (!localStorage.getItem('swt_cookie_consent')) setVisible(true)
+    if (!getItem('swt_cookie_consent')) setVisible(true)
   }, [])
 
   const hide = () => setVisible(false)
 
   const acceptAll = () => {
-    localStorage.setItem('swt_cookie_consent', JSON.stringify({ necessary: true, analytics: true, ads: true }))
+    setItem('swt_cookie_consent', JSON.stringify({ necessary: true, analytics: true, ads: true }))
     hide()
   }
 
   const declineAll = () => {
-    localStorage.setItem('swt_cookie_consent', JSON.stringify({ necessary: true, analytics: false, ads: false }))
+    setItem('swt_cookie_consent', JSON.stringify({ necessary: true, analytics: false, ads: false }))
     hide()
   }
 
   const openModal = () => {
-    const prefs = JSON.parse(localStorage.getItem('swt_cookie_consent') || '{}')
+    const prefs = JSON.parse(getItem('swt_cookie_consent') || '{}')
     setAnalytics(prefs.analytics || false)
     setAds(prefs.ads || false)
     setModalOpen(true)
   }
 
   const savePrefs = () => {
-    localStorage.setItem('swt_cookie_consent', JSON.stringify({ necessary: true, analytics, ads }))
+    setItem('swt_cookie_consent', JSON.stringify({ necessary: true, analytics, ads }))
     setModalOpen(false)
     hide()
   }
