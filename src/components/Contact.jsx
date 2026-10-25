@@ -1,24 +1,17 @@
-import { useState } from 'react'
-
 export default function Contact() {
-  const [submitted, setSubmitted] = useState(false)
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    setSubmitted(true)
-  }
-
   return (
     <section id="contact" className="py-16 bg-cream">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-16 items-start">
 
-        <div className="space-y-8">
+        <div>
           <div className="space-y-4">
             <span className="text-xs font-semibold tracking-widest text-terra uppercase">Get In Touch</span>
             <h2 className="font-serif text-4xl font-semibold text-balance text-brown">We'd love to hear from you</h2>
             <p className="text-muted leading-relaxed">Have questions before booking? Want to know if we're the right fit? Reach out.... we respond to every message.</p>
           </div>
+        </div>
 
+        <div>
           <div className="space-y-5">
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-xl bg-sand/40 flex items-center justify-center shrink-0">
@@ -28,11 +21,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-xs text-muted uppercase tracking-wider font-medium mb-1">Email</p>
-                <div className="space-y-1">
-                  <a href="mailto:Admin@solacewavetherapy.com" className="text-terra font-medium hover:underline block">Admin@solacewavetherapy.com</a>
-                  <p className="text-terra font-medium">Or</p>
-                  <a href="mailto:Solacewavetherapy@gmail.com" className="text-terra font-medium hover:underline block">Solacewavetherapy@gmail.com</a>
-                </div>
+                <a href="mailto:solacewavetherapy@gmail.com" className="text-terra font-medium hover:underline block">Solacewavetherapy@gmail.com</a>
               </div>
             </div>
 
@@ -44,7 +33,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-xs text-muted uppercase tracking-wider font-medium mb-1">Phone</p>
-                <a href="tel:+16479300819" className="text-terra font-medium hover:underline block">+1 (647) 930-0819</a>
+                <a href="tel:+12264584533" className="text-terra font-medium hover:underline block">+1 (226) 458-4533</a>
               </div>
             </div>
 
@@ -73,40 +62,6 @@ export default function Contact() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="bg-blush rounded-3xl p-8 space-y-6">
-          <div>
-            <h3 className="font-serif text-2xl font-semibold text-gold">Stay in the loop</h3>
-            <p className="text-gold/65 text-sm mt-2 leading-relaxed">Thoughtful content on diaspora mental health, self-care, and community events. No spam ever.</p>
-          </div>
-
-          {!submitted ? (
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="text-xs font-medium text-gold/60 uppercase tracking-wider mb-1.5 block">First Name</label>
-                  <input type="text" placeholder="Amara" className="w-full bg-white/70 border border-gold/15 rounded-xl px-4 py-3 text-sm text-gold placeholder:text-gold/35 focus:outline-none focus:ring-2 focus:ring-terra/30 focus:border-transparent transition-all"/>
-                </div>
-                <div>
-                  <label className="text-xs font-medium text-gold/60 uppercase tracking-wider mb-1.5 block">Last Name</label>
-                  <input type="text" placeholder="Osei" className="w-full bg-white/70 border border-gold/15 rounded-xl px-4 py-3 text-sm text-gold placeholder:text-gold/35 focus:outline-none focus:ring-2 focus:ring-terra/30 focus:border-transparent transition-all"/>
-                </div>
-              </div>
-              <div>
-                <label className="text-xs font-medium text-gold/60 uppercase tracking-wider mb-1.5 block">Email</label>
-                <input type="email" placeholder="hello@email.com" className="w-full bg-white/70 border border-gold/15 rounded-xl px-4 py-3 text-sm text-gold placeholder:text-gold/35 focus:outline-none focus:ring-2 focus:ring-terra/30 focus:border-transparent transition-all"/>
-              </div>
-              <button type="submit" className="w-full bg-brown text-sand font-semibold py-3.5 rounded-xl hover-bg-brown transition-all text-sm">
-                Subscribe to Newsletter →
-              </button>
-              <p className="text-gold/50 text-xs text-center">No spam. Unsubscribe anytime.</p>
-            </form>
-          ) : (
-            <div className="bg-sand/40 border border-sand rounded-xl p-5 text-center">
-              <p className="text-terra font-medium text-sm">You're in! 🌊 Welcome to the Solace Wave community.</p>
-            </div>
-          )}
         </div>
 
       </div>
