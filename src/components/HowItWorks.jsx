@@ -1,7 +1,7 @@
 const steps = [
   { num: '1', color: 'bg-brown shadow-gold/25', title: 'Book a Free Call', text: 'A 30 minute, no-pressure chat to share what you\'re going through and see if we\'re the right fit.', line: true },
-  { num: '2', color: 'bg-terra shadow-terra/25',         title: 'Initial Assessment', text: 'A deeper first session where we listen to your story, understand your goals, and map what healing looks like for you.', line: true },
-  { num: '3', color: 'bg-brown shadow-gold/25',           title: 'Begin Your Therapy', text: 'We build a personalised care plan and get to work virtually, at a pace that actually works for you.', line: false },
+  { num: '2', color: 'bg-terra shadow-terra/25',         title: 'Get Matched', text: 'We personally match you with the therapist or wellness coach who fits your story, your needs and your vibe. Want to meet them first? We\'ll set up a quick intro call.', line: true },
+  { num: '3', color: 'bg-brown shadow-gold/25',           title: 'Begin Your Healing Journey', text: 'Start your sessions virtually with someone who already gets where you\'re coming from, at a pace that works for you.', line: false },
 ]
 
 export default function HowItWorks() {
