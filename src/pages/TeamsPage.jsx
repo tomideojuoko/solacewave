@@ -489,6 +489,31 @@ export default function TeamsPage() {
           color: var(--beige);
         }
 
+        .returning-band {
+          margin-top: 40px;
+          background: var(--beige);
+          border-radius: 20px;
+          padding: 36px 28px;
+          text-align: center;
+        }
+
+        .returning-band h3 {
+          font-family: "Playfair Display", serif;
+          font-size: 24px;
+          font-weight: 700;
+          color: var(--brown-dark);
+          margin-bottom: 8px;
+        }
+
+        .returning-band p {
+          font-size: 15px;
+          font-weight: 300;
+          color: var(--text-mid);
+          line-height: 1.7;
+          max-width: 520px;
+          margin: 0 auto 22px;
+        }
+
         .section-divider {
           border: none;
           border-top: 1px solid rgba(102, 57, 22, 0.1);
@@ -543,6 +568,20 @@ export default function TeamsPage() {
                 onToggle={() => setOpenCard(openCard === member.id ? null : member.id)}
               />
             ))}
+          </div>
+
+          {/* Returning clients: book directly with their matched therapist */}
+          <div className="returning-band">
+            <h3>Already had your consultation?</h3>
+            <p>Ready to book more sessions with your matched therapist? Go ahead and book with them directly here.</p>
+            <a
+              href="https://book.carepatron.com/Solace-Wave-Therapy/All?p=gAXiqIIET-W80KBN21uGPw&e=b"
+              className="btn-brown"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book a session
+            </a>
           </div>
         </div>
 
