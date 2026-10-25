@@ -27,11 +27,11 @@ export default function VideoSection() {
         {/* Main Content */}
         <div className="space-y-3">
           <p className="text-charcoal/75 leading-relaxed text-sm md:text-base">
-            Our team personally speaks with every client before recommending a therapist or wellness coach because your healing deserves more than a survey. We look at your story, your needs, your personality and yes, your vibe!
+            Our team personally speaks with every client before recommending a therapist because your healing deserves more than a survey. We look at your story, your needs, your personality and yes, your vibe!
           </p>
 
           <p className="text-charcoal/75 leading-relaxed text-sm md:text-base">
-            And if you want to meet your match before committing fully, we'll set up a quick intro call with your therapist or wellness coach before your first session.
+            And if you want to meet your match before committing fully, we'll set up a quick intro call with your therapist before your first session.
           </p>
 
           <p className="text-charcoal font-medium text-sm md:text-base">
