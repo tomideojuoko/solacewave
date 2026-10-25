@@ -6,7 +6,17 @@ export default function Navbar({ solid = false }) {
 
   useEffect(() => {
     const navbar = document.getElementById('navbar')
+    let lastY = window.scrollY
     const handleScroll = () => {
+      // Slide the bar away when scrolling down, bring it back when scrolling up,
+      // and close the mobile menu once the page moves.
+      const y = window.scrollY
+      if (Math.abs(y - lastY) > 6) {
+        navbar?.classList.toggle('nav-hidden', y > lastY && y > 120)
+        setIsMenuOpen(false)
+        lastY = y
+      }
+
       const past = solid || window.scrollY > 80
       navbar?.classList.toggle('nav-scrolled', past)
       navbar?.querySelectorAll('.nav-link').forEach(el => {

@@ -35,8 +35,10 @@ body {
 /* ── Nav: transparent → cream on scroll ── */
 #navbar {
   background: transparent;
-  transition: background 0.4s ease, box-shadow 0.4s ease;
+  transition: background 0.4s ease, box-shadow 0.4s ease, translate 0.35s ease;
 }
+/* Uses `translate` (not `transform`) so it doesn't clash with the intro animation */
+.nav-hidden { translate: 0 -100%; }
 .nav-scrolled {
   background: rgba(248,240,232,0.97) !important;
   box-shadow: 0 1px 24px rgba(74,40,16,0.10);
