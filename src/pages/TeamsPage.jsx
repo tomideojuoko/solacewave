@@ -6,7 +6,7 @@ const teamMembers = [
     name: 'Annmarie C.',
     credential: 'RP • CCC • CRPO',
     country: '🇨🇦 Canada',
-    image: '/assets/Annmarie.jpeg',
+    image: '/assets/Annmarie-circle.jpg',
     quote: 'Your lived experience matters here. Together, we create space for reflection, healing, and growth.',
     tags: ['Trauma', 'Anxiety', 'The girl child experience', 'Grief and loss', 'Burnout', 'Family pressures', 'Relationship issues', 'Self-esteem & confidence'],
     bio: 'Annmarie is a Registered Psychotherapist with deep experience supporting people through trauma, grief, and the specific stress that comes with navigating race and identity. With warmth and cultural understanding, she creates a space where your whole story is honored.',
@@ -32,7 +32,7 @@ const teamMembers = [
     name: 'Raquel A.',
     credential: 'RP (Qualifying) • CRPO',
     country: '🇨🇦 Canada',
-    image: '/assets/RaquelA.png',
+    image: '/assets/RaquelA-circle.jpg',
     quote: "You don't have to have everything figured out before we begin.",
     tags: ['Anxiety', 'ADHD support', 'Grief and loss', 'Trauma', 'Relationship challenges', 'Culture and belonging', 'Adults and families'],
     bio: 'Raquel is a Registered Psychotherapist (Qualifying) with a background in education and counselling psychology. She takes a trauma-informed, culturally responsive approach, helping clients navigate identity, family dynamics, and life transitions with warmth and understanding. Her practice centres on meeting each client where they are, honouring the culture, community, and lived experience that shape how they see themselves and the world.',
@@ -221,7 +221,7 @@ export default function TeamsPage() {
         .card-photo {
           width: 160px;
           height: 160px;
-          border-radius: 16px;
+          border-radius: 50%;
           overflow: hidden;
           background: #e8d5be;
           margin-bottom: 18px;
