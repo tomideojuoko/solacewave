@@ -54,45 +54,6 @@ const teamMembers = [
     isTherapist: true,
   },
   {
-    id: 5,
-    name: 'Ashleigh O.',
-    credential: 'Wellness Coach',
-    country: '🇳🇬 Nigeria',
-    image: '/assets/AshleighO.jpeg',
-    quote: "Break the cycle. Rebuild your strength. I'll walk with you every step of the way.",
-    tags: ['Relationships', 'Life transitions', 'Personal growth'],
-    bio: 'Ashleigh is a Wellness Coach with over 10 years of experience helping people reconnect with their strength and move forward with purpose. Warm, direct, and deeply invested in every person she works with, she creates a safe space where honest conversations lead to real change.',
-    specialties: ['Relationships', 'Life transitions', 'Personal growth', 'Self-discovery'],
-    disclaimer: false,
-    isTherapist: false,
-  },
-  {
-    id: 6,
-    name: 'Beniyam D.',
-    credential: 'Wellness Coach',
-    country: '🇪🇷 Eritrea',
-    image: '/assets/BeniyamD.jpeg',
-    quote: "Your story matters, and healing happens when you're truly seen and heard.",
-    tags: ['Identity & culture', 'Anxiety', 'Relationships', 'Grief'],
-    bio: 'Beniyam is a Wellness Coach who brings deep cultural understanding and practical insight to support clients through identity exploration, cultural transitions, and relational growth.',
-    specialties: ['Identity & cultural exploration', 'Relationships & family dynamics', 'Personal growth', 'Self-esteem & belonging', 'Life transitions'],
-    disclaimer: false,
-    isTherapist: false,
-  },
-  {
-    id: 7,
-    name: 'Nhyira A.',
-    credential: 'Wellness Coach',
-    country: '🇬🇭 Ghana',
-    image: '/assets/NhyiraA.jpeg',
-    quote: "Growth happens when you feel safe to be yourself. That's the space I create.",
-    tags: ["Women's empowerment", 'Personal growth', 'Anxiety', 'Life transitions'],
-    bio: 'Nhyira is a Wellness Coach with a passion for supporting women through self-discovery, confidence-building, and meaningful life transitions. With cultural awareness and genuine care, she helps clients reconnect with their inner strength.',
-    specialties: ["Women's empowerment", 'Self-esteem & personal growth', 'Life transitions & identity', 'Relationship & boundary-setting', 'Personal growth'],
-    disclaimer: false,
-    isTherapist: false,
-  },
-  {
     id: 8,
     name: 'Jane O.',
     credential: 'Wellness Coach',
@@ -102,19 +63,6 @@ const teamMembers = [
     tags: ["Relationships", "Women's empowerment", 'Personal growth', 'Self-discovery'],
     bio: 'Jane is a Wellness Coach with 8 years of experience supporting individuals and couples through some of life\'s most meaningful transitions. She has a particular heart for women navigating confidence, self-worth, and personal growth, creating a space where clients feel deeply understood and genuinely supported.',
     specialties: ['Relationships', 'Women\'s empowerment', 'Personal growth', 'Self-discovery'],
-    disclaimer: false,
-    isTherapist: false,
-  },
-  {
-    id: 9,
-    name: 'Shuaib M.',
-    credential: 'Wellness Coach',
-    country: '🇳🇬 Nigeria',
-    image: '/assets/ShuaibM.jpeg',
-    quote: 'I help you build stronger relationships, navigate transitions, and grow into your best self.',
-    tags: ['Relationships', 'Life transitions', 'Personal growth'],
-    bio: 'Shuaib is a Wellness Coach with over 10 years of experience working with individuals and families through life\'s most meaningful transitions. With deep cultural sensitivity and a grounded, practical approach, he helps clients strengthen their relationships, navigate change, and grow into the best version of themselves.',
-    specialties: ['Relationships', 'Life transitions', 'Personal growth'],
     disclaimer: false,
     isTherapist: false,
   },
@@ -594,7 +542,7 @@ export default function TeamsPage() {
         {/* Coaches section */}
         <div className="team-section">
           <p className="section-eyebrow">Wellness professionals</p>
-          <h2 className="section-title">Our wellness coaches</h2>
+          <h2 className="section-title">Wellness coaching</h2>
           <p className="section-sub">Supporting your personal growth and life transitions with cultural wisdom and genuine care.</p>
 
           <div className="cards-grid">
@@ -620,7 +568,7 @@ export default function TeamsPage() {
           <p>Let us figure it out together.<br />You do not have to choose alone. Book a free consultation and we will take the time to understand your needs, then match you with the right person, together.</p>
           <div className="cta-buttons">
             <a href="https://calendly.com/solacewavetherapy/consultation" className="btn-brown" target="_blank" rel="noopener">Book Your Free Consultation</a>
-            <a href="#team" className="btn-outline">Explore our Psychotherapist and Wellness Coaches Team</a>
+            <a href="#team" className="btn-outline">Explore our Team</a>
           </div>
         </div>
       </div>
