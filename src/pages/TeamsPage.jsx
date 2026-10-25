@@ -42,6 +42,18 @@ const teamMembers = [
     isTherapist: true,
   },
   {
+    id: 10,
+    name: 'Monique M.',
+    credential: 'MSW • RSW',
+    country: '🇨🇦 Canada',
+    image: '/assets/MoniqueM.jpg',
+    comingSoon: true,
+    tags: [],
+    specialties: [],
+    disclaimer: false,
+    isTherapist: true,
+  },
+  {
     id: 8,
     name: 'Jane O.',
     credential: 'Wellness Coach',
@@ -65,6 +77,10 @@ function TeamCard({ member, isOpen, onToggle }) {
         </div>
         <p className="card-name">{member.name}</p>
         <p className="card-credential">{member.credential}</p>
+        {member.comingSoon ? (
+          <span className="joining-soon">Joining soon</span>
+        ) : (
+        <>
         <div className="tags">
           {member.tags.map((tag, idx) => (
             <span key={idx} className="tag">{tag}</span>
@@ -99,6 +115,8 @@ function TeamCard({ member, isOpen, onToggle }) {
               </div>
             )}
           </div>
+        )}
+        </>
         )}
       </div>
     </div>
@@ -186,10 +204,27 @@ export default function TeamsPage() {
         }
 
         .cards-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
           gap: 24px;
           align-items: stretch;
+        }
+
+        .cards-grid > * {
+          width: calc((100% - 48px) / 3);
+        }
+
+        .joining-soon {
+          margin-top: auto;
+          background: var(--teal);
+          color: #fff;
+          font-size: 11px;
+          font-weight: 600;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+          padding: 6px 16px;
+          border-radius: 100px;
         }
 
         /* When a card is opened, let the others keep their own height */
@@ -462,14 +497,14 @@ export default function TeamsPage() {
         }
 
         @media (max-width: 900px) {
-          .cards-grid {
-            grid-template-columns: repeat(2, 1fr);
+          .cards-grid > * {
+            width: calc((100% - 24px) / 2);
           }
         }
 
         @media (max-width: 640px) {
-          .cards-grid {
-            grid-template-columns: 1fr;
+          .cards-grid > * {
+            width: 100%;
           }
           .team-section {
             padding: 48px 18px;
