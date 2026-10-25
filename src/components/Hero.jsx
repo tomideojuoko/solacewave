@@ -29,10 +29,6 @@ export default function Hero() {
             <p className="text-white/55 text-xs mt-0.5">Clients supported</p>
           </div>
           <div>
-            <p className="text-white font-serif text-xl font-semibold">5+ yrs</p>
-            <p className="text-white/55 text-xs mt-0.5">Clinical experience</p>
-          </div>
-          <div>
             <p className="text-white font-serif text-xl font-semibold">100%</p>
             <p className="text-white/55 text-xs mt-0.5">Culturally affirming</p>
           </div>
