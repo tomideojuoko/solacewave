@@ -148,12 +148,20 @@ export default function App() {
     if (pathname !== '/') document.body.style.opacity = '1'
   }, [pathname])
 
+  const isHome = pathname === '/'
+
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/services" element={<ServicesPage />} />
-      <Route path="/team" element={<TeamsPage />} />
-      <Route path="/legal" element={<LegalPage />} />
-    </Routes>
+    <>
+      {/* The homepage has its own menu; every other page gets a solid one */}
+      {!isHome && <Navbar solid />}
+      <div className={isHome ? '' : 'pt-[70px] md:pt-[108px]'}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/team" element={<TeamsPage />} />
+          <Route path="/legal" element={<LegalPage />} />
+        </Routes>
+      </div>
+    </>
   )
 }

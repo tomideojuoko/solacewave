@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Navbar() {
+export default function Navbar({ solid = false }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
     const navbar = document.getElementById('navbar')
     const handleScroll = () => {
-      const past = window.scrollY > 80
+      const past = solid || window.scrollY > 80
       navbar?.classList.toggle('nav-scrolled', past)
       navbar?.querySelectorAll('.nav-link').forEach(el => {
         el.style.color = past ? 'rgba(26,26,26,0.70)' : ''
@@ -21,9 +21,10 @@ export default function Navbar() {
       if (logo) logo.style.color = past ? '#4a2810' : ''
       if (sub) sub.style.color = past ? '#663916' : ''
     }
+    handleScroll()
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [solid])
 
   const closeMenu = () => setIsMenuOpen(false)
 
@@ -88,8 +89,8 @@ export default function Navbar() {
 
       {/* Mobile nav */}
       <div className="md:hidden flex items-center justify-between px-6 py-4">
-        <Link to="/" className="font-serif text-xl font-semibold text-white">Solace Wave Therapy</Link>
-        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 text-white" aria-label="Open menu">
+        <Link to="/" className="nav-logo font-serif text-xl font-semibold text-white">Solace Wave Therapy</Link>
+        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="nav-burger p-2 text-white" aria-label="Open menu">
           <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>

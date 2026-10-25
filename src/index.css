@@ -46,6 +46,7 @@ body {
 .nav-scrolled .nav-logo   { color: #4a2810 !important; }
 .nav-scrolled .nav-sub    { color: #663916 !important; }
 .nav-scrolled .nav-social { border-color: rgba(42,26,14,0.25) !important; color: rgba(42,26,14,0.55) !important; }
+.nav-scrolled .nav-burger { color: #4a2810 !important; }
 
 /* ── Hero background ── */
 .hero-bg {
