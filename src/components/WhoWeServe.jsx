@@ -21,7 +21,7 @@ const cards = [
     titleClass: 'text-sand',
     textClass: 'text-sand/65',
     title: "You're ready to heal on your terms",
-    text: "Whether it's anxiety, depression, grief, identity, trauma, or relationship strain you're ready to work through it with someone you can actually trust.",
+    text: "Whether it's anxiety, depression, grief, identity, trauma, or relationship strain, you're ready to work through it with someone who feels familiar, and who makes it easier to open up.",
   },
 ]
 
