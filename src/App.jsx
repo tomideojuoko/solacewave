@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import MarqueeBanner from './components/MarqueeBanner'
@@ -106,6 +106,41 @@ function HomePage() {
 
 export default function App() {
   const { pathname } = useLocation()
+  const navigate = useNavigate()
+
+  // Handle in-site links in one place: "#section" links scroll smoothly
+  // (going back to the homepage first if needed), and "/page" links switch
+  // pages without a full reload.
+  useEffect(() => {
+    function onClick(e) {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
+      const a = e.target.closest('a[href]')
+      if (!a || a.target === '_blank') return
+      const href = a.getAttribute('href')
+
+      if (href === '#') { e.preventDefault(); return }
+
+      if (/^#[A-Za-z][\w-]*$/.test(href)) {
+        e.preventDefault()
+        const id = href.slice(1)
+        const el = document.getElementById(id)
+        if (el) el.scrollIntoView({ behavior: 'smooth' })
+        else {
+          navigate('/')
+          setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }), 400)
+        }
+        return
+      }
+
+      if (/^\/[\w-]*$/.test(href)) {
+        e.preventDefault()
+        navigate(href)
+        window.scrollTo(0, 0)
+      }
+    }
+    document.addEventListener('click', onClick)
+    return () => document.removeEventListener('click', onClick)
+  }, [navigate])
 
   // The page starts hidden (index.css) so the homepage can fade in.
   // Other pages have no intro, so show them straight away.
