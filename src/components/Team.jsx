@@ -47,7 +47,7 @@ export default function Team() {
                 <p className="text-gold/60 text-sm font-medium mt-1">Client Coordinator and Consultant</p>
               </div>
               <p className="text-gold/75 leading-relaxed text-sm">
-                Deborah is the warm first voice you hear at Solace Wave Therapy. She listens deeply, holds space without judgment and makes sure every client feels truly heard even before they meet their assigned therapist or coach. She matches you with the perfect therapist or wellness coach for your specific needs.
+                Deborah is the warm first voice you hear at Solace Wave Therapy. She listens deeply, holds space without judgment and makes sure every client feels truly heard even before they meet their assigned therapist. She matches you with the perfect therapist for your specific needs.
               </p>
               <div className="bg-white/50 rounded-2xl p-4 mt-4">
                 <p className="text-gold text-sm italic">
