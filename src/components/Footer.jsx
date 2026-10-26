@@ -56,8 +56,8 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-5">
           <div className="flex items-center gap-4">
-            <p className="text-white/35 text-xs">© 2025 Solace Wave Therapy. All rights reserved.</p>
-            <a href="/legal" className="text-white/35 text-xs hover:text-white/70 transition-colors">Terms &amp; Privacy</a>
+            <p className="text-white/35 text-xs"><span className="whitespace-nowrap">© 2025 Solace Wave Therapy.</span> All rights reserved.</p>
+            <a href="/legal" className="text-white/35 text-xs hover:text-white/70 transition-colors whitespace-nowrap">Terms &amp; Privacy</a>
           </div>
           <div className="flex flex-wrap items-center gap-3">
             <span className="text-white/50 text-xs px-3 py-1.5 rounded-full border border-white/10">Registered Psychotherapists &amp; Social Workers</span>

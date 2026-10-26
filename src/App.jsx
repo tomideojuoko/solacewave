@@ -168,6 +168,8 @@ export default function App() {
           <Route path="/book" element={<BookPage />} />
         </Routes>
       </div>
+      {/* The homepage includes its own footer */}
+      {!isHome && <Footer />}
     </>
   )
 }
