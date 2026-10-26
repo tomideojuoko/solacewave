@@ -13,13 +13,15 @@ export default function Hero() {
           <p className="text-white/75 text-base md:text-lg max-w-md leading-relaxed">
             Culturally attuned therapy and coaching for Black, African and Caribbean communities across Canada.
           </p>
-          <div className="flex items-center gap-3 shrink-0">
-            <a href="https://calendly.com/solacewavetherapy/consultation" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-brown text-sand font-bold px-7 py-3.5 rounded-full hover:bg-terra transition-all text-sm shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-200">
+          <div className="flex flex-col gap-3 shrink-0 w-full sm:w-64">
+            <a href="https://calendly.com/solacewavetherapy/consultation" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-brown text-sand font-bold px-7 py-3.5 rounded-full hover:bg-terra transition-all text-sm shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-200">
               Book a free consultation
             </a>
-            <a href="#about" className="inline-flex items-center gap-2 bg-white/15 text-white font-medium px-7 py-3.5 rounded-full hover:bg-white/25 transition-all text-sm border border-white/30 backdrop-blur-sm">
-              Learn More
+            {/* For returning clients who've already been matched */}
+            <a href="https://book.carepatron.com/Solace-Wave-Therapy/All?p=gAXiqIIET-W80KBN21uGPw&e=b" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-terra text-sand font-bold px-7 py-3.5 rounded-full hover:bg-brown transition-all text-sm shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-200">
+              Book your next session
             </a>
+            <p className="text-white text-xs text-center leading-snug [text-shadow:0_1px_6px_rgba(0,0,0,0.55)]">Already had your consultation? Book your next session with your matched therapist.</p>
           </div>
         </div>
 
