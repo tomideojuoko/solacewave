@@ -14,9 +14,10 @@ export default function VideoSection() {
       {/* Video Section */}
       <div className="w-full bg-black flex items-center justify-center">
         <video
-          src={`${import.meta.env.BASE_URL}assets/therapy video.mov`}
+          src={`${import.meta.env.BASE_URL}assets/therapy-video-web.mp4`}
           poster={`${import.meta.env.BASE_URL}assets/therapy-video-poster.jpg`}
           controls
+          preload="metadata"
           playsInline
           className="w-full h-screen md:h-auto md:max-h-96 object-contain"
         />

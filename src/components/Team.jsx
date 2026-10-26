@@ -39,7 +39,7 @@ export default function Team() {
           {/* Deborah Card */}
           <div className="bg-blush rounded-3xl p-6 sm:p-8 md:p-10 flex flex-col" data-anim>
             <div className="w-full aspect-square rounded-2xl mb-6 overflow-hidden sm:min-h-80 md:min-h-96">
-              <img src={`${import.meta.env.BASE_URL}assets/Deborah.PNG`} alt="Deborah Ochoche" className="w-full h-full object-cover" />
+              <img src={`${import.meta.env.BASE_URL}assets/Deborah.jpg`} alt="Deborah Ochoche" className="w-full h-full object-cover" />
             </div>
             <div className="space-y-4 flex-1">
               <div>

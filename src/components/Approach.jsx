@@ -53,7 +53,7 @@ export default function Approach() {
           </div>
 
           <div className="rounded-3xl overflow-hidden">
-            <img src={`${import.meta.env.BASE_URL}assets/We'reherecanada.PNG`} alt="We're here Canada" className="w-full h-full object-cover" />
+            <img src={`${import.meta.env.BASE_URL}assets/werehere-canada.jpg`} alt="We're here Canada" className="w-full h-full object-cover" />
           </div>
 
         </div>
