@@ -7,7 +7,7 @@ export default function Services() {
             <span className="text-xs font-semibold tracking-widest text-terra uppercase">Services</span>
             <h2 className="font-serif text-4xl md:text-5xl max-w-md text-balance text-brown">Support shaped around you</h2>
           </div>
-          <a href="#book" className="shrink-0 inline-flex items-center gap-2 text-terra font-semibold hover:gap-3 transition-all duration-150 text-sm">Book a session →</a>
+          <a href="#book" className="shrink-0 inline-flex items-center gap-2 text-terra font-semibold hover:gap-3 transition-all duration-150 text-sm">Book a free consultation →</a>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5" data-anim-group>
@@ -37,7 +37,7 @@ export default function Services() {
               </div>
             </div>
             <p className="text-sand/65 text-sm leading-relaxed">One-on-one sessions for anxiety, depression, identity, trauma, and life transitions in a space built entirely for you.</p>
-            <a href="#book" className="text-sand text-sm font-semibold hover:text-white inline-flex items-center gap-1 transition-colors">Learn more →</a>
+            <a href="/services?open=1" className="text-sand text-sm font-semibold hover:text-white inline-flex items-center gap-1 transition-colors">Learn more →</a>
           </div>
 
           <div className="bg-blush rounded-3xl p-7 space-y-4 card-hover">
@@ -49,7 +49,7 @@ export default function Services() {
             <h3 className="font-serif text-lg font-semibold text-gold">Group Therapy</h3>
             <p className="text-gold/80 text-sm font-medium">$200 CAD for 4 sessions</p>
             <p className="text-gold/65 text-sm leading-relaxed">Facilitated group therapy with others from shared backgrounds. Healing in community you are not alone in this.</p>
-            <a href="#book" className="text-gold text-sm font-semibold hover:text-terra inline-flex items-center gap-1 transition-colors">Learn more →</a>
+            <a href="/services?open=2" className="text-gold text-sm font-semibold hover:text-terra inline-flex items-center gap-1 transition-colors">Learn more →</a>
           </div>
 
           <div className="bg-terra rounded-3xl p-7 space-y-4 card-hover">
@@ -60,7 +60,7 @@ export default function Services() {
             </div>
             <h3 className="font-serif text-lg font-semibold text-white">Couples &amp; Relationship Therapy</h3>
             <p className="text-white/65 text-sm leading-relaxed">Navigate cultural differences, communication breakdowns, and relational stress with a therapist who understands your context.</p>
-            <a href="#book" className="text-sand text-sm font-semibold hover:text-white inline-flex items-center gap-1 transition-colors">Learn more →</a>
+            <a href="/services?open=4" className="text-sand text-sm font-semibold hover:text-white inline-flex items-center gap-1 transition-colors">Learn more →</a>
           </div>
 
         </div>

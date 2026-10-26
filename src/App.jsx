@@ -131,7 +131,7 @@ export default function App() {
         return
       }
 
-      if (/^\/[\w-]*$/.test(href)) {
+      if (/^\/[\w-]*(\?[\w=&-]*)?$/.test(href)) {
         e.preventDefault()
         navigate(href)
         window.scrollTo(0, 0)
