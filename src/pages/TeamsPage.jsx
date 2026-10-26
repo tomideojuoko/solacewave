@@ -573,7 +573,7 @@ export default function TeamsPage() {
           {/* Returning clients: book directly with their matched therapist */}
           <div className="returning-band">
             <h3>Ready for your next session?</h3>
-            <p>Already had your consultation? Book your next session directly with your matched therapist here.</p>
+            <p>Already had your consultation?<br />Book your next session directly with your matched therapist here.</p>
             <a
               href="https://book.carepatron.com/Solace-Wave-Therapy/All?p=gAXiqIIET-W80KBN21uGPw&e=b"
               className="btn-brown"

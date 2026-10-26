@@ -67,18 +67,18 @@ export default function CookieBanner() {
       <div style={{
         position: 'fixed', bottom: 0, left: 0, right: 0,
         background: '#4a2810', color: '#EED7BF',
-        padding: '14px 32px', display: 'flex', alignItems: 'center',
+        padding: '14px clamp(16px, 4vw, 32px)', display: 'flex', alignItems: 'center',
         justifyContent: 'space-between', gap: 20, zIndex: 9999,
         flexWrap: 'wrap', boxShadow: '0 -4px 24px rgba(0,0,0,0.2)',
       }}>
-        <p style={{ fontSize: 13, color: 'rgba(238,215,191,0.85)', fontWeight: 300, lineHeight: 1.5, margin: 0, flex: 1, minWidth: 240 }}>
+        <p style={{ fontSize: 13, color: 'rgba(238,215,191,0.85)', fontWeight: 300, lineHeight: 1.5, margin: 0, flex: '1 1 240px', minWidth: 0 }}>
           We use cookies to enhance your experience, analyse site performance, and support our Instagram ads.{' '}
           <button onClick={openModal} style={{ color: '#EED7BF', fontWeight: 500, textDecoration: 'underline', background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', padding: 0 }}>
             Manage preferences
           </button>
           {' '}or choose below.
         </p>
-        <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', alignItems: 'center', flexShrink: 0 }}>
+        <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', alignItems: 'center', justifyContent: 'flex-end', flex: '0 1 auto', minWidth: 0 }}>
           <button onClick={openModal} style={{ fontFamily: 'inherit', fontSize: 12, fontWeight: 600, padding: '8px 10px', borderRadius: 100, cursor: 'pointer', background: 'transparent', color: 'rgba(238,215,191,0.7)', border: 'none', textDecoration: 'underline' }}>
             Manage Cookies
           </button>
@@ -98,7 +98,7 @@ export default function CookieBanner() {
           backdropFilter: 'blur(5px)', zIndex: 10000,
           display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24,
         }}>
-          <div style={{ background: '#FCFCFC', borderRadius: 20, padding: '36px 40px 40px', maxWidth: 520, width: '100%', position: 'relative' }}>
+          <div style={{ background: '#FCFCFC', borderRadius: 20, padding: 'clamp(28px, 6vw, 36px) clamp(20px, 6vw, 40px) clamp(28px, 6vw, 40px)', maxWidth: 520, width: '100%', position: 'relative' }}>
             <button onClick={() => setModalOpen(false)} style={{
               position: 'absolute', top: 16, right: 18,
               background: 'rgba(74,40,16,0.08)', border: 'none', width: 32, height: 32,
