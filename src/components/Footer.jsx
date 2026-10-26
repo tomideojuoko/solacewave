@@ -60,7 +60,7 @@ export default function Footer() {
             <a href="/legal" className="text-white/35 text-xs hover:text-white/70 transition-colors">Terms &amp; Privacy</a>
           </div>
           <div className="flex flex-wrap items-center gap-3">
-            <span className="text-white/50 text-xs px-3 py-1.5 rounded-full border border-white/10">CRPO Registered</span>
+            <span className="text-white/50 text-xs px-3 py-1.5 rounded-full border border-white/10">Registered Psychotherapists &amp; Social Workers</span>
             <span className="text-white/50 text-xs px-3 py-1.5 rounded-full border border-white/10">Trauma-Informed</span>
             <span className="text-white/50 text-xs px-3 py-1.5 rounded-full border border-white/10">Psychology Today</span>
             <span className="text-white/50 text-xs px-3 py-1.5 rounded-full border border-white/10">Virtual · Toronto</span>

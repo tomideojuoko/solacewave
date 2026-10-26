@@ -79,7 +79,7 @@ const services = [
   },
   {
     id: 4,
-    name: 'Couples Counselling',
+    name: 'Couples Therapy',
     price: '$250 CAD per session',
     cardPrice: '$250 CAD',
     image: IMG3,

@@ -11,7 +11,6 @@ import HowItWorks from './components/HowItWorks'
 import Approach from './components/Approach'
 import Team from './components/Team'
 import VideoSection from './components/VideoSection'
-import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import CTA from './components/CTA'
 import Contact from './components/Contact'
@@ -94,7 +93,6 @@ function HomePage() {
         <VideoSection />
         <Approach />
         <Team />
-        <Testimonials />
         <FAQ />
         <CTA />
         <Contact />
