@@ -5,10 +5,10 @@ const CONSULT_LINK = 'https://calendly.com/solacewavetherapy/consultation'
 // Booking page for returning clients who've already had their free consultation.
 export default function BookPage() {
   return (
-    <div className="bg-cream min-h-screen font-sans text-charcoal">
+    <div className="bg-cream min-h-screen text-charcoal" style={{ fontFamily: "'Poppins', sans-serif" }}>
       <section className="bg-brown px-6 py-16 md:py-20 text-center">
         <span className="text-xs font-semibold tracking-widest text-sand/60 uppercase">Returning clients</span>
-        <h1 className="font-serif text-4xl md:text-6xl text-sand mt-4 text-balance">Book your next session</h1>
+        <h1 className="text-4xl md:text-6xl font-bold text-sand mt-4 text-balance" style={{ fontFamily: "'Playfair Display', serif" }}>Book your next session</h1>
         <p className="text-sand/70 text-base md:text-lg max-w-xl mx-auto mt-5 leading-relaxed">
           Already had your consultation? Choose your matched therapist and a time that works for you below.
         </p>

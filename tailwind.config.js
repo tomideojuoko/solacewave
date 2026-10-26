@@ -20,7 +20,7 @@ export default {
       },
       fontFamily: {
         serif: ['Fraunces', 'Georgia', 'serif'],
-        sans:  ['Inter', 'system-ui', 'sans-serif'],
+        sans:  ['Poppins', 'system-ui', 'sans-serif'],
       },
     },
   },
