@@ -612,7 +612,7 @@ export default function TeamsPage() {
           <p>Let us figure it out together.<br />You do not have to choose alone. Book a free consultation and we will take the time to understand your needs, then match you with the right person, together.</p>
           <div className="cta-buttons">
             <a href="https://calendly.com/solacewavetherapy/consultation" className="btn-brown" target="_blank" rel="noopener">Book Your Free Consultation</a>
-            <a href="#team" className="btn-outline">Explore our Team</a>
+            <a href="#team" className="btn-outline">Meet our consultation team</a>
           </div>
         </div>
       </div>
