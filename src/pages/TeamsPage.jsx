@@ -9,10 +9,8 @@ const teamMembers = [
     country: '🇨🇦 Canada',
     image: '/assets/Annmarie-circle.jpg',
     quote: 'Your lived experience matters here. Together, we create space for reflection, healing, and growth.',
-    tags: ['Trauma', 'Anxiety', 'The girl child experience', 'Grief and loss', 'Burnout', 'Family pressures', 'Relationship issues', 'Self-esteem & confidence', 'Couples therapy'],
+    tags: ['Trauma', 'Anxiety', 'The girl child experience', 'Grief and loss', 'Burnout', 'Family pressures', 'Relationship issues', 'Self-esteem & confidence', 'Couples therapy', 'Racialized stress', 'Life transitions'],
     bio: 'Annmarie is a Registered Psychotherapist with deep experience supporting people through trauma, grief, and the specific stress that comes with navigating race and identity. With warmth and cultural understanding, she creates a space where your whole story is honored.',
-    specialties: ['Trauma-informed therapy', 'Grief & loss', 'Racialized stress & BIPOC support', 'Anxiety & emotional burnout', 'Life transitions', 'Relationship challenges', 'Anti-oppressive practice'],
-    disclaimer: true,
     isTherapist: true,
   },
   {
@@ -22,10 +20,8 @@ const teamMembers = [
     country: '🇨🇦 Canada',
     image: '/assets/KemaniG.jpg',
     quote: "Healing doesn't mean having all the answers. It means giving yourself permission to explore, grow and embrace the journey.",
-    tags: ['Depression', 'Anxiety', 'High performance burnout', 'Identity and life transitions', 'Relationships', 'Emotional processing', 'Workplace stress', 'Young men and boys'],
+    tags: ['Depression', 'Anxiety', 'High performance burnout', 'Identity and life transitions', 'Relationships', 'Emotional processing', 'Workplace stress', 'Young men and boys', 'Self-esteem', 'Youth & young adults', 'Mindfulness'],
     bio: "Kemani is a Registered Social Worker who brings experience supporting youth and adults through a compassionate, mindful, and trauma-informed approach. He strives to create a safe, inclusive and empowering space where individuals feel heard, supported, and encouraged to build emotional awareness, strengthen resilience and navigate life's challenges.",
-    specialties: ['Self-esteem & personal growth', 'Emotional regulation', 'Anti-oppressive practice', 'Youth & young adult support', 'Mindfulness', 'Trauma-informed care'],
-    disclaimer: true,
     isTherapist: true,
   },
   {
@@ -35,10 +31,8 @@ const teamMembers = [
     country: '🇨🇦 Canada',
     image: '/assets/RaquelA-circle.jpg',
     quote: "You don't have to have everything figured out before we begin.",
-    tags: ['Anxiety', 'ADHD support', 'Grief and loss', 'Trauma', 'Relationship challenges', 'Culture and belonging', 'Adults and families', 'Mature women'],
+    tags: ['Anxiety', 'ADHD support', 'Grief and loss', 'Trauma', 'Relationship challenges', 'Culture and belonging', 'Adults and families', 'Mature women', 'Self-esteem', 'Identity', 'Life transitions', 'LGBTQIA+ affirming'],
     bio: 'Racquel is a Registered Psychotherapist (Qualifying) with a background in education and counselling psychology. She takes a trauma-informed, culturally responsive approach, helping clients navigate identity, family dynamics, and life transitions with warmth and understanding. Her practice centres on meeting each client where they are, honouring the culture, community, and lived experience that shape how they see themselves and the world.',
-    specialties: ['Anxiety & self-esteem', 'Relationships & family dynamics', 'Identity exploration', 'Life transitions', 'Grief & loss', 'Cultural & family expectations', 'LGBTQIA+ affirming support', 'Trauma-informed & client-centred therapy'],
-    disclaimer: true,
     isTherapist: true,
   },
   {
@@ -49,8 +43,6 @@ const teamMembers = [
     image: '/assets/MoniqueM.jpg',
     comingSoon: true,
     tags: [],
-    specialties: [],
-    disclaimer: false,
     isTherapist: true,
   },
   {
@@ -62,8 +54,6 @@ const teamMembers = [
     quote: "Real change comes when you feel genuinely supported. I'm here to help you get there.",
     tags: ["Relationships", "Women's empowerment", 'Personal growth', 'Self-discovery'],
     bio: 'Jane is a Wellness Coach with 8 years of experience supporting individuals and couples through some of life\'s most meaningful transitions. She has a particular heart for women navigating confidence, self-worth, and personal growth, creating a space where clients feel deeply understood and genuinely supported.',
-    specialties: ['Relationships', 'Women\'s empowerment', 'Personal growth', 'Self-discovery'],
-    disclaimer: false,
     isTherapist: false,
   },
 ]
@@ -98,22 +88,6 @@ function TeamCard({ member, isOpen, onToggle }) {
           <div className="expanded">
             <p className="expanded-quote">"{member.quote}"</p>
             <p className="expanded-bio">{member.bio}</p>
-            <div className="expanded-specialties">
-              <h4>How I can help</h4>
-              <div className="tags tags-left">
-                {member.specialties.map((spec, idx) => (
-                  <span key={idx} className="tag">{spec}</span>
-                ))}
-              </div>
-            </div>
-            {member.disclaimer && (
-              <div className="disclaimer">
-                <strong>Please note:</strong> {member.isTherapist ?
-                  "Psychotherapy is a confidential, professional service. Our therapists follow strict ethical guidelines and are bound by confidentiality." :
-                  "Wellness coaching is a supportive, growth-focused service and is not psychotherapy. If you are experiencing suicidal ideation, self-harm, severe anxiety, depression, or psychosis, we will connect you directly with one of our registered psychotherapists."
-                }
-              </div>
-            )}
           </div>
         )}
         </>
@@ -470,6 +444,15 @@ export default function TeamsPage() {
           transform: translateY(-2px);
         }
 
+        .cta-band .btn-brown {
+          background: var(--beige) !important;
+          color: var(--brown-dark) !important;
+        }
+
+        .cta-band .btn-brown:hover {
+          background: #ffffff !important;
+        }
+
         .btn-outline {
           background: transparent;
           color: rgba(238, 215, 191, 0.8);
@@ -512,6 +495,20 @@ export default function TeamsPage() {
           line-height: 1.7;
           max-width: 520px;
           margin: 0 auto 22px;
+        }
+
+        .coaching-note {
+          max-width: 560px;
+          margin: -24px auto 36px;
+          text-align: center;
+          font-size: 13px;
+          font-weight: 300;
+          line-height: 1.7;
+          color: var(--text-mid);
+          background: var(--white);
+          border: 1px solid rgba(102, 57, 22, 0.12);
+          border-radius: 14px;
+          padding: 12px 18px;
         }
 
         .section-divider {
@@ -557,7 +554,7 @@ export default function TeamsPage() {
         <div className="team-section">
           <p className="section-eyebrow">Licensed professionals</p>
           <h2 className="section-title">Our therapists</h2>
-          <p className="section-sub">CRPO-registered psychotherapists bringing clinical expertise and genuine cultural understanding to every session.</p>
+          <p className="section-sub">Registered psychotherapists and social workers who bring clinical skill and cultural understanding to every session.</p>
 
           <div className="cards-grid">
             {therapists.map(member => (
@@ -590,6 +587,7 @@ export default function TeamsPage() {
           <p className="section-eyebrow">Wellness professionals</p>
           <h2 className="section-title">Wellness coaching</h2>
           <p className="section-sub">Supporting your personal growth and life transitions with cultural wisdom and genuine care.</p>
+          <p className="coaching-note">Wellness coaching is a warm, supportive space to grow, set goals and feel more like yourself. It's non-clinical, so if you ever need therapy, we'll gently connect you with one of our therapists.</p>
 
           <div className="cards-grid">
             {coaches.map(member => (
