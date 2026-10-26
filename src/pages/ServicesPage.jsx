@@ -118,7 +118,7 @@ const services = [
       },
     ],
     note: 'All assessments and reports are completed by qualified clinicians. Fees depend on the scope and complexity of each case and are provided during your consultation. Please contact us to discuss your needs.',
-    cta: { label: 'Contact Us About Assessments', href: 'https://wa.me/2347085256034', variant: 'teal' },
+    cta: { label: 'Contact Us About Assessments', href: 'tel:+12264584533', variant: 'teal' },
   },
 ]
 
