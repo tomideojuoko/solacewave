@@ -24,7 +24,7 @@ export default function BookPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 md:py-14 space-y-8">
         <div className="bg-blush rounded-2xl px-6 py-5 flex flex-col sm:flex-row sm:items-center gap-4 sm:justify-between">
           <p className="text-gold text-sm leading-relaxed">
-            <span className="font-semibold">New to Solace Wave?</span> Start with a free 30 minute consultation so we can match you with the right therapist.
+            <span className="font-semibold">New to Solace Wave?</span> Start with a free 30 minute consultation so we can match you with the right therapist for your specific needs.
           </p>
           <a href={CONSULT_LINK} target="_blank" rel="noopener noreferrer" className="shrink-0 inline-flex justify-center bg-brown text-sand font-semibold px-5 py-2.5 rounded-full text-sm hover:bg-terra transition-colors">
             Book a free consultation
