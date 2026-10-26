@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 
 const IMG1 = '/assets/Africacoach/lookingatcomputer.JPG'
 const IMG2 = '/assets/Africacoach/girlfixinggirlhair.JPG'
@@ -184,6 +184,17 @@ function ExpandedPanel({ service, onClose }) {
 
 export default function ServicesPage() {
   const [activeId, setActiveId] = useState(null)
+  const [params] = useSearchParams()
+
+  // Links like /services?open=1 (from the footer) open that service straight away
+  useEffect(() => {
+    const id = Number(params.get('open'))
+    if (!id) return
+    setActiveId(id)
+    setTimeout(() => {
+      document.getElementById(`exp-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }, 150)
+  }, [params])
 
   useEffect(() => {
     document.body.style.transition = 'opacity 0.4s ease'
@@ -253,7 +264,7 @@ export default function ServicesPage() {
         {/* Expanded panels */}
         {services.map(service => (
           activeId === service.id && (
-            <div key={service.id} id={`exp-${service.id}`}>
+            <div key={service.id} id={`exp-${service.id}`} style={{ scrollMarginTop: 90 }}>
               <ExpandedPanel service={service} onClose={() => close(service.id)} />
             </div>
           )

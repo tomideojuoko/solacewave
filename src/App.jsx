@@ -143,6 +143,12 @@ export default function App() {
     return () => document.removeEventListener('click', onClick)
   }, [navigate])
 
+  // Every new page starts at the top. Section links ("#about") scroll
+  // to their section after this runs.
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
   // The page starts hidden (index.css) so the homepage can fade in.
   // Other pages have no intro, so show them straight away.
   useEffect(() => {

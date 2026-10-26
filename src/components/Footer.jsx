@@ -45,9 +45,9 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-xs font-semibold uppercase tracking-wider text-white/40">Services</h4>
             <ul className="space-y-3">
-              <li><Link to="/services" className="text-white/55 hover:text-white text-sm transition-colors">Individual Therapy</Link></li>
-              <li><Link to="/services" className="text-white/55 hover:text-white text-sm transition-colors">Couples Therapy</Link></li>
-              <li><Link to="/services" className="text-white/55 hover:text-white text-sm transition-colors">Group Sessions</Link></li>
+              <li><Link to="/services?open=1" className="text-white/55 hover:text-white text-sm transition-colors">Individual Therapy</Link></li>
+              <li><Link to="/services?open=4" className="text-white/55 hover:text-white text-sm transition-colors">Couples Therapy</Link></li>
+              <li><Link to="/services?open=2" className="text-white/55 hover:text-white text-sm transition-colors">Group Sessions</Link></li>
               <li><a href="https://calendly.com/solacewavetherapy/consultation" target="_blank" rel="noopener noreferrer"     className="text-white/55 hover:text-white text-sm transition-colors">Free Consultation</a></li>
             </ul>
           </div>
