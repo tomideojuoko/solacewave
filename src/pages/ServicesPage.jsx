@@ -132,7 +132,7 @@ function BackIcon() {
 
 function ExpandedPanel({ service, onClose }) {
   return (
-    <div className="bg-white rounded-3xl p-10 md:p-14 mb-10 border border-[rgba(102,57,22,0.08)]">
+    <div className="bg-white rounded-3xl p-6 sm:p-10 md:p-14 mb-10 border border-[rgba(102,57,22,0.08)]">
       <div className="flex items-start gap-8 mb-10 flex-wrap">
         <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-[#EED7BF] shrink-0">
           <img src={service.image} alt={service.name} className="w-full h-full object-cover"/>
@@ -260,7 +260,7 @@ export default function ServicesPage() {
         ))}
 
         {/* Service cards grid */}
-        <div id="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 32, marginBottom: 80 }}>
+        <div id="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: 32, marginBottom: 80 }}>
           {services.map(service => (
             <div
               key={service.id}

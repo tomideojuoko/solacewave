@@ -7,18 +7,18 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
 
           <div className="relative" data-anim>
-            <div className="bg-sand/40 rounded-3xl p-8 border border-sand space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-brown rounded-2xl p-6 text-white">
+            <div className="bg-sand/40 rounded-3xl p-4 sm:p-8 border border-sand space-y-4">
+              <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                <div className="bg-brown rounded-2xl p-4 sm:p-6 text-white">
                   <p className="font-serif text-3xl font-semibold">1 in 5</p>
                   <p className="text-white/65 text-sm mt-2 leading-snug">Black Canadians experience a mental health challenge each year</p>
                 </div>
-                <div className="bg-terra rounded-2xl p-6 text-white">
+                <div className="bg-terra rounded-2xl p-4 sm:p-6 text-white">
                   <p className="font-serif text-3xl font-semibold">3×</p>
                   <p className="text-white/65 text-sm mt-2 leading-snug">Less likely to access care due to systemic and cultural barriers</p>
                 </div>
               </div>
-              <div className="bg-brown rounded-2xl p-6">
+              <div className="bg-brown rounded-2xl p-4 sm:p-6">
                 <p className="font-serif text-lg font-medium text-sand mb-2">
                   "Therapy isn't for people like us…" That ends here.
                 </p>

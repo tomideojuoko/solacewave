@@ -94,6 +94,10 @@ body {
 /* ── Page load + scroll animations ── */
 body { opacity: 0; }
 
+/* Let long words and email addresses wrap instead of pushing the page wider on small phones */
+html { overflow-wrap: break-word; }
+a[href^="mailto:"] { overflow-wrap: anywhere; }
+
 @keyframes navSlideDown {
   from { opacity: 0; transform: translateY(-110%); }
   to   { opacity: 1; transform: translateY(0); }

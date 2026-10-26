@@ -1,8 +1,8 @@
 export default function Hero() {
   return (
-    <section id="hero" className="hero-bg relative w-full" style={{ height: '100vh', minHeight: '600px' }}>
+    <section id="hero" className="hero-bg relative w-full flex flex-col justify-end min-h-[600px]" style={{ minHeight: 'max(600px, 100svh)' }}>
       <div className="hero-overlay absolute inset-0"></div>
-      <div className="absolute inset-x-0 bottom-0 px-8 md:px-16 pb-14 md:pb-20 z-10">
+      <div className="relative px-6 sm:px-8 md:px-16 pt-28 pb-12 md:pb-20 z-10">
 
         <h1 className="font-serif text-white leading-[1.1] max-w-4xl text-[2.8rem] sm:text-[3.8rem] md:text-[5rem] lg:text-[6rem]">
           <span className="reveal-wrap"><span className="reveal-line" id="rl1">Therapists that understand</span></span>
