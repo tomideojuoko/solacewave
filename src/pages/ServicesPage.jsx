@@ -17,7 +17,7 @@ const services = [
     preview: 'A private, one on one space built entirely around you. Work through what you are carrying with a Registered Psychotherapist who already understands your world.',
     body: [
       'Individual therapy at Solace Wave Therapy is a private, one on one space built entirely around you. Whether you are navigating anxiety, depression, identity, grief, trauma, relationship challenges or the quiet exhaustion of living between cultures, your therapist meets you exactly where you are.',
-      'Our therapists are Registered Psychotherapists (RP) who bring both deep professional training and genuine lived experience to every session.',
+      'Our therapists are Registered Psychotherapists (RP) and Registered Social Workers (RSW) who bring both deep professional training and genuine lived experience to every session.',
     ],
     subheadings: [
       {
@@ -57,27 +57,6 @@ const services = [
     cta: { label: 'Book a Free Consultation', href: 'https://calendly.com/solacewavetherapy/consultation', variant: 'brown' },
   },
   {
-    id: 3,
-    name: 'Wellness Coaching',
-    price: '$100 CAD per session',
-    cardPrice: '$100 CAD',
-    image: IMG2,
-    preview: 'Words of wisdom from home. Grounded, culturally rooted coaching from coaches across Nigeria, Ghana, Ethiopia and Somalia who know your world from the inside.',
-    body: [
-      '"Words of wisdom from home."',
-      'Our wellness coaches bring something rare. The kind of grounded, culturally rooted guidance that feels like sitting with someone who truly knows your world. Our coaches come from Nigeria, Ghana, Ethiopia, Somalia and across the African continent, bringing deep community knowledge, lived experience and cultural wisdom to every session.',
-      'Wellness coaching is a supportive, non-clinical service focused on helping you move forward in life. Your coach helps you gain clarity, build healthier habits, set meaningful goals and navigate the everyday challenges of life.',
-    ],
-    subheadings: [
-      {
-        title: 'Wellness coaching is a great fit for',
-        text: 'Personal growth and goal setting, stress management and work-life balance, mindset and motivation, building confidence and self-worth, navigating relationships and family dynamics, wellbeing support and accountability.',
-      },
-    ],
-    note: 'Please note: Wellness coaching is a supportive, non-clinical service. Coaches do not provide psychotherapy, make diagnoses or prescribe medication. If you are experiencing symptoms that require that level of care, our team will help connect you with one of our registered therapists.',
-    cta: { label: 'Book a Free Consultation', href: 'https://calendly.com/solacewavetherapy/consultation', variant: 'brown' },
-  },
-  {
     id: 4,
     name: 'Couples Therapy',
     price: '$250 CAD per session',
@@ -102,22 +81,43 @@ const services = [
     cta: { label: 'Book a Free Consultation', href: 'https://calendly.com/solacewavetherapy/consultation', variant: 'brown' },
   },
   {
+    id: 3,
+    name: 'Wellness Coaching',
+    price: '$100 CAD per session',
+    cardPrice: '$100 CAD',
+    image: IMG2,
+    preview: 'Words of wisdom from home. Grounded, culturally rooted coaching from coaches across Nigeria, Ghana, Ethiopia and Somalia who know your world from the inside.',
+    body: [
+      '"Words of wisdom from home."',
+      'Our wellness coaches bring something rare. The kind of grounded, culturally rooted guidance that feels like sitting with someone who truly knows your world. Our coaches come from Nigeria, Ghana, Ethiopia, Somalia and across the African continent, bringing deep community knowledge, lived experience and cultural wisdom to every session.',
+      'Wellness coaching is a supportive, non-clinical service focused on helping you move forward in life. Your coach helps you gain clarity, build healthier habits, set meaningful goals and navigate the everyday challenges of life.',
+    ],
+    subheadings: [
+      {
+        title: 'Wellness coaching is a great fit for',
+        text: 'Personal growth and goal setting, stress management and work-life balance, mindset and motivation, building confidence and self-worth, navigating relationships and family dynamics, wellbeing support and accountability.',
+      },
+    ],
+    note: 'Please note: Wellness coaching is a supportive, non-clinical service. Coaches do not provide psychotherapy, make diagnoses or prescribe medication. If you are experiencing symptoms that require that level of care, our team will help connect you with one of our registered therapists.',
+    cta: { label: 'Book a Free Consultation', href: 'https://calendly.com/solacewavetherapy/consultation', variant: 'brown' },
+  },
+  {
     id: 5,
     name: 'Assessments and Reports',
-    price: 'Assessment from $820 CAD · Reports $2,000–$2,500 CAD',
-    cardPrice: 'From $820 CAD',
+    price: 'Fees provided on consultation',
+    cardPrice: 'Fees on request',
     image: IMG5,
-    preview: 'Comprehensive psychological assessments and formal reports for immigration hearings, humanitarian applications and pre-removal risk assessments.',
+    preview: 'Clinical psychological assessments and formal reports to support immigration hearings, Humanitarian and Compassionate applications and Pre-Removal Risk Assessments.',
     body: [
-      'Our assessment and report services are designed to support clients who need formal psychological documentation for legal, immigration or humanitarian purposes. We understand how high the stakes can be when your safety, your status or your future depends on the right support and documentation.',
+      'Our clinicians provide thorough, trauma-informed psychological assessments and formal reports for legal, immigration and humanitarian purposes. We understand what is at stake, and we approach every assessment with care, objectivity and cultural understanding so that your experiences are documented accurately and respectfully.',
     ],
     subheadings: [
       {
         title: 'Services include',
-        text: 'Psychological Assessment (4 hours) $820 CAD — A comprehensive psychological assessment conducted by our qualified clinicians to evaluate cognitive, emotional and psychological functioning. Psychological Report for Immigration Hearings — A detailed clinical report prepared to support clients appearing before the Immigration and Refugee Board or in related legal proceedings. Humanitarian and Compassionate Report — A psychological report prepared to support H&C applications with IRCC. Pre-Removal Risk Assessment Report — A clinical report prepared to support PRRA applications for clients facing removal from Canada.',
+        text: 'Psychological Assessment — A comprehensive clinical assessment of cognitive, emotional and psychological functioning. Psychological Report for Immigration Hearings — A detailed clinical report to support clients appearing before the Immigration and Refugee Board of Canada (IRB) or in related proceedings. Humanitarian and Compassionate (H&C) Report — A psychological report to support H&C applications to Immigration, Refugees and Citizenship Canada (IRCC). Pre-Removal Risk Assessment (PRRA) Report — A clinical report to support PRRA applications for clients facing removal from Canada.',
       },
     ],
-    note: 'All reports are prepared by qualified clinicians. Report pricing ranges from $2,000 to $2,500 CAD depending on complexity and scope. Please contact us to discuss your specific needs.',
+    note: 'All assessments and reports are completed by qualified clinicians. Fees depend on the scope and complexity of each case and are provided during your consultation. Please contact us to discuss your needs.',
     cta: { label: 'Contact Us About Assessments', href: 'https://wa.me/2347085256034', variant: 'teal' },
   },
 ]

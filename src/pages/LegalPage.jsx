@@ -241,6 +241,7 @@ function TermsContent() {
 
       <Section title="5. Session Fees and Payment">
         <P>Session fees are set by Solace Wave Therapy and are provided to you during onboarding and booking. Payment is collected by Solace Wave Therapy prior to or at the time of your session. All fees are in Canadian dollars unless otherwise stated.</P>
+        <P>We offer direct billing to select insurance providers, including Manulife, Sun Life, Canada Life, Medavie Blue Cross and Alberta Blue Cross. Where direct billing is not available, we provide official receipts so you can submit a claim to your insurer for reimbursement. Coverage depends on your individual plan, and you are responsible for any amount your insurer does not cover.</P>
         <Sub>Cancellation Policy</Sub>
         <P>Cancellations made with less than 24 hours notice may be subject to a cancellation fee at our discretion. No-shows (failure to attend without notice) may be charged a full or partial session fee. Your appointment time cannot be held if you are more than 15 minutes late without prior notice.</P>
         <Sub>Refunds</Sub>

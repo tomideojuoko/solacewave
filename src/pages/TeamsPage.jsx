@@ -10,7 +10,7 @@ const teamMembers = [
     image: '/assets/Annmarie-circle.jpg',
     quote: 'Your lived experience matters here. Together, we create space for reflection, healing, and growth.',
     tags: ['Trauma', 'Anxiety', 'The girl child experience', 'Grief and loss', 'Burnout', 'Family pressures', 'Relationship issues', 'Self-esteem & confidence', 'Couples therapy', 'Racialized stress', 'Life transitions'],
-    bio: 'Annmarie is a Registered Psychotherapist with deep experience supporting people through trauma, grief, and the specific stress that comes with navigating race and identity. With warmth and cultural understanding, she creates a space where your whole story is honored.',
+    bio: 'Annmarie is a Registered Psychotherapist who supports people through trauma, low confidence, stress and burnout, including the pressures of the workplace. With warmth and cultural understanding, she helps you make sense of what you are carrying, rebuild your confidence and create a clear vision for the life you want.',
     isTherapist: true,
   },
   {
@@ -20,7 +20,7 @@ const teamMembers = [
     country: '🇨🇦 Canada',
     image: '/assets/KemaniG.jpg',
     quote: "Healing doesn't mean having all the answers. It means giving yourself permission to explore, grow and embrace the journey.",
-    tags: ['Depression', 'Anxiety', 'High performance burnout', 'Identity and life transitions', 'Relationships', 'Emotional processing', 'Workplace stress', 'Young men and boys', 'Self-esteem', 'Youth & young adults', 'Mindfulness'],
+    tags: ['Depression', 'Anxiety', 'High performance burnout', 'Identity and life transitions', 'Relationships', 'Emotional processing', 'Workplace stress', 'Youth and men', 'Self-esteem', 'Mindfulness'],
     bio: "Kemani is a Registered Social Worker who brings experience supporting youth and adults through a compassionate, mindful, and trauma-informed approach. He strives to create a safe, inclusive and empowering space where individuals feel heard, supported, and encouraged to build emotional awareness, strengthen resilience and navigate life's challenges.",
     isTherapist: true,
   },
