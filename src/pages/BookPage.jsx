@@ -1,6 +1,14 @@
 const BOOKING_EMBED = 'https://book.carepatron.com/Solace-Wave-Therapy/All?p=gAXiqIIET-W80KBN21uGPw&e=i'
 const CONSULT_LINK = 'https://calendly.com/solacewavetherapy/consultation'
 
+// Shown above the booking portal so returning clients can spot their therapist.
+// Full names match how they appear in Carepatron.
+const THERAPISTS = [
+  { name: 'Annmarie Etuk', role: 'Registered Psychotherapist', image: '/assets/Annmarie-circle.jpg' },
+  { name: 'Racquel Anthony', role: 'Registered Psychotherapist (Qualifying)', image: '/assets/RaquelA-circle.jpg' },
+  { name: 'Kemani Grant', role: 'Registered Social Worker', image: '/assets/KemaniG.jpg' },
+]
+
 // Booking page for returning clients who've already had their free consultation.
 export default function BookPage() {
   return (
@@ -21,6 +29,20 @@ export default function BookPage() {
           <a href={CONSULT_LINK} target="_blank" rel="noopener noreferrer" className="shrink-0 inline-flex justify-center bg-brown text-sand font-semibold px-5 py-2.5 rounded-full text-sm hover:bg-terra transition-colors">
             Book a free consultation
           </a>
+        </div>
+
+        <div className="text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-brown" style={{ fontFamily: "'Playfair Display', serif" }}>Find your therapist</h2>
+          <p className="text-muted text-sm mt-2">Then choose them in the booking form below.</p>
+          <div className="mt-7 grid grid-cols-3 gap-3 sm:gap-8 max-w-2xl mx-auto">
+            {THERAPISTS.map(t => (
+              <div key={t.name} className="flex flex-col items-center">
+                <img src={t.image} alt={t.name} className="w-20 h-20 sm:w-28 sm:h-28 rounded-full object-cover border-4 border-sand shadow-sm" />
+                <p className="mt-3 font-semibold text-brown text-sm sm:text-base leading-tight">{t.name}</p>
+                <p className="mt-1 text-muted text-[11px] sm:text-xs leading-snug">{t.role}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="bg-white rounded-3xl border border-sand overflow-hidden shadow-sm">
