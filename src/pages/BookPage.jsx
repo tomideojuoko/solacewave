@@ -1,4 +1,4 @@
-const BOOKING_EMBED = 'https://book.carepatron.com/Solace-Wave-Therapy/All?p=gAXiqIIET-W80KBN21uGPw&e=i'
+const BOOKING_LINK = 'https://book.carepatron.com/Solace-Wave-Therapy/All?p=gAXiqIIET-W80KBN21uGPw&e=b'
 const CONSULT_LINK = 'https://calendly.com/solacewavetherapy/consultation'
 
 // Shown above the booking portal so returning clients can spot their therapist.
@@ -33,7 +33,7 @@ export default function BookPage() {
 
         <div className="text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-brown" style={{ fontFamily: "'Playfair Display', serif" }}>Find your therapist</h2>
-          <p className="text-muted text-sm mt-2">Then choose them in the booking form below.</p>
+          <p className="text-muted text-sm mt-2">Look for your therapist when you open the booking portal.</p>
           <div className="mt-7 grid grid-cols-3 gap-3 sm:gap-8 max-w-2xl mx-auto">
             {THERAPISTS.map(t => (
               <div key={t.name} className="flex flex-col items-center">
@@ -45,13 +45,14 @@ export default function BookPage() {
           </div>
         </div>
 
-        <div className="bg-white rounded-3xl border border-sand overflow-hidden shadow-sm">
-          <iframe
-            title="Carepatron Online Booking"
-            src={BOOKING_EMBED}
-            className="w-full block border-0"
-            style={{ height: 'min(1100px, max(760px, 85vh))' }}
-          />
+        <div className="bg-white rounded-3xl border border-sand shadow-sm px-6 py-12 text-center space-y-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-brown" style={{ fontFamily: "'Playfair Display', serif" }}>Ready to book?</h2>
+          <p className="text-muted text-sm md:text-base max-w-md mx-auto leading-relaxed">
+            Open our booking portal, choose your therapist and pick a time that works for you.
+          </p>
+          <a href={BOOKING_LINK} target="_blank" rel="noopener noreferrer" className="inline-flex bg-brown text-sand font-semibold px-8 py-3.5 rounded-full text-sm md:text-base hover:bg-terra transition-colors shadow-md">
+            Open booking portal
+          </a>
         </div>
 
       </div>
