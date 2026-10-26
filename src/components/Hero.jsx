@@ -18,7 +18,7 @@ export default function Hero() {
               Book a free consultation
             </a>
             {/* For returning clients who've already been matched */}
-            <a href="https://book.carepatron.com/Solace-Wave-Therapy/All?p=gAXiqIIET-W80KBN21uGPw&e=b" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-terra text-sand font-bold px-7 py-3.5 rounded-full hover:bg-brown transition-all text-sm shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-200">
+            <a href="/book" className="inline-flex items-center justify-center gap-2 bg-terra text-sand font-bold px-7 py-3.5 rounded-full hover:bg-brown transition-all text-sm shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-200">
               Book your next session
             </a>
             <p className="text-white text-xs text-center leading-snug [text-shadow:0_1px_6px_rgba(0,0,0,0.55)]">Already had your consultation? Book your next session with your matched therapist.</p>

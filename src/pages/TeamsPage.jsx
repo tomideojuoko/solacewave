@@ -575,10 +575,8 @@ export default function TeamsPage() {
             <h3>Ready for your next session?</h3>
             <p>Already had your consultation?<br />Book your next session directly with your matched therapist here.</p>
             <a
-              href="https://book.carepatron.com/Solace-Wave-Therapy/All?p=gAXiqIIET-W80KBN21uGPw&e=b"
+              href="/book"
               className="btn-brown"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               Book your next session
             </a>

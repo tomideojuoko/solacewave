@@ -20,6 +20,7 @@ import CookieBanner from './components/CookieBanner'
 import ServicesPage from './pages/ServicesPage'
 import TeamsPage from './pages/TeamsPage'
 import LegalPage from './pages/LegalPage'
+import BookPage from './pages/BookPage'
 
 const EASE = 'cubic-bezier(0.16, 1, 0.3, 1)'
 const wait = ms => new Promise(r => setTimeout(r, ms))
@@ -160,6 +161,7 @@ export default function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/team" element={<TeamsPage />} />
           <Route path="/legal" element={<LegalPage />} />
+          <Route path="/book" element={<BookPage />} />
         </Routes>
       </div>
     </>

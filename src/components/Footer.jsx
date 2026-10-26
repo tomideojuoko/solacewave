@@ -42,6 +42,7 @@ export default function Footer() {
               <li><Link to="/services" className="text-white/55 hover:text-white text-sm transition-colors">Services</Link></li>
               <li><a href="#approach" className="text-white/55 hover:text-white text-sm transition-colors">Our Approach</a></li>
               <li><Link to="/team"     className="text-white/55 hover:text-white text-sm transition-colors">Our Team</Link></li>
+              <li><Link to="/book"     className="text-white/55 hover:text-white text-sm transition-colors">Book a Session</Link></li>
               <li><a href="https://calendly.com/solacewavetherapy/consultation" target="_blank" rel="noopener noreferrer"     className="text-white/55 hover:text-white text-sm transition-colors">Book a Session</a></li>
             </ul>
           </div>

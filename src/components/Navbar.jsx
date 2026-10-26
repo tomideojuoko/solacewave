@@ -94,6 +94,7 @@ export default function Navbar({ solid = false }) {
           <a href="#approach"    className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">Our Approach</a>
           <Link to="/team"        className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">Team</Link>
           <a href="#contact"     className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">Contact Us</a>
+          <Link to="/book"        className="nav-link text-sm font-medium text-white/85 hover:text-white transition-colors">Book a Session</Link>
         </div>
       </div>
 
@@ -114,6 +115,7 @@ export default function Navbar({ solid = false }) {
           <a href="#approach"      onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-terra">Our Approach</a>
           <Link to="/team"     onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-terra">Team</Link>
           <a href="#contact"  onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-terra">Contact Us</a>
+          <Link to="/book"    onClick={closeMenu} className="block text-sm font-medium text-charcoal/75 hover:text-terra">Book a Session</Link>
           <a href="https://calendly.com/solacewavetherapy/consultation" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="block text-center bg-brown text-sand font-bold px-5 py-3 rounded-full text-sm">Book Now!</a>
         </div>
       )}
