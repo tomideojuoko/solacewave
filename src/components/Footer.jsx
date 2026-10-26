@@ -54,6 +54,15 @@ export default function Footer() {
 
         </div>
 
+        {/* Crisis support, shown on every page */}
+        <div className="mb-8 rounded-2xl bg-white/5 border border-white/10 px-5 py-4 text-center md:text-left">
+          <p className="text-white/75 text-sm leading-relaxed">
+            <span className="font-semibold text-sand">Need help right now?</span>{' '}
+            If you're in crisis, call or text <a href="tel:988" className="font-semibold text-sand underline underline-offset-2 hover:text-white">988</a> (Suicide Crisis Helpline, 24/7).
+            In an emergency, call <a href="tel:911" className="font-semibold text-sand underline underline-offset-2 hover:text-white">911</a> or go to your nearest emergency department.
+          </p>
+        </div>
+
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-5">
           <div className="flex items-center gap-4">
             <p className="text-white/35 text-xs"><span className="whitespace-nowrap">© 2025 Solace Wave Therapy.</span> All rights reserved.</p>
