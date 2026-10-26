@@ -1,5 +1,4 @@
 const BOOKING_EMBED = 'https://book.carepatron.com/Solace-Wave-Therapy/All?p=gAXiqIIET-W80KBN21uGPw&e=i'
-const BOOKING_LINK = 'https://book.carepatron.com/Solace-Wave-Therapy/All?p=gAXiqIIET-W80KBN21uGPw&e=b'
 const CONSULT_LINK = 'https://calendly.com/solacewavetherapy/consultation'
 
 // Booking page for returning clients who've already had their free consultation.
@@ -33,12 +32,6 @@ export default function BookPage() {
           />
         </div>
 
-        <p className="text-center text-sm text-muted">
-          Booking form not loading?{' '}
-          <a href={BOOKING_LINK} target="_blank" rel="noopener noreferrer" className="text-terra font-semibold hover:underline">
-            Open it in a new tab
-          </a>
-        </p>
       </div>
     </div>
   )
